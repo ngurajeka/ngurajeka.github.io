@@ -118,7 +118,10 @@ header nav.subnav {
 
 header .subnav a {
     padding-right: 0px;
-  margin-left: 20px;
+    margin-left: 20px;
+}
+header .subnav a:hover {
+    border-top: 5px solid #111;
 }
 header .subnav a.active {
     border-bottom: 5px solid #111;
