@@ -1,7 +1,7 @@
 # site config
 title: AdHy Ngurajeka
 desc: "Linuxer / Programmer / Thinker"
-
+url: "http://blog.ngurajeka.com"
 # jekyll config
 sass:
    sass_dir: _sass
