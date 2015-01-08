@@ -1,15 +1,14 @@
-@import 'bourbon/bourbon';
-@import 'neat/neat';
 
 h1.hero {
     font-size: 6.5em;
-    margin: 0.3em 0 0.1em;
+    margin: 0.5em 0 0.1em;
 }
+@media screen and (min-width: 40em) {
+	.project {
+	    @include span-columns(6);
 
-.project {
-    @include span-columns(6);
+	}
 }
-
 .pagination a {
     @include span-columns(3);
 }
@@ -22,4 +21,8 @@ h1.hero {
   @media (min-width: em(1000)) {
     display: block;
   }
+}
+
+.text-center {
+	text-align: center;
 }
