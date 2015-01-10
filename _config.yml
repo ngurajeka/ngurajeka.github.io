@@ -9,7 +9,7 @@ sass:
  sass_dir: _sass
  style: compressed
 paginate: 5
-paginate_path: "page/page:num/"
+paginate_path: "page:num/"
 
 owner:
   name: AdHy Ngurajeka
