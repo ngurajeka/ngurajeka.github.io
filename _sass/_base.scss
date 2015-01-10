@@ -1,0 +1,42 @@
+body {
+    color: $text-color;
+    font-size: $base-font-size;
+    font-family: $base-font-family;
+}
+h1 {
+    font-size: 4em;
+    font-weight: 700;
+}
+h2 {
+    font-size: 3.5em;
+    font-weight: 700;
+}
+h3 {
+    font-size: 3em;
+    font-weight: 700;
+}
+h4 {
+    font-size: 2.5em;
+}
+h5 {
+    font-size: 2em;
+}
+h6 {
+    font-size: 1.5em;
+}
+a {
+    color: $primary-color;
+    text-decoration: none;
+    &:hover, &:active {
+        text-decoration: underline;
+    }
+}
+blockquote {
+    border-left:1px solid $text-color-light;
+    background-color: rgba($text-color-light, 0.2);
+    padding:0.25em;
+    p {
+        margin: 0;
+        color: rgba($text-color, 0.8);
+    }
+}

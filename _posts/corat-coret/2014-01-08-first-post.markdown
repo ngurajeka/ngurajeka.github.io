@@ -1,7 +1,7 @@
 ---
 title: First Post
 subnav: blog
-layout: default
+layout: post
 type: single_post
 categories: corat-coret
 summary: "First post using jekyll"
