@@ -1,22 +1,29 @@
-# site config
+# Site settings
 title: AdHy Ngurajeka
-desc: "Linuxer / Programmer / Thinker"
-url: "http://blog.ngurajeka.com"
-# jekyll config
+email: ngurajeka.92@gmail.com
+description: "{ Linuxer / Programmer / Thinker }"
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "" # the base hostname & protocol for your site
+
 sass:
-   sass_dir: _sass
-   style: compressed
-permalink: /:categories/:title.html
-exclude: ['Gemfile','Gemfile.lock','Rakefile','.git']
-paginate: 4
-markdown: kramdown
-highlighter: pygments
-gems:
-   - jekyll-sitemap
+ sass_dir: _sass
+ style: compressed
+paginate: 5
+paginate_path: "page/page:num/"
 
-# owner stuff
 owner:
-   name: AdHy Ngurajeka
-   realname: Ady Rahmat MA
-   nickname: ngurajeka
+  name: AdHy Ngurajeka
+  realname: Ady Rahmat MA
+  nickname: ngurajeka
+  social_media:
+  - name: twitter
+    url: twitter.com/ngurajeka
+  - name: github
+    url: github.com/ngurajeka
+  - name: facebook
+    url: fb.com/ngurajeka.92
+  bio:
+  avatar: assets/images/me.jpg
 
+# Build settings
+markdown: kramdown
