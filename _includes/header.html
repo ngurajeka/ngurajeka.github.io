@@ -3,9 +3,9 @@
 		<a class="site-title" href="{{ site.baseurl }}/">{{ site.title }}</a>
 		<nav class="site-nav">
 			<div class="trigger">
-				{% for page in site.pages %}
-					{% if page.title != "Page Not Found" %}
-						<a class="page-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
+				{% for pages in site.pages %}
+					{% if pages.title != "Page Not Found" %}
+						<a class="page-link" href="{{ pages.url | prepend: site.baseurl }}">{{ pages.title }}</a>
 					{% endif %}
 				{% endfor %}
 				{% for social in site.owner.social_media %}
