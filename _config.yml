@@ -3,7 +3,7 @@ title: AdHy Ngurajeka
 email: ngurajeka.92@gmail.com
 description: "{ Linuxer / Programmer / Thinker }"
 baseurl: "" # the subpath of your site, e.g. /blog/
-url: "" # the base hostname & protocol for your site
+url: "http://blog.ngurajeka.com" # the base hostname & protocol for your site
 
 sass:
  sass_dir: _sass
