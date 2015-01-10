@@ -1,7 +1,7 @@
 ---
 title: Buku Elektronik Administrasi Server 
 subnav: blog
-layout: default
+layout: post
 type: single_post
 categories: tkj
 summary: "Administrasi Server untuk Kelas 2 TKJ"
