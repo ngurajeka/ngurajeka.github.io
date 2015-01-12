@@ -30,6 +30,10 @@
 	}
 }
 
+.center {
+	text-align: center;
+}
+
 .page-content, .home {
 	.post-header {
 		margin-top: 10px;
@@ -37,6 +41,10 @@
 		.post-title {
 			margin: 0;
 		}
+	}
+	img {
+		max-width: 80%;
+		margin: auto;
 	}
 }
 
