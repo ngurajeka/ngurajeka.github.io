@@ -8,7 +8,7 @@
   <meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
   <meta property="og:type" content="article">
   <meta property="og:description" content="{% if page.summary %}{{ page.summary | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
-  <meta property="og:image" content="{% if page.image_summmary %}{{ page.image_summmary }}{% else %}{{ site.url }}/{{ site.owner.avatar }}{% endif %}">
+  <meta property="og:image" content="{% if page.image_summary %}{{ page.image_summary }}{% else %}{{ site.url }}/{{ site.owner.avatar }}{% endif %}">
 
   <link rel="stylesheet" href="{{ "/assets/fonts/SourceSansPro/font.css" | prepend: site.baseurl }}">
   <link rel="stylesheet" href="{{ "/assets/stylesheets/main.css" | prepend: site.baseurl }}">
