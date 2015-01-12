@@ -4,3 +4,11 @@
 		<p class="text">Powered by <a href="http://jekyllrb.com/" title="" target="_blank">Jekyll</a></p>
 	</div>
 </footer>
+<script type="text/javascript">
+	var img = document.getElementsByTagName("img");
+	for (var i = img.length - 1; i >= 0; i--) {
+		var att = document.createAttribute("class");
+		att.value = "center";
+		img[i].parentNode.setAttributeNode(att);
+	};
+</script>
