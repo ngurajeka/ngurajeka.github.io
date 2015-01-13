@@ -17,13 +17,15 @@ owner:
   nickname: ngurajeka
   social_media:
   - name: twitter
-    url: twitter.com/ngurajeka
+    url: http://twitter.com/ngurajeka
   - name: github
-    url: github.com/ngurajeka
+    url: http://github.com/ngurajeka
   - name: facebook
-    url: fb.com/ngurajeka.92
+    url: http://fb.com/ngurajeka.92
   bio:
   avatar: assets/images/me.jpg
 
 # Build settings
 markdown: kramdown
+
+#host: 192.168.1.107
