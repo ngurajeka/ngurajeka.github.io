@@ -4,7 +4,6 @@
 	padding-right: 5%;
 	@include clearfix;
 }
-
 .site-header {
 	background-color: $primary-color;
 	padding-top: 20px;
@@ -117,5 +116,40 @@ button, .button {
 	.text {
 		margin: 0;
 		color: rgba($text-color, 0.8);
+	}
+}
+
+// stylis ordering list
+.circle {
+  counter-reset: olcircle;
+  max-width: none;
+  list-style: none;
+  padding:0;
+  margin-bottom: 1.71428571rem;
+  li {
+  	counter-increment: olcircle;
+  	margin-left: 46px;
+  	margin-left: 3.28571429rem;
+  	margin-bottom: 2rem;
+		&:before {
+		  float: left;
+		  border-radius: 50%;
+		  content: counter(olcircle);
+		  font-size: 13px;
+		  font-size: 0.92857143rem;
+		  height: 28px;
+		  height: 2rem;
+		  line-height: 28px;
+		  line-height: 2rem;
+		  margin: -3px 10px 1px -40px;
+		  margin: -0.21428571rem 0.71428571rem 0.07142857rem -2.85714286rem;
+		  padding-top: 1px;
+		  padding-top: 0.07142857rem;
+		  width: 28px;
+		  width: 2rem;
+		  background-color: #828282;
+		  color: #fff;
+		  text-align: center;
+		}
 	}
 }
