@@ -1,15 +1,15 @@
 # Site settings
-title: AdHy Ngurajeka
+title: The Official Ngurajeka Site
 email: ngurajeka.92@gmail.com
 description: "{ Linuxer / Programmer / Thinker }"
-baseurl: "" # the subpath of your site, e.g. /blog/
-url: "http://blog.ngurajeka.com" # the base hostname & protocol for your site
+baseurl: ""
+url: "http://ngurajeka.com"
 
 sass:
  sass_dir: _sass
  style: compressed
 paginate: 5
-paginate_path: "page:num/"
+paginate_path: "blog/page:num/"
 
 owner:
   name: AdHy Ngurajeka
