@@ -1,0 +1,16 @@
+{
+	"data": [
+	{
+		"id": "k01",
+		"nama": "Tempat Nongkrong",
+		"keterangan": "Kumpulan Tempat Nongkrong yang ada di Bulukumba",
+		"jumlah": 10
+	},
+	{
+		"id": "k02",
+		"nama": "Hotel / Wisma",
+		"keterangan": "Kumpulan Hotel atau Wisma yang ada di Bulukumba",
+		"jumlah": 5
+	}
+	]
+}
