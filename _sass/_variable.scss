@@ -14,13 +14,18 @@ $white-color:      #ffffff;
 $background-color: #fdfdfd;
 $brand-color:      #2a7ae2;
 
-$grey-color:       #828282;
+$grey-color:      #C7C7C7;
 $grey-color-light: lighten($grey-color, 40%);
 $grey-color-dark:  darken($grey-color, 25%);
 
-$primary-color:	   #1ABC9C;
+$primary-color:	   #384452;
 $primary-color-light: lighten($primary-color, 40%);
 $primary-color-dark:  darken($primary-color, 25%);
+
+$secondary-color:	   #00B3FE;
+$secondary-color-light: lighten($secondary-color, 40%);
+$secondary-color-dark:  darken($secondary-color, 25%);
+$secondary-text-color: #ffffff;
 
 // Width of the content area
 $content-width:    800px;
