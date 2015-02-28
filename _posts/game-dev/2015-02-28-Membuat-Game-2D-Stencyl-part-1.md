@@ -12,9 +12,11 @@ summary: "Belajar Dasar-Dasar pembuatan Game 2D dengan Stencyl."
 ## Menyiapkan assets
 
 Untuk game yang akan dibuat kali ini kita akan menggunakan assets dari **Kenney** dan dua suara yang telah saya konversi dari format *ogg* ke *mp3*.
-```
+
+{% highlight %}
 http://s.id/4kW
-```
+{% endhighlight %}
+
 Setelah assets diatas berhasil anda unduh, silahkan simpan dan ekstrak ditempat yang mudah anda untuk cari kembali.
 
 ## Membuat Game Baru
