@@ -25,8 +25,6 @@ Langkah selanjutnya adalah memasukkan file suara yang kita inginkan, dalam asset
 
 ![](https://farm9.staticflickr.com/8649/16463988267_c4ee76f73a_o_d.png)
 
-![](https://farm9.staticflickr.com/8649/16463988267_c4ee76f73a_o_d.png)
-
 ![](https://farm9.staticflickr.com/8675/16051347603_6e3b9b35df_z_d.jpg)
 
 ## Membuat (Menambahkan) Background atau Gambar Latar
