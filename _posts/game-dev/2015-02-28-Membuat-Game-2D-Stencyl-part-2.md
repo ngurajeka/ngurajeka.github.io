@@ -54,3 +54,22 @@ Buka jendela **Settings** melalui menu ataupun toolbar di Stencyl. Lalu pada jen
 
 ![](https://farm9.staticflickr.com/8650/16483666840_1f8b015df0_z_d.jpg)
 
+## Membuat Actor Enemies dan Lasers
+
+Buat dua buah Actor dengan Nama Enemies dan Lasers (atau silahkan ubah sesuai dengan keinginan anda). Pada actor **Enemies** ubah pada bagian **Physics** untuk **What kind of Actor Type** menjadi *Cannot be pushed* dan **No** untuk bagian *Can Rotate*. Kemudian masukkan actor **Enemies** kedalam group **Enemies**. Sedangkan untuk Actor **Lasers** tidak memiliki perubahan pada bagian **Physics** namun dengan hanya memasukkannya ke dalam group **Lasers**.
+
+![](https://farm9.staticflickr.com/8633/16051162123_d19a8777c0_z_d.jpg)
+
+![](https://farm9.staticflickr.com/8562/16484946209_98dcdd448b_z_d.jpg)
+
+![](https://farm9.staticflickr.com/8639/16484945989_462d13ae65_z_d.jpg)
+
+![](https://farm9.staticflickr.com/8622/16483683720_83fa6a7f34_z_d.jpg)
+
+![](https://farm9.staticflickr.com/8658/16483523748_287fedece6_z_d.jpg)
+
+![](https://farm9.staticflickr.com/8619/16645155886_807b09e030_z_d.jpg)
+
+![](https://farm9.staticflickr.com/8580/16463796997_197e4d8360_z_d.jpg)
+
+Pada bagian selanjutnya kita akan membuat dan memasukkan **Sounds** (Suara) beserta sebuah **Background** (Gambar Latar)
