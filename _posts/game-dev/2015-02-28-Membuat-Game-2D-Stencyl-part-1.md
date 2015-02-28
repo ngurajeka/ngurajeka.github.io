@@ -1,5 +1,5 @@
 ---
-title: Membuat Game 2D dengan Stencyl (Space Shooter)
+title: Membuat Game 2D dengan Stencyl (Space Shooter Part 1) 
 subnav: blog
 layout: post
 type: single_post
