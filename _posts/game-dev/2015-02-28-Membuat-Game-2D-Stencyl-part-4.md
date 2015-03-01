@@ -22,7 +22,7 @@ Langkah selanjutnya adalah memasukkan background. Kita akan membuat sebuah layer
 
 ![](https://farm9.staticflickr.com/8567/16057006763_1b8344733c_o_d.png)
 
-Selanjutnya kita akan memasukkan beberapa **Actor** kedalam **Scene** yang baru saja kita buat. Terdapat sebuah kolom di atas kolom **Tiles** | **Actor**, buka kolom **Actor** dan anda akan menemukan **Actor** yang telah anda buat sebelumnya. Kemudian Pilih **Player** lalu tempatkan didalam **Scene** pada bagian bawah. Begitu pula dengan **Enemies** namun tempatkan pada bagian atas.
+Selanjutnya kita akan memasukkan beberapa **Actor** kedalam **Scene** yang baru saja kita buat. Terdapat sebuah kolom di atas kolom **Tiles**, **Actor**, buka kolom **Actor** dan anda akan menemukan **Actor** yang telah anda buat sebelumnya. Kemudian Pilih **Player** lalu tempatkan didalam **Scene** pada bagian bawah. Begitu pula dengan **Enemies** namun tempatkan pada bagian atas.
 
 ![](https://farm9.staticflickr.com/8655/16489388418_605f93c58b_z_d.jpg)
 
