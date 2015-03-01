@@ -14,7 +14,7 @@ Pada halaman **Dashboard** buka bagian **Scene** kemudian pilih **Create New** u
 
 ![](https://farm9.staticflickr.com/8630/16489361718_c2fbbd4d19_z_d.jpg)
 
-Langkah selanjutnya adalah memasukkan background. Kita akan membuat sebuah layer (lapisan) dengan tipe background layer. Tekan Klik kanan tetikus (mouse) pada Layer 0 disebelah kanan bawah pada bagian kolom **Layers** lalu kemudian pilih **New Background Layer**. Atau bisa juga dengan memilih tombol tambah pada bagian bawah kolom **Layers**. Setelah itu anda dapat memilih **Background** yang telah anda buat sebelumnya. Setelah itu, buat agar Layer 0 tetap berada pada lapisan paling atas dengan cara klik kanan tetikus (mouse) pada layer background yang baru saja kita tambahkan kemudian pilih **Send Layer Back**.
+Langkah selanjutnya adalah memasukkan background. Kita akan membuat sebuah layer (lapisan) dengan tipe background layer. Tekan Klik kanan tetikus (mouse) pada Layer 0 disebelah kanan bawah pada bagian kolom **Layers** lalu kemudian pilih **New Background Layer**. Atau bisa juga dengan memilih tombol tambah pada bagian bawah kolom **Layers**. Setelah itu anda dapat memilih **Background** yang telah anda buat sebelumnya. Kemudian, buat agar Layer 0 tetap berada pada lapisan paling atas dengan cara klik kanan tetikus (mouse) pada layer background yang baru saja kita tambahkan kemudian pilih **Send Layer Back**.
 
 ![](https://farm9.staticflickr.com/8627/16489529190_4f049901f4_z_d.jpg)
 
@@ -22,7 +22,7 @@ Langkah selanjutnya adalah memasukkan background. Kita akan membuat sebuah layer
 
 ![](https://farm9.staticflickr.com/8567/16057006763_1b8344733c_o_d.png)
 
-Selanjutnya kita akan memasukkan beberapa **Actor** kedalam **Scene** yang baru saja kita buat. Terdapat sebuah kolom di atas kolom **Tiles|Actor**, buka kolom **Actor** dan anda akan menemukan **Actor** yang telah anda buat sebelumnya. Kemudian Pilih **Player** lalu tempatkan didalam **Scene** pada bagian bawah. Begitu pula dengan **Enemies** namun tempatkan pada bagian atas.
+Selanjutnya kita akan memasukkan beberapa **Actor** kedalam **Scene** yang baru saja kita buat. Terdapat sebuah kolom di atas kolom **Tiles** | **Actor**, buka kolom **Actor** dan anda akan menemukan **Actor** yang telah anda buat sebelumnya. Kemudian Pilih **Player** lalu tempatkan didalam **Scene** pada bagian bawah. Begitu pula dengan **Enemies** namun tempatkan pada bagian atas.
 
 ![](https://farm9.staticflickr.com/8655/16489388418_605f93c58b_z_d.jpg)
 
