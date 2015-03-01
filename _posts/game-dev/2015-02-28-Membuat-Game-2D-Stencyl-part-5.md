@@ -8,7 +8,7 @@ summary: "Menambahkan Logika pada Player"
 ---
 ## Membuat Player dapat bergerak
 
-Kali ini kita akan membuat agar **Player** dapat bergerak kekiri dan kekanan. Buka kembali **Actor** **Player** lalu masuk kebagian **Events**. Lalu tambahkan sebuah **Event** **Basic** kemudian pilih **When Updating**. Event ini akan kita gunakan untuk melakukan cek input keyboard.
+Kali ini kita akan membuat agar **Player** dapat bergerak ke kiri dan ke kanan. Buka kembali **Actor** **Player** lalu masuk kebagian **Events**. Lalu tambahkan sebuah **Event** **Basic** kemudian pilih **When Updating**. Event ini akan kita gunakan untuk melakukan cek input keyboard.
 
 ![](https://farm9.staticflickr.com/8611/16676165292_79b2616ac9_z_d.jpg)
 
@@ -42,6 +42,6 @@ Nah, setelah cukup paham dengan logika yang akan kita gunakan diatas sekarang sa
 
 ![](https://farm9.staticflickr.com/8651/16677377075_5a1759b4e8_o_d.png)
 
-* Terakhir adalah menambahkan logika untuk tombol kanan, tidak menekan tombol apapun. 
+* Terakhir adalah menambahkan logika untuk tombol kanan, dan juga pada saat tidak menekan tombol apapun. 
 
 ![](https://farm9.staticflickr.com/8585/16677176845_2b40565794_z_d.jpg)
