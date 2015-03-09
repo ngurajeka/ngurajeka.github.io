@@ -2,31 +2,29 @@
 layout: default
 ---
 
-<div class="home">
-	
-	<ul class="post-list">
-		{% for post in paginator.posts %}
-			<li>
-				<h2>
-					<a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-				</h2>
-				<span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-				<p class="post-summary">{{ post.summary }}</p>
-			</li>
-		{% endfor %}
-	</ul>
-	<!-- Pagination links -->
-	<div class="pagination">
-		{% if paginator.previous_page %}
-			<a href="{{ paginator.previous_page_path }}" class="left previous">Previous</a>
-		{% else %}
-			<span class="left previous">Previous</span>
-		{% endif %}
-		{% if paginator.next_page %}
-			<a href="{{ paginator.next_page_path }}" class="right next">Next</a>
-		{% else %}
-			<span class="right next">Next</span>
-		{% endif %}
-	</div>
+<div id="home">
+
+    <div class="center">
+        <img src="{{ site.owner.avatar }}" class="img-circle img-medium" alt="{{ site.owner.name }}">
+        <br>
+        <a href="">about me</a> | <a href="/blog/">blog</a>
+    </div>
+
+    <p>I'm a Linuxer, Programmer, Thinker with a passion for learning new stuff. I use <strong>Python</strong>, <strong>Django</strong>, <strong>PHP</strong>, <strong>CI</strong>, <strong>Laravel</strong>, <strong>Jade</strong>, <strong>SASS</strong>, <strong>Stylus</strong>, and <strong>CoffeeScript</strong>. If you need help bout one of those i mention, just buy me a coffee or Hire me.</p>
+
+    <hr>
+
+    <div class="center">
+        <p class="email">{{ site.email }}</p>
+
+        <ul class="social-link">
+            {% for social in site.owner.social_media %}
+                <li>
+                    <a href="{{ social.url }}" title="{{ social.name }}"><i class="fa fa-{{ social.name }} fa-2x"></i></a>
+                </li>
+            {% endfor %}
+        </ul>
+
+    </div>
 
 </div>
