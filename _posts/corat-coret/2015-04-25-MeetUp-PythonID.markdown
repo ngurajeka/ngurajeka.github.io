@@ -5,6 +5,7 @@ layout: post
 type: single_post
 categories: corat-coret
 summary: "MeetUp PythonID"
+image_summary: "http://photos1.meetupstatic.com/photos/event/1/0/1/1/600_436684113.jpeg"
 ---
 ![](http://photos1.meetupstatic.com/photos/event/1/0/1/1/600_436684113.jpeg)
 
