@@ -7,8 +7,6 @@ categories: corat-coret
 summary: "MeetUp PythonID"
 image_summary: "http://photos1.meetupstatic.com/photos/event/1/0/1/1/600_436684113.jpeg"
 ---
-![](http://photos1.meetupstatic.com/photos/event/1/0/1/1/600_436684113.jpeg)
-
 25 April 2015. Hari ini saya memiliki pengalaman yang cukup menarik. Pengalaman ini saya dapatkan sewaktu mengikuti acara "MeetUp PythonID" yang dilaksanakan di kantor Detik.com
 
 Pertemuan kali ini adalah ajang sharing tentang Python. Acara sharingnya masih seputaran basic atau pengenalan Python. Jadi bagi saya tidaklah begitu sulit untuk mengikuti materinya. Kemudian acaranya ditutup dengan sharing dari beberapa orang yang sudah bekerja menggunakan Python atau bisa dikatakan "sesepuh" dari PythonID.
