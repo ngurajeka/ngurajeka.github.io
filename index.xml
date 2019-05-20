@@ -12,12 +12,21 @@
     
     
     <item>
-      <title>Docker Screencast</title>
-      <link>https://ngurajeka.com/screencast/docker/</link>
+      <title>Screencast</title>
+      <link>https://ngurajeka.com/screencast/</link>
       <pubDate>Mon, 20 May 2019 09:00:00 +0000</pubDate>
       
-      <guid>https://ngurajeka.com/screencast/docker/</guid>
-      <description>http://www.python.or.id/2016/10/300-calon-programmer-dari-tangerang.html</description>
+      <guid>https://ngurajeka.com/screencast/</guid>
+      <description> Docker  Installation of Docker Your first docker container  </description>
+    </item>
+    
+    <item>
+      <title>About</title>
+      <link>https://ngurajeka.com/about/</link>
+      <pubDate>Mon, 20 May 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://ngurajeka.com/about/</guid>
+      <description>My name is Ady Rahmat MA or you can call me ngurajeka. Currently i&amp;rsquo;m working as a CEO @Valutac. Full Time Superheroes. Living the day by Writing Codes, Travelling, Drinking Coffee, and Fighting SuperVillain.</description>
     </item>
     
     <item>
