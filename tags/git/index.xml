@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Git on The Official Site of ngurajeka</title>
+    <link>https://ngurajeka.com/tags/git/</link>
+    <description>Recent content in Git on The Official Site of ngurajeka</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 07 May 2017 21:38:11 +0700</lastBuildDate>
+    
+	<atom:link href="https://ngurajeka.com/tags/git/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Ansible Git Module for Private Repository</title>
+      <link>https://ngurajeka.com/post/ansible-git-module-with-private-repository/</link>
+      <pubDate>Sun, 07 May 2017 21:38:11 +0700</pubDate>
+      
+      <guid>https://ngurajeka.com/post/ansible-git-module-with-private-repository/</guid>
+      <description>Ansible is one of the best tool when it comes to deployment and any related things as well. I&amp;rsquo;m using ansible to deploy my website, and a few of my projects.
+Using git modules on Ansible is quite easy, for examples:
+- name: pull the latest code from git git: repo: https://github.com/username/repo.git dest: /path/to/remote/dir  With a simple configuration, the git module will clone or update the from repo to the destination directory.</description>
+    </item>
+    
+    <item>
+      <title>Using Pre Commit on Golang Project</title>
+      <link>https://ngurajeka.com/post/using-pre-commit-on-golang-project/</link>
+      <pubDate>Tue, 28 Mar 2017 18:55:50 +0700</pubDate>
+      
+      <guid>https://ngurajeka.com/post/using-pre-commit-on-golang-project/</guid>
+      <description>Are you using Git to manage your code? Have you ever heard of hooks? pre-commit hook?
+Git is one of many version control that exist nowadays. Git helps developer, programmer, engineer to manage their code, versioning their project, library or even just as file storage.
+Hook is an operation that could be executed before, or after our main operation.
+So pre-commit is an operation that executed right before the commit processed on git.</description>
+    </item>
+    
+  </channel>
+</rss>

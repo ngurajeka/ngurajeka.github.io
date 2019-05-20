@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+    <title>Membuat Web Sederhana menggunakan PHP, Twig Template Engine dan MySQL: Part 2 :: The Official Site of ngurajeka — A simple theme for Hugo</title>
+  
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+<meta name="description" content="Template Engine Template Engine adalah salah satu alat bantu yang digunakan untuk memisahkan pengerjaan antara logic dan tatap muka. Dalam hal ini, Template Engine yang akan kita gunakan adalah Twig.
+Twig merupakan salah satu Template Engine untuk Bahasa Pemrograman PHP. Pada dasarnya, menggunakan PHP terkadang akan terasa seperti menggunakan sebuah Template Engine. Dan banyak yang mengatakan bahwa PHP sendiri awalnya dibuat seperti sebuah template engine. Contoh:
+&amp;lt;h1&amp;gt;&amp;lt;?php echo $title; ?"/>
+<meta name="keywords" content=""/>
+<meta name="robots" content="noodp"/>
+<link rel="canonical" href="https://ngurajeka.com/post/membuat-web-sederhana-menggunakan-php-twig-template-engine-dan-mysql-part-2/" />
+
+
+<link rel="stylesheet" href="https://ngurajeka.com/assets/style.css">
+
+
+<link rel="stylesheet" href="https://ngurajeka.com/style.css">
+
+
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="https://ngurajeka.com/img/apple-touch-icon-144-precomposed.png">
+<link rel="shortcut icon" href="https://ngurajeka.com/img/favicon.png">
+
+
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:title" content="Membuat Web Sederhana menggunakan PHP, Twig Template Engine dan MySQL: Part 2 :: The Official Site of ngurajeka — A simple theme for Hugo" />
+<meta name="twitter:description" content="Template Engine Template Engine adalah salah satu alat bantu yang digunakan untuk memisahkan pengerjaan antara logic dan tatap muka. Dalam hal ini, Template Engine yang akan kita gunakan adalah Twig.
+Twig merupakan salah satu Template Engine untuk Bahasa Pemrograman PHP. Pada dasarnya, menggunakan PHP terkadang akan terasa seperti menggunakan sebuah Template Engine. Dan banyak yang mengatakan bahwa PHP sendiri awalnya dibuat seperti sebuah template engine. Contoh:
+&amp;lt;h1&amp;gt;&amp;lt;?php echo $title; ?" />
+<meta name="twitter:site" content="https://ngurajeka.com/" />
+<meta name="twitter:creator" content="" />
+<meta name="twitter:image" content="">
+
+
+<meta property="og:locale" content="en" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="Membuat Web Sederhana menggunakan PHP, Twig Template Engine dan MySQL: Part 2 :: The Official Site of ngurajeka — A simple theme for Hugo">
+<meta property="og:description" content="Template Engine Template Engine adalah salah satu alat bantu yang digunakan untuk memisahkan pengerjaan antara logic dan tatap muka. Dalam hal ini, Template Engine yang akan kita gunakan adalah Twig.
+Twig merupakan salah satu Template Engine untuk Bahasa Pemrograman PHP. Pada dasarnya, menggunakan PHP terkadang akan terasa seperti menggunakan sebuah Template Engine. Dan banyak yang mengatakan bahwa PHP sendiri awalnya dibuat seperti sebuah template engine. Contoh:
+&amp;lt;h1&amp;gt;&amp;lt;?php echo $title; ?" />
+<meta property="og:url" content="https://ngurajeka.com/post/membuat-web-sederhana-menggunakan-php-twig-template-engine-dan-mysql-part-2/" />
+<meta property="og:site_name" content="Membuat Web Sederhana menggunakan PHP, Twig Template Engine dan MySQL: Part 2" />
+<meta property="og:image" content="">
+<meta property="og:image:width" content="2048">
+<meta property="og:image:height" content="1024">
+
+<meta property="article:published_time" content="2015-11-17 00:00:00 &#43;0000 UTC" />
+
+
+
+
+
+
+
+
+
+</head>
+<body class="dark-theme">
+<div class="container">
+  <header class="header">
+  <span class="header__inner">
+    <a href="https://ngurajeka.com/" class="logo" style="text-decoration: none;">
+  
+    <span class="logo__mark"><svg xmlns="http://www.w3.org/2000/svg" class="greater-icon" width="44" height="44" viewBox="0 0 44 44">
+  <polyline fill="none" stroke="#000" stroke-width="2" points="15 8 29.729 22.382 15 35.367"/>
+</svg>
+</span>
+    <span class="logo__text">ngurajeka</span>
+    <span class="logo__cursor"></span>
+  
+</a>
+
+    <span class="header__right">
+      
+        <nav class="menu">
+  <ul class="menu__inner menu__inner--desktop">
+    
+      
+        
+          <li><a href="https://ngurajeka.com/about">About</a></li>
+        
+      
+        
+          <li><a href="https://ngurajeka.com/screencast">Screencast</a></li>
+        
+      
+      
+    
+  </ul>
+
+  <ul class="menu__inner menu__inner--mobile">
+    
+      
+        <li><a href="https://ngurajeka.com/about">About</a></li>
+      
+    
+      
+        <li><a href="https://ngurajeka.com/screencast">Screencast</a></li>
+      
+    
+  </ul>
+</nav>
+
+        <span class="menu-trigger">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <path d="M0 0h24v24H0z" fill="none"/>
+            <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
+          </svg>
+        </span>
+      
+      <span class="theme-toggle">
+        <svg class="theme-toggler" width="24" height="24" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M22 41C32.4934 41 41 32.4934 41 22C41 11.5066 32.4934 3 22
+  3C11.5066 3 3 11.5066 3 22C3 32.4934 11.5066 41 22 41ZM7 22C7
+  13.7157 13.7157 7 22 7V37C13.7157 37 7 30.2843 7 22Z"/>
+</svg>
+
+      </span>
+    </span>
+  </span>
+</header>
+
+
+  <div class="content">
+    
+  <div class="post">
+    <h2 class="post-title"><a href="https://ngurajeka.com/post/membuat-web-sederhana-menggunakan-php-twig-template-engine-dan-mysql-part-2/">Membuat Web Sederhana menggunakan PHP, Twig Template Engine dan MySQL: Part 2</a></h2>
+    <div class="post-meta">
+      
+        <span class="post-date">
+            2015-11-17
+        </span>
+      
+      
+      
+    </div>
+
+    
+
+    
+
+    <div class="post-content">
+      
+
+<h1 id="template-engine">Template Engine</h1>
+
+<p>Template Engine adalah salah satu alat bantu yang digunakan untuk memisahkan pengerjaan antara logic dan tatap muka. Dalam hal ini, Template Engine yang akan kita gunakan adalah Twig.</p>
+
+<p>Twig merupakan salah satu Template Engine untuk Bahasa Pemrograman PHP. Pada dasarnya, menggunakan PHP terkadang akan terasa seperti menggunakan sebuah Template Engine. Dan banyak yang mengatakan bahwa PHP sendiri awalnya dibuat seperti sebuah template engine. Contoh:</p>
+
+<pre><code class="language-php">&lt;h1&gt;&lt;?php echo $title; ?&gt;&lt;/h1&gt;
+&lt;p&gt;&lt;?php echo $description; ?&gt;&lt;/p&gt;
+</code></pre>
+
+<p>Kenapa harus ada Template Engine jika PHP sendiri bisa digunakan untuk mempresentasikan hal tersebut ke tatap muka pengguna. Sebelum saya jawab, kode diatas akan saya tulis menggunakan Twig.</p>
+
+<pre><code class="language-php">&lt;h1&gt;{{ title }}&lt;/h1&gt;
+&lt;p&gt;{{ description }}&lt;/p&gt;
+</code></pre>
+
+<p>Kedua kode diatas, akan menghasilkan output elemen yang sama. Menurut anda mana yang lebih mudah?</p>
+
+<p>Bagi saya, yang seorang BackEnd Developer. Memisahkan antara penulisan logika dan tatap muka dengan menggunakan template engine ini sangat membantu dalam proses pengembangan. Bekerja sama antara FrontEnd Developer dan BackEnd Developer terkadang menjadi lebih mudah dengan pemisahan antara penulisan logika dan tatap muka pengguna seperti ini.</p>
+
+<p>Selain syntax sederhana diatas, ada banyak sekali hal-hal yang bisa kita lakukan menggunakan Twig Template Engine ini. Untuk membaca lebih jelasnya ada <a href="http://twig.sensiolabs.org/doc/templates.html">disini</a>.</p>
+
+<h1 id="membuat-template-kepala-kaki-dan-konten">Membuat template kepala, kaki dan konten</h1>
+
+<p>Sekarang, kita akan memulai dengan membuat tiga file html. Yaitu head.html, foot.html dan index.html didalam direktori template</p>
+
+<pre><code class="language-bash">$ touch template/{index,head,foot}.html
+</code></pre>
+
+<p>Perintah diatas kita gunakan untuk membuat file-file seperti yang kita butuhkan sebelumnya sekaligus. Bisa juga dibuat satu persatu secara terpisah.</p>
+
+<p>Kita mulai dengan file head.html, silahkan gunakan teks editor yang paling anda sukai. Saran saya, anda bisa menggunakan Sublime Text atau Atom atau bahkan teks editor lainnya. (Vim, Nano, GNU EMacs)</p>
+
+<pre><code class="language-html">&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+    &lt;head&gt;
+        &lt;title&gt;{{ judul }}&lt;/title&gt;
+        &lt;meta name=&quot;description&quot; content=&quot;{{ deskripsi }}&quot;&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+</code></pre>
+
+<p>Dari kode diatas, kita menuliskan judul dan deskripsi secara dinamis. {{ }} merupakan syntax dari Twig Template Engine untuk memanggil referensi variable yang sebelumnya kita deklarasikan.</p>
+
+<p>Selanjutnya, kita buat foot.html</p>
+
+<pre><code class="language-html">    &lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+
+<p>Hanya itu saja? Yup, untuk sementara kita buat seminimalis mungkin. Kita pun baru akan menambahkan bootstrap setelah template ini telah berhasil kita implementasikan.</p>
+
+<p>Terakhir, untuk file index.html</p>
+
+<pre><code class="language-html">    {% include 'head.html' %}
+    &lt;h1&gt;Selamat Datang&lt;/h1&gt;
+    &lt;p&gt;Perkenalkan, nama saya adalah {{ nama_lengkap }}. Dan saya berasal dari {{ nama_kota }}. Salam Kenal&lt;/p&gt;
+    {% include 'foot.html' %}
+</code></pre>
+
+<p>Pada bagian ini, kita memasukkan head.html dengan perintah include. Artinya, kode yang telah kita tulis didalam file head.html ini akan secara automatis berada dalam konteks index.html saat di eksekusi. Begitu pula dengan file foot.html. Lalu kita pun memanggil referensi variable nama_lengkap dan nama_kota.</p>
+
+<p>Apakah file-file diatas sudah bisa digunakan langsung? Hm… Sebelum terlalu jauh, mari kita lihat kembali apa yang telah buat.</p>
+
+<ul>
+<li>Membuat struktural direktori dan file</li>
+<li>Menambahkan pustaka Twig dan Bootstrap</li>
+<li>Mempelajari dasar-dasar Template Engine</li>
+<li>Membuat template dasar (head.html, foot.html, dan index.html)</li>
+</ul>
+
+<p>Nah, sebelum kita terlalu jauh. Saya akan menjelaskan sedikit tentang Web sederhana yang akan kita buat:</p>
+
+<ul>
+<li>Akan ada satu halaman home (index.php, akan menggunakan index.html sebagai template)</li>
+<li>Akan ada satu halaman galeri (gallery.php, akan menggunakan gallery.html sebagai template)</li>
+</ul>
+
+<p>Sederhana bukan? Mari kita lanjutkan dengan membuat perubahan pada file index.php yang sebelumnya telah kita buat.</p>
+
+<pre><code class="language-php">&lt;?php
+    require_once __DIR__.'/inc/Twig/lib/Twig/Autoloader.php';
+    Twig_Autoloader::register();
+    $loader = new Twig_Loader_Filesystem(__DIR__ . '/template');
+    $twig = new Twig_Environment($loader, array());
+
+    $data = array(
+        'judul' =&gt; 'Web Sederhana',
+        'deskripsi' =&gt; 'Belajar membuat web sederhana',
+        'nama_lengkap' =&gt; 'Ady Rahmat MA',
+        'nama_kota' =&gt; 'Jakarta Selatan'
+    );
+    echo $twig-&gt;render('index.html', $data);
+?&gt;
+</code></pre>
+
+<p>Dari kode diatas, kita melakukan hal berikut:</p>
+
+<ul>
+<li>Memanggil file autoloader dari pustaka Twig. Autoloader ini berisikan fungsi-fungsi untuk memanggil class-class pustaka dari Twig agar bisa kita gunakan. Dan kemudian menggunakan class Twig_Autoloader dan static function register untuk mendaftarkan class-class pustaka dari Twig.</li>
+<li>Melakukan instantiate dari class Twig_Loader_Filesystem dengan memberikan parameter dimana kita akan atau sedang menyimpan file-file html (template) kita. <strong>DIR</strong> merupakan konstan yang disediakan oleh PHP untuk memberikan nilai absolute dari direktori dimana kita sekarang berada. Lalu di assign ke $loader sebagai reference variable.</li>
+<li>Melakukan instantiate dari class Twig_Environment, dengan menambahkan $loader sebagai parameter. Dan sebuah tumpukan data (array) kosong. Lalu di assign ke $twig sebagai reference variable.</li>
+<li>Membuat tumpukan data yang berisikan judul, deskripsi, nama_lengkap, dan nama_kota. Lalu di assign ke $data.</li>
+<li>Menggunakan fungsi render dari objek $twig untuk memanggil dan memparsing file index.html dan mengirimkan $data agar tumpukan data didalamnya bisa digunakan. (Cek kembali file head.html, dan index.html).</li>
+<li>Dan terakhir, mengeluarkan hasil rendernya sebagai output (hasil dari render diatas merupakan string) menggunakan perintah echo.</li>
+</ul>
+
+<p>Mari kita lihat hasilnya menggunakan perintah php di antarmuka bari perintah:</p>
+
+<pre><code class="language-bash">$ php index.php
+</code></pre>
+
+<p>Maka output yang akan dikeluarkan adalah sebagai berikut:</p>
+
+<pre><code class="language-html">&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+    &lt;head&gt;
+        &lt;title&gt;Web Sederhana&lt;/title&gt;
+        &lt;meta name=&quot;description&quot; content=&quot;Belajar membuat web sederhana&quot;&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+    &lt;h1&gt;Selamat Datang&lt;/h1&gt;
+    &lt;p&gt;Perkenalkan, nama saya adalah Ady Rahmat MA. Dan saya berasal dari Jakarta Selatan. Salam Kenal&lt;/p&gt;
+        &lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+
+<p>Yang menandakan bahwa file index.php telah berhasil kita buat sesuai dengan apa yang telah kita tuliskan mulai dari template dan tumpukan data yang kita masukkan.</p>
+
+<p>Kemana perginya {{ title }} dan beberapa kode lainnya? Seperti yang awal saya sampaikan, bahwa tumpukan data yang kita kirimkan atau tambahkan sebagai parameter pada fungsi render akan digunakan sebagai reference pada template yang kita buat. Dan tentunya, file head.html, dan foot.html pun akan di render secara bersamaan didalam file index.html karena dipanggil menggunakan perintah include didalam index.html kita.</p>
+
+<p>Sekarang, mari kita lihat hasilnya dari Web Browser.</p>
+
+<p>`<code>bash
+$ php -S 0.0.0.0:9000 -t .
+</code></p>
+
+<p>Perintah diatas, akan menjalankan PHP Builtin Web Server dan dijalankan di port 9000 (bisa diubah sesuai keinginan atau kebutuhan). Kemudian 0.0.0.0 adalah hostnya, agar bisa diakses melalui <a href="http://localhost:9000">http://localhost:9000</a> atau <a href="http://127.0.0.1:9000">http://127.0.0.1:9000</a></p>
+
+<p><img src="https://farm6.staticflickr.com/5679/22671578558_c8bbf2d385_o_d.png" alt="" /></p>
+
+<h4 id="membuat-web-sederhana-menggunakan-php-twig-template-engine-dan-mysql-part-1-post-membuat-web-sederhana-menggunakan-php-twig-template-engine-dan-mysql"><a href="https://ngurajeka.com/post/membuat-web-sederhana-menggunakan-php-twig-template-engine-dan-mysql">Membuat Web Sederhana menggunakan PHP, Twig Template Engine dan MySQL: Part 1</a></h4>
+
+<h4 id="membuat-web-sederhana-menggunakan-php-twig-template-engine-dan-mysql-part-2">Membuat Web Sederhana menggunakan PHP, Twig Template Engine dan MySQL: Part 2</h4>
+
+<h4 id="membuat-web-sederhana-menggunakan-php-twig-template-engine-dan-mysql-part-3-post-membuat-web-sederhana-menggunakan-php-twig-template-engine-dan-mysql-part-3"><a href="https://ngurajeka.com/post/membuat-web-sederhana-menggunakan-php-twig-template-engine-dan-mysql-part-3">Membuat Web Sederhana menggunakan PHP, Twig Template Engine dan MySQL: Part 3</a></h4>
+
+<h4 id="membuat-web-sederhana-menggunakan-php-twig-template-engine-dan-mysql-part-4-post-membuat-web-sederhana-menggunakan-php-twig-template-engine-dan-mysql-part-4"><a href="https://ngurajeka.com/post/membuat-web-sederhana-menggunakan-php-twig-template-engine-dan-mysql-part-4">Membuat Web Sederhana menggunakan PHP, Twig Template Engine dan MySQL: Part 4</a></h4>
+
+    </div>
+    
+      <div class="pagination">
+        <div class="pagination__title">
+          <span class="pagination__title-h">Read other posts</span>
+          <hr />
+        </div>
+        <div class="pagination__buttons">
+          
+            <span class="button previous">
+              <a href="https://ngurajeka.com/post/membuat-web-sederhana-menggunakan-php-twig-template-engine-dan-mysql-part-3/">
+                <span class="button__icon">←</span>
+                <span class="button__text">Membuat Web Sederhana menggunakan PHP, Twig Template Engine dan MySQL: Part 3</span>
+              </a>
+            </span>
+          
+          
+            <span class="button next">
+              <a href="https://ngurajeka.com/post/membuat-web-sederhana-menggunakan-php-twig-template-engine-dan-mysql/">
+                <span class="button__text">Membuat Web Sederhana menggunakan PHP, Twig Template Engine dan MySQL</span>
+                <span class="button__icon">→</span>
+              </a>
+            </span>
+          
+        </div>
+      </div>
+    
+
+    
+
+    </div>
+
+  </div>
+
+  
+    <footer class="footer">
+  <div class="footer__inner">
+    
+      <a href="https://ngurajeka.com/" class="logo" style="text-decoration: none;">
+  
+    <span class="logo__mark"><svg xmlns="http://www.w3.org/2000/svg" class="greater-icon" width="44" height="44" viewBox="0 0 44 44">
+  <polyline fill="none" stroke="#000" stroke-width="2" points="15 8 29.729 22.382 15 35.367"/>
+</svg>
+</span>
+    <span class="logo__text">ngurajeka</span>
+    <span class="logo__cursor"></span>
+  
+</a>
+
+      <div class="copyright">
+        <span>© 2019 Powered by <a href="https://gohugo.io">Hugo</a></span>
+        <span>Theme created by <a href="https://twitter.com/panr">panr</a></span>
+      </div>
+    
+  </div>
+</footer>
+
+<script src="https://ngurajeka.com/assets/main.js"></script>
+<script src="https://ngurajeka.com/assets/prism.js"></script>
+
+
+  
+</div>
+
+</body>
+</html>

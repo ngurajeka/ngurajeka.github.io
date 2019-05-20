@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+    <title>Membuat Web Sederhana menggunakan PHP, Twig Template Engine dan MySQL :: The Official Site of ngurajeka — A simple theme for Hugo</title>
+  
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+<meta name="description" content="Ringkasan Membuat web sederhana menggunakan Bahasa Pemrograman PHP, Twig Template Engine beserta MySQL sebagai basis penyimpanan data.
+Persyaratan dan Persiapan Untuk dapat mengikuti tulisan ini ada hal-hal yang perlu untuk dipersiapkan dan diketahui:
+ Pastikan bahwa Interpreter PHP telah terinstall di mesin (Laptop/PC) anda. Pastikan bahwa MySQL-Server / MariaDB-Server telah terinstall di mesin anda. Kita hanya akan menggunakan PHP Builtin-Web Server untuk menjalankan web yang akan kita buat dari tulisan ini."/>
+<meta name="keywords" content=""/>
+<meta name="robots" content="noodp"/>
+<link rel="canonical" href="https://ngurajeka.com/post/membuat-web-sederhana-menggunakan-php-twig-template-engine-dan-mysql/" />
+
+
+<link rel="stylesheet" href="https://ngurajeka.com/assets/style.css">
+
+
+<link rel="stylesheet" href="https://ngurajeka.com/style.css">
+
+
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="https://ngurajeka.com/img/apple-touch-icon-144-precomposed.png">
+<link rel="shortcut icon" href="https://ngurajeka.com/img/favicon.png">
+
+
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:title" content="Membuat Web Sederhana menggunakan PHP, Twig Template Engine dan MySQL :: The Official Site of ngurajeka — A simple theme for Hugo" />
+<meta name="twitter:description" content="Ringkasan Membuat web sederhana menggunakan Bahasa Pemrograman PHP, Twig Template Engine beserta MySQL sebagai basis penyimpanan data.
+Persyaratan dan Persiapan Untuk dapat mengikuti tulisan ini ada hal-hal yang perlu untuk dipersiapkan dan diketahui:
+ Pastikan bahwa Interpreter PHP telah terinstall di mesin (Laptop/PC) anda. Pastikan bahwa MySQL-Server / MariaDB-Server telah terinstall di mesin anda. Kita hanya akan menggunakan PHP Builtin-Web Server untuk menjalankan web yang akan kita buat dari tulisan ini." />
+<meta name="twitter:site" content="https://ngurajeka.com/" />
+<meta name="twitter:creator" content="" />
+<meta name="twitter:image" content="">
+
+
+<meta property="og:locale" content="en" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="Membuat Web Sederhana menggunakan PHP, Twig Template Engine dan MySQL :: The Official Site of ngurajeka — A simple theme for Hugo">
+<meta property="og:description" content="Ringkasan Membuat web sederhana menggunakan Bahasa Pemrograman PHP, Twig Template Engine beserta MySQL sebagai basis penyimpanan data.
+Persyaratan dan Persiapan Untuk dapat mengikuti tulisan ini ada hal-hal yang perlu untuk dipersiapkan dan diketahui:
+ Pastikan bahwa Interpreter PHP telah terinstall di mesin (Laptop/PC) anda. Pastikan bahwa MySQL-Server / MariaDB-Server telah terinstall di mesin anda. Kita hanya akan menggunakan PHP Builtin-Web Server untuk menjalankan web yang akan kita buat dari tulisan ini." />
+<meta property="og:url" content="https://ngurajeka.com/post/membuat-web-sederhana-menggunakan-php-twig-template-engine-dan-mysql/" />
+<meta property="og:site_name" content="Membuat Web Sederhana menggunakan PHP, Twig Template Engine dan MySQL" />
+<meta property="og:image" content="">
+<meta property="og:image:width" content="2048">
+<meta property="og:image:height" content="1024">
+
+<meta property="article:published_time" content="2015-11-16 00:00:00 &#43;0000 UTC" />
+
+
+
+
+
+
+
+
+
+</head>
+<body class="dark-theme">
+<div class="container">
+  <header class="header">
+  <span class="header__inner">
+    <a href="https://ngurajeka.com/" class="logo" style="text-decoration: none;">
+  
+    <span class="logo__mark"><svg xmlns="http://www.w3.org/2000/svg" class="greater-icon" width="44" height="44" viewBox="0 0 44 44">
+  <polyline fill="none" stroke="#000" stroke-width="2" points="15 8 29.729 22.382 15 35.367"/>
+</svg>
+</span>
+    <span class="logo__text">ngurajeka</span>
+    <span class="logo__cursor"></span>
+  
+</a>
+
+    <span class="header__right">
+      
+        <nav class="menu">
+  <ul class="menu__inner menu__inner--desktop">
+    
+      
+        
+          <li><a href="https://ngurajeka.com/about">About</a></li>
+        
+      
+        
+          <li><a href="https://ngurajeka.com/screencast">Screencast</a></li>
+        
+      
+      
+    
+  </ul>
+
+  <ul class="menu__inner menu__inner--mobile">
+    
+      
+        <li><a href="https://ngurajeka.com/about">About</a></li>
+      
+    
+      
+        <li><a href="https://ngurajeka.com/screencast">Screencast</a></li>
+      
+    
+  </ul>
+</nav>
+
+        <span class="menu-trigger">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <path d="M0 0h24v24H0z" fill="none"/>
+            <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
+          </svg>
+        </span>
+      
+      <span class="theme-toggle">
+        <svg class="theme-toggler" width="24" height="24" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M22 41C32.4934 41 41 32.4934 41 22C41 11.5066 32.4934 3 22
+  3C11.5066 3 3 11.5066 3 22C3 32.4934 11.5066 41 22 41ZM7 22C7
+  13.7157 13.7157 7 22 7V37C13.7157 37 7 30.2843 7 22Z"/>
+</svg>
+
+      </span>
+    </span>
+  </span>
+</header>
+
+
+  <div class="content">
+    
+  <div class="post">
+    <h2 class="post-title"><a href="https://ngurajeka.com/post/membuat-web-sederhana-menggunakan-php-twig-template-engine-dan-mysql/">Membuat Web Sederhana menggunakan PHP, Twig Template Engine dan MySQL</a></h2>
+    <div class="post-meta">
+      
+        <span class="post-date">
+            2015-11-16
+        </span>
+      
+      
+      
+    </div>
+
+    
+
+    
+
+    <div class="post-content">
+      
+
+<h1 id="ringkasan">Ringkasan</h1>
+
+<p>Membuat web sederhana menggunakan Bahasa Pemrograman PHP, Twig Template Engine beserta MySQL sebagai basis penyimpanan data.</p>
+
+<h1 id="persyaratan-dan-persiapan">Persyaratan dan Persiapan</h1>
+
+<p>Untuk dapat mengikuti tulisan ini ada hal-hal yang perlu untuk dipersiapkan dan diketahui:</p>
+
+<ul>
+<li>Pastikan bahwa Interpreter PHP telah terinstall di mesin (Laptop/PC) anda.</li>
+<li>Pastikan bahwa MySQL-Server / MariaDB-Server telah terinstall di mesin anda.</li>
+<li>Kita hanya akan menggunakan PHP Builtin-Web Server untuk menjalankan web yang akan kita buat dari tulisan ini.</li>
+<li>Akan sangat baik jika anda mengetahui perintah-perintah dasar di Antarmuka Baris Perintah (CLI). Seperti cd, mkdir, touch, dan rm atau bahkan perintah-perintah lainnya. Ini akan sangat mendukung anda dalam mengikuti tulisan ini.</li>
+<li>Tulisan ini lebih ditujukan untuk pengguna OSx atau GNU/Linux. Namun, pengguna Sistem Operasi lain pun masih bisa ikut membaca atau bahkan mencobanya.</li>
+</ul>
+
+<h1 id="membuat-dan-menyusun-struktural-projek">Membuat dan menyusun struktural projek</h1>
+
+<p>Hal yang akan kita lakukan adalah membuat dan menyusun struktural direktori dan file-file yang akan kita buat atau gunakan dalam membangun web sederhana ini. Seperti file-file php, template, static file (css/js) dan lain-lain.</p>
+
+<p>Memastikan bahwa kita berada di <strong>$HOME</strong>. Ada beberapa cara yang dapat digunakan, yaitu dengan berpindah secara langsung, atau mengecek apakah kita telah berada pada pada Home Direktori.</p>
+
+<pre><code class="language-bash">#cd: change directory
+$ cd ~
+#atau
+$ cd $HOME
+#atau
+$ cd
+#pwd: print working directory
+$ pwd
+/Users/ngurajeka
+</code></pre>
+
+<p>Buat satu direktori khusus untuk projek yang akan kita buat menggunakan perintah di antarmuka baris perintah (gunakan terminal, console, dan lain-lain), semisal web_pribadi. <code>mkdir web_pribadi</code>. Kemudian berpindah ke dalam direktori yang baru saja kita buat <code>cd web_pribadi</code>.</p>
+
+<p>Membuat file index.php, direktori inc, template, static. index.php adalah file yang pada umumnya akan menjadi file yang pertama kali di jalankan pada saat mengakses satu web yang menggunakan PHP. Walaupun hal ini bisa diubah, namun index.php ini menjadi konfigurasi default di beberapa web server. Direktori inc akan kita gunakan untuk menyimpan file-file php yang akan kita gunakan secara berulang-ulang, bisa dikatakan sebagai tempat untuk menyimpan pustaka-pustaka (library) yang akan kita buat menggunakan PHP. Direktori Template untuk menyimpan template, sedangkan static untuk menyimpan file-file seperti file css ataupun js.</p>
+
+<pre><code class="language-bash">$ touch index.php
+$ mkdir inc template static
+</code></pre>
+
+<h1 id="menyiapkan-pustaka-pustaka-yang-dibutuhkan">Menyiapkan pustaka-pustaka yang dibutuhkan</h1>
+
+<p>Pada bagian ini kita akan menambahkan Twig Template Engine dan Bootstrap CSS Framework.</p>
+
+<p>Mengunduh file tarball Twig Template Engine, kemudian kita ekstrak dan masukkan kedalam direktori inc</p>
+
+<pre><code class="language-bash">$ wget https://github.com/twigphp/Twig/archive/v1.23.1.tar.gz
+$ tar xvf v1.23.1.tar.gz -C inc
+$ mv inc/Twig-1.23.1 inc/Twig
+</code></pre>
+
+<p>Dengan perintah diatas, kita mengunduh terlebih dahulu file tarballnya, kemudian mengekstrak file tersebut kedalam direktori inc dan terakhir mengubah nama direktori hasil ekstraknya dari Twig-1.23.1 menjadi Twig agar lebih mudah.</p>
+
+<p>Mengunduh bootstrap, mengekstraknya dan memasukkan file-file staticnya kedalam direktori static</p>
+
+<pre><code class="language-bash">$ wget https://github.com/twbs/bootstrap/releases/download/v3.3.5/bootstrap-3.3.5-dist.zip
+$ unzip bootstrap-3.3.5-dist.zip -d /tmp/bootstrap
+$ mv /tmp/bootstrap/bootstrap-3.3.5-dist/* static
+</code></pre>
+
+<p>Untuk memastikan atau melihat struktural file-file anda sekarang, anda dapat menggunakan perintah tree ataupun find</p>
+
+<pre><code class="language-bash"># tree: memunculkan struktur file dan folder dalam bentuk pohon hirarki
+$ tree
+# find: lebih tepat digunakan untuk mencari file, namun bisa digunakan dengan tujuan yang sama seperti tree
+$ find
+</code></pre>
+
+<h4 id="membuat-web-sederhana-menggunakan-php-twig-template-engine-dan-mysql-part-1">Membuat Web Sederhana menggunakan PHP, Twig Template Engine dan MySQL: Part 1</h4>
+
+<h4 id="membuat-web-sederhana-menggunakan-php-twig-template-engine-dan-mysql-part-2-post-membuat-web-sederhana-menggunakan-php-twig-template-engine-dan-mysql-part-2"><a href="https://ngurajeka.com/post/membuat-web-sederhana-menggunakan-php-twig-template-engine-dan-mysql-part-2">Membuat Web Sederhana menggunakan PHP, Twig Template Engine dan MySQL: Part 2</a></h4>
+
+<h4 id="membuat-web-sederhana-menggunakan-php-twig-template-engine-dan-mysql-part-3-post-membuat-web-sederhana-menggunakan-php-twig-template-engine-dan-mysql-part-3"><a href="https://ngurajeka.com/post/membuat-web-sederhana-menggunakan-php-twig-template-engine-dan-mysql-part-3">Membuat Web Sederhana menggunakan PHP, Twig Template Engine dan MySQL: Part 3</a></h4>
+
+<h4 id="membuat-web-sederhana-menggunakan-php-twig-template-engine-dan-mysql-part-4-post-membuat-web-sederhana-menggunakan-php-twig-template-engine-dan-mysql-part-4"><a href="https://ngurajeka.com/post/membuat-web-sederhana-menggunakan-php-twig-template-engine-dan-mysql-part-4">Membuat Web Sederhana menggunakan PHP, Twig Template Engine dan MySQL: Part 4</a></h4>
+
+    </div>
+    
+      <div class="pagination">
+        <div class="pagination__title">
+          <span class="pagination__title-h">Read other posts</span>
+          <hr />
+        </div>
+        <div class="pagination__buttons">
+          
+            <span class="button previous">
+              <a href="https://ngurajeka.com/post/membuat-web-sederhana-menggunakan-php-twig-template-engine-dan-mysql-part-2/">
+                <span class="button__icon">←</span>
+                <span class="button__text">Membuat Web Sederhana menggunakan PHP, Twig Template Engine dan MySQL: Part 2</span>
+              </a>
+            </span>
+          
+          
+            <span class="button next">
+              <a href="https://ngurajeka.com/post/meetup-pythonid-april/">
+                <span class="button__text">MeetUp Python-ID</span>
+                <span class="button__icon">→</span>
+              </a>
+            </span>
+          
+        </div>
+      </div>
+    
+
+    
+
+    </div>
+
+  </div>
+
+  
+    <footer class="footer">
+  <div class="footer__inner">
+    
+      <a href="https://ngurajeka.com/" class="logo" style="text-decoration: none;">
+  
+    <span class="logo__mark"><svg xmlns="http://www.w3.org/2000/svg" class="greater-icon" width="44" height="44" viewBox="0 0 44 44">
+  <polyline fill="none" stroke="#000" stroke-width="2" points="15 8 29.729 22.382 15 35.367"/>
+</svg>
+</span>
+    <span class="logo__text">ngurajeka</span>
+    <span class="logo__cursor"></span>
+  
+</a>
+
+      <div class="copyright">
+        <span>© 2019 Powered by <a href="https://gohugo.io">Hugo</a></span>
+        <span>Theme created by <a href="https://twitter.com/panr">panr</a></span>
+      </div>
+    
+  </div>
+</footer>
+
+<script src="https://ngurajeka.com/assets/main.js"></script>
+<script src="https://ngurajeka.com/assets/prism.js"></script>
+
+
+  
+</div>
+
+</body>
+</html>

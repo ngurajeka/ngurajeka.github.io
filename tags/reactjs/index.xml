@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Reactjs on The Official Site of ngurajeka</title>
+    <link>https://ngurajeka.com/tags/reactjs/</link>
+    <description>Recent content in Reactjs on The Official Site of ngurajeka</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 22 Oct 2016 21:57:22 +0700</lastBuildDate>
+    
+	<atom:link href="https://ngurajeka.com/tags/reactjs/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>I Am In Love With React</title>
+      <link>https://ngurajeka.com/post/i-am-in-love-with-react/</link>
+      <pubDate>Sat, 22 Oct 2016 21:57:22 +0700</pubDate>
+      
+      <guid>https://ngurajeka.com/post/i-am-in-love-with-react/</guid>
+      <description>I&amp;rsquo;m In Love.
+Few days ago i started to use ReactJS more frequently to write a client side of an application.
+I&amp;rsquo;ve been known ReactJS since years ago, but i&amp;rsquo;ve never been using it before to build some application.
+This whole year i was just writing codes for Backend because that was my job. And honestly, back then i hate javascript.
+I hate the Frontend kind of thing, hate the frameworks, hate all of the things about Frontend development.</description>
+    </item>
+    
+  </channel>
+</rss>

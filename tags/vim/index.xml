@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Vim on The Official Site of ngurajeka</title>
+    <link>https://ngurajeka.com/tags/vim/</link>
+    <description>Recent content in Vim on The Official Site of ngurajeka</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 01 Oct 2016 20:43:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://ngurajeka.com/tags/vim/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>ReMap CtrlP in MacVim</title>
+      <link>https://ngurajeka.com/post/remap-ctrlp-in-macvim/</link>
+      <pubDate>Sat, 01 Oct 2016 20:43:00 +0000</pubDate>
+      
+      <guid>https://ngurajeka.com/post/remap-ctrlp-in-macvim/</guid>
+      <description>Are you using MacVim and using CtrlP plugin?
+Have you ever found that pressing ctrl+p is not easy on mac?
+For me, it is faster when pressing cmd+p instead of pressing ctrl+p.
+That&amp;rsquo;s why i think i have disable or remap the key. In the official repository of CtrlP has been explained very well to changed this keymap.
+But, if you are using MacVim replacing the key to cmd+p is not as easy as it looks like.</description>
+    </item>
+    
+  </channel>
+</rss>

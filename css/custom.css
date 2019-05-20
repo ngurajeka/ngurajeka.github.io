@@ -1,0 +1,28 @@
+section.main .content .navigation {
+  width: 100%;
+}
+section.main .content .navigation div {
+  margin-top: 1em;
+}
+section.main .content .navigation .icon {
+  width: 16px;
+  height: 16px;
+}
+section.main .content .navigation a {
+  width: 250px;
+  margin-left: 1em;
+  text-align: center;
+  font-style: italic;
+  color: #313537;
+}
+h4.share {
+  font-size: 20px;
+  font-family: 'Raleway', 'Helvetica Neue', 'Arial', sans-serif;
+  letter-spacing: -0.005rem;
+  font-weight: 700;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+  color: #333;
+  margin-bottom: 16px;
+}

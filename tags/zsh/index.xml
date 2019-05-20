@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Zsh on The Official Site of ngurajeka</title>
+    <link>https://ngurajeka.com/tags/zsh/</link>
+    <description>Recent content in Zsh on The Official Site of ngurajeka</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 09 May 2017 19:05:20 +0700</lastBuildDate>
+    
+	<atom:link href="https://ngurajeka.com/tags/zsh/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>ZSH NoClobber: Keep File save from overwriting</title>
+      <link>https://ngurajeka.com/post/zsh-no-clobber/</link>
+      <pubDate>Tue, 09 May 2017 19:05:20 +0700</pubDate>
+      
+      <guid>https://ngurajeka.com/post/zsh-no-clobber/</guid>
+      <description>Last night, i build some script in sh to change an existing value from a few files.
+Let say, i have this command:
+echo &amp;quot;Hai&amp;quot; &amp;gt; outputfile.txt  If the file outputfile.txt isn&amp;rsquo;t already exist, the command will be executed successfully.
+But, if the outfile.txt was an existing file, we will got an error zsh: file exists: outputfile.txt. (zsh is my current shell)
+And of course, i got the very same error last night because i wanted to change a value from an existing files.</description>
+    </item>
+    
+  </channel>
+</rss>
