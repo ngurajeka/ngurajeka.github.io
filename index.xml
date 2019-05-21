@@ -6,10 +6,19 @@
     <description>Recent content on The Official Site of ngurajeka</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 20 May 2019 09:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 21 May 2019 09:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://ngurajeka.com/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Podcast</title>
+      <link>https://ngurajeka.com/podcast/</link>
+      <pubDate>Tue, 21 May 2019 09:00:00 +0000</pubDate>
+      
+      <guid>https://ngurajeka.com/podcast/</guid>
+      <description> 2019-05-21 Introduction  </description>
+    </item>
     
     <item>
       <title>Screencast</title>
