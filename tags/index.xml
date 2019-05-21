@@ -6,40 +6,13 @@
     <description>Recent content in Tags on The Official Site of ngurajeka</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 07 May 2017 21:38:11 +0700</lastBuildDate>
+    <lastBuildDate>Tue, 09 May 2017 19:05:20 +0700</lastBuildDate>
     
 	<atom:link href="https://ngurajeka.com/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>Ansible</title>
-      <link>https://ngurajeka.com/tags/ansible/</link>
-      <pubDate>Sun, 07 May 2017 21:38:11 +0700</pubDate>
-      
-      <guid>https://ngurajeka.com/tags/ansible/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Blog</title>
-      <link>https://ngurajeka.com/tags/blog/</link>
-      <pubDate>Tue, 09 May 2017 11:25:04 +0700</pubDate>
-      
-      <guid>https://ngurajeka.com/tags/blog/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Commit</title>
-      <link>https://ngurajeka.com/tags/commit/</link>
-      <pubDate>Tue, 28 Mar 2017 18:55:50 +0700</pubDate>
-      
-      <guid>https://ngurajeka.com/tags/commit/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Console</title>
+      <title>console</title>
       <link>https://ngurajeka.com/tags/console/</link>
       <pubDate>Tue, 09 May 2017 19:05:20 +0700</pubDate>
       
@@ -48,124 +21,7 @@
     </item>
     
     <item>
-      <title>Deployment</title>
-      <link>https://ngurajeka.com/tags/deployment/</link>
-      <pubDate>Sun, 07 May 2017 21:38:11 +0700</pubDate>
-      
-      <guid>https://ngurajeka.com/tags/deployment/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Frontend</title>
-      <link>https://ngurajeka.com/tags/frontend/</link>
-      <pubDate>Sat, 22 Oct 2016 21:57:22 +0700</pubDate>
-      
-      <guid>https://ngurajeka.com/tags/frontend/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Git</title>
-      <link>https://ngurajeka.com/tags/git/</link>
-      <pubDate>Sun, 07 May 2017 21:38:11 +0700</pubDate>
-      
-      <guid>https://ngurajeka.com/tags/git/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Git Hook</title>
-      <link>https://ngurajeka.com/tags/git-hook/</link>
-      <pubDate>Tue, 28 Mar 2017 18:55:50 +0700</pubDate>
-      
-      <guid>https://ngurajeka.com/tags/git-hook/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Go</title>
-      <link>https://ngurajeka.com/tags/go/</link>
-      <pubDate>Tue, 28 Mar 2017 18:55:50 +0700</pubDate>
-      
-      <guid>https://ngurajeka.com/tags/go/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Golang</title>
-      <link>https://ngurajeka.com/tags/golang/</link>
-      <pubDate>Sat, 18 Mar 2017 20:19:41 +0700</pubDate>
-      
-      <guid>https://ngurajeka.com/tags/golang/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Gorilla</title>
-      <link>https://ngurajeka.com/tags/gorilla/</link>
-      <pubDate>Sat, 18 Mar 2017 20:19:41 +0700</pubDate>
-      
-      <guid>https://ngurajeka.com/tags/gorilla/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Hook</title>
-      <link>https://ngurajeka.com/tags/hook/</link>
-      <pubDate>Tue, 28 Mar 2017 18:55:50 +0700</pubDate>
-      
-      <guid>https://ngurajeka.com/tags/hook/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Http</title>
-      <link>https://ngurajeka.com/tags/http/</link>
-      <pubDate>Wed, 12 Oct 2016 20:41:00 +0000</pubDate>
-      
-      <guid>https://ngurajeka.com/tags/http/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Hugo</title>
-      <link>https://ngurajeka.com/tags/hugo/</link>
-      <pubDate>Tue, 09 May 2017 11:25:04 +0700</pubDate>
-      
-      <guid>https://ngurajeka.com/tags/hugo/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Javascript</title>
-      <link>https://ngurajeka.com/tags/javascript/</link>
-      <pubDate>Sat, 22 Oct 2016 21:57:22 +0700</pubDate>
-      
-      <guid>https://ngurajeka.com/tags/javascript/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Mux</title>
-      <link>https://ngurajeka.com/tags/mux/</link>
-      <pubDate>Sat, 18 Mar 2017 20:19:41 +0700</pubDate>
-      
-      <guid>https://ngurajeka.com/tags/mux/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Net/Http</title>
-      <link>https://ngurajeka.com/tags/net-http/</link>
-      <pubDate>Wed, 12 Oct 2016 20:41:00 +0000</pubDate>
-      
-      <guid>https://ngurajeka.com/tags/net-http/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Oh My Zsh</title>
+      <title>oh-my-zsh</title>
       <link>https://ngurajeka.com/tags/oh-my-zsh/</link>
       <pubDate>Tue, 09 May 2017 19:05:20 +0700</pubDate>
       
@@ -174,16 +30,7 @@
     </item>
     
     <item>
-      <title>Pre Commit</title>
-      <link>https://ngurajeka.com/tags/pre-commit/</link>
-      <pubDate>Tue, 28 Mar 2017 18:55:50 +0700</pubDate>
-      
-      <guid>https://ngurajeka.com/tags/pre-commit/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Prezto</title>
+      <title>prezto</title>
       <link>https://ngurajeka.com/tags/prezto/</link>
       <pubDate>Tue, 09 May 2017 19:05:20 +0700</pubDate>
       
@@ -192,34 +39,7 @@
     </item>
     
     <item>
-      <title>React Native</title>
-      <link>https://ngurajeka.com/tags/react-native/</link>
-      <pubDate>Sat, 22 Oct 2016 21:57:22 +0700</pubDate>
-      
-      <guid>https://ngurajeka.com/tags/react-native/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Reactjs</title>
-      <link>https://ngurajeka.com/tags/reactjs/</link>
-      <pubDate>Sat, 22 Oct 2016 21:57:22 +0700</pubDate>
-      
-      <guid>https://ngurajeka.com/tags/reactjs/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Sysadmin</title>
-      <link>https://ngurajeka.com/tags/sysadmin/</link>
-      <pubDate>Sun, 07 May 2017 21:38:11 +0700</pubDate>
-      
-      <guid>https://ngurajeka.com/tags/sysadmin/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Terms</title>
+      <title>terms</title>
       <link>https://ngurajeka.com/tags/terms/</link>
       <pubDate>Tue, 09 May 2017 19:05:20 +0700</pubDate>
       
@@ -228,25 +48,142 @@
     </item>
     
     <item>
-      <title>Text Editor</title>
-      <link>https://ngurajeka.com/tags/text-editor/</link>
-      <pubDate>Sat, 01 Oct 2016 20:43:00 +0000</pubDate>
+      <title>zsh</title>
+      <link>https://ngurajeka.com/tags/zsh/</link>
+      <pubDate>Tue, 09 May 2017 19:05:20 +0700</pubDate>
       
-      <guid>https://ngurajeka.com/tags/text-editor/</guid>
+      <guid>https://ngurajeka.com/tags/zsh/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Vim</title>
-      <link>https://ngurajeka.com/tags/vim/</link>
-      <pubDate>Sat, 01 Oct 2016 20:43:00 +0000</pubDate>
+      <title>blog</title>
+      <link>https://ngurajeka.com/tags/blog/</link>
+      <pubDate>Tue, 09 May 2017 11:25:04 +0700</pubDate>
       
-      <guid>https://ngurajeka.com/tags/vim/</guid>
+      <guid>https://ngurajeka.com/tags/blog/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Web Dev</title>
+      <title>hugo</title>
+      <link>https://ngurajeka.com/tags/hugo/</link>
+      <pubDate>Tue, 09 May 2017 11:25:04 +0700</pubDate>
+      
+      <guid>https://ngurajeka.com/tags/hugo/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>ansible</title>
+      <link>https://ngurajeka.com/tags/ansible/</link>
+      <pubDate>Sun, 07 May 2017 21:38:11 +0700</pubDate>
+      
+      <guid>https://ngurajeka.com/tags/ansible/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>deployment</title>
+      <link>https://ngurajeka.com/tags/deployment/</link>
+      <pubDate>Sun, 07 May 2017 21:38:11 +0700</pubDate>
+      
+      <guid>https://ngurajeka.com/tags/deployment/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>git</title>
+      <link>https://ngurajeka.com/tags/git/</link>
+      <pubDate>Sun, 07 May 2017 21:38:11 +0700</pubDate>
+      
+      <guid>https://ngurajeka.com/tags/git/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>sysadmin</title>
+      <link>https://ngurajeka.com/tags/sysadmin/</link>
+      <pubDate>Sun, 07 May 2017 21:38:11 +0700</pubDate>
+      
+      <guid>https://ngurajeka.com/tags/sysadmin/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>commit</title>
+      <link>https://ngurajeka.com/tags/commit/</link>
+      <pubDate>Tue, 28 Mar 2017 18:55:50 +0700</pubDate>
+      
+      <guid>https://ngurajeka.com/tags/commit/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>git hook</title>
+      <link>https://ngurajeka.com/tags/git-hook/</link>
+      <pubDate>Tue, 28 Mar 2017 18:55:50 +0700</pubDate>
+      
+      <guid>https://ngurajeka.com/tags/git-hook/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>go</title>
+      <link>https://ngurajeka.com/tags/go/</link>
+      <pubDate>Tue, 28 Mar 2017 18:55:50 +0700</pubDate>
+      
+      <guid>https://ngurajeka.com/tags/go/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>hook</title>
+      <link>https://ngurajeka.com/tags/hook/</link>
+      <pubDate>Tue, 28 Mar 2017 18:55:50 +0700</pubDate>
+      
+      <guid>https://ngurajeka.com/tags/hook/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>pre-commit</title>
+      <link>https://ngurajeka.com/tags/pre-commit/</link>
+      <pubDate>Tue, 28 Mar 2017 18:55:50 +0700</pubDate>
+      
+      <guid>https://ngurajeka.com/tags/pre-commit/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>golang</title>
+      <link>https://ngurajeka.com/tags/golang/</link>
+      <pubDate>Sat, 18 Mar 2017 20:19:41 +0700</pubDate>
+      
+      <guid>https://ngurajeka.com/tags/golang/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>gorilla</title>
+      <link>https://ngurajeka.com/tags/gorilla/</link>
+      <pubDate>Sat, 18 Mar 2017 20:19:41 +0700</pubDate>
+      
+      <guid>https://ngurajeka.com/tags/gorilla/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>mux</title>
+      <link>https://ngurajeka.com/tags/mux/</link>
+      <pubDate>Sat, 18 Mar 2017 20:19:41 +0700</pubDate>
+      
+      <guid>https://ngurajeka.com/tags/mux/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>web dev</title>
       <link>https://ngurajeka.com/tags/web-dev/</link>
       <pubDate>Sat, 18 Mar 2017 20:19:41 +0700</pubDate>
       
@@ -255,7 +192,61 @@
     </item>
     
     <item>
-      <title>Web Development</title>
+      <title>frontend</title>
+      <link>https://ngurajeka.com/tags/frontend/</link>
+      <pubDate>Sat, 22 Oct 2016 21:57:22 +0700</pubDate>
+      
+      <guid>https://ngurajeka.com/tags/frontend/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>javascript</title>
+      <link>https://ngurajeka.com/tags/javascript/</link>
+      <pubDate>Sat, 22 Oct 2016 21:57:22 +0700</pubDate>
+      
+      <guid>https://ngurajeka.com/tags/javascript/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>react-native</title>
+      <link>https://ngurajeka.com/tags/react-native/</link>
+      <pubDate>Sat, 22 Oct 2016 21:57:22 +0700</pubDate>
+      
+      <guid>https://ngurajeka.com/tags/react-native/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>reactjs</title>
+      <link>https://ngurajeka.com/tags/reactjs/</link>
+      <pubDate>Sat, 22 Oct 2016 21:57:22 +0700</pubDate>
+      
+      <guid>https://ngurajeka.com/tags/reactjs/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>http</title>
+      <link>https://ngurajeka.com/tags/http/</link>
+      <pubDate>Wed, 12 Oct 2016 20:41:00 +0000</pubDate>
+      
+      <guid>https://ngurajeka.com/tags/http/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>net/http</title>
+      <link>https://ngurajeka.com/tags/net/http/</link>
+      <pubDate>Wed, 12 Oct 2016 20:41:00 +0000</pubDate>
+      
+      <guid>https://ngurajeka.com/tags/net/http/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>web development</title>
       <link>https://ngurajeka.com/tags/web-development/</link>
       <pubDate>Wed, 12 Oct 2016 20:41:00 +0000</pubDate>
       
@@ -264,11 +255,20 @@
     </item>
     
     <item>
-      <title>Zsh</title>
-      <link>https://ngurajeka.com/tags/zsh/</link>
-      <pubDate>Tue, 09 May 2017 19:05:20 +0700</pubDate>
+      <title>text editor</title>
+      <link>https://ngurajeka.com/tags/text-editor/</link>
+      <pubDate>Sat, 01 Oct 2016 20:43:00 +0000</pubDate>
       
-      <guid>https://ngurajeka.com/tags/zsh/</guid>
+      <guid>https://ngurajeka.com/tags/text-editor/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>vim</title>
+      <link>https://ngurajeka.com/tags/vim/</link>
+      <pubDate>Sat, 01 Oct 2016 20:43:00 +0000</pubDate>
+      
+      <guid>https://ngurajeka.com/tags/vim/</guid>
       <description></description>
     </item>
     

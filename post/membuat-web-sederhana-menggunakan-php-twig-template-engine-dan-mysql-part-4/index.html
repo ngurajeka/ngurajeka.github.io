@@ -157,8 +157,9 @@ Yang akan menjadi pertanyaan adalah, untuk apa kita membutuhkan basis data MySQL
 <li><p>Mengakses shell dari MySQL dengan user root, localhost merupakan host dari MySQL-Server terpasang dan berjalan. Jika sebelumnya anda telah memasang sebuah kata sandi, maka hal tersebut akan dibutuhkan untuk dapat mengakses shell dari MySQL.</p>
 
 <pre><code class="language-bash">$ mysql -u root -p
-</code></pre></li>
+</code></pre>
 
+<ul>
 <li><p>Membuat sebuah basis data (database) dengan nama web_sederhana</p>
 
 <pre><code class="language-sql">mysql&gt; CREATE DATABASE web_sederhana;
@@ -180,7 +181,8 @@ mysql&gt; EXIT;
 <p>Sebelum melanjutkan, mari kita cek apakah semuanya telah siap. Kita akan mencoba untuk mengakses shell dari MySQL dengan menggunakan pengguna yang baru saja kita buat, dan membuka akses ke basis data yang juga baru saja kita buat.</p>
 
 <pre><code class="language-bash">$ mysql -u user_web -p
-</code></pre>
+</code></pre></li>
+</ul>
 
 <pre><code class="language-sql">mysql&gt; USE `web_sederhana`;
 </code></pre>
@@ -232,8 +234,7 @@ mysql&gt; SELECT * from `daftar_gambar`;
 
 <p>Setelah kita menambahkan tiga data selesai, dan saat membaca kembali rekaman data yang telah kita masukkan maka hasilnya kurang lebih seperti diatas. Jika semua berjalan dengan, silahkan masukkan kembali gambar-gambar lainnya yang belum dimasukkan (boleh ditambah sesuai keinginan)</p>
 
-<p>Apa saja sih yang sebenarnya bisa kita lakukan dengan basis data beserta table yang telah kita buat ini? Ada banyak, bahkan sangat banyak. Dan karena alasan itu pula tidak dapat dijabarkan secara keseluruhan pada artikel ini. Namun, jika anda ingin mencari tahu lebih atau bahkan mendalami dari dasar-dasar basis data ini. <a href="http://www.w3schools.com/sql/default.asp">Link berikut</a> akan sangat membantu anda untuk memahami dan mempelajari hal-hal tersebut.</p></li>
-</ul>
+<p>Apa saja sih yang sebenarnya bisa kita lakukan dengan basis data beserta table yang telah kita buat ini? Ada banyak, bahkan sangat banyak. Dan karena alasan itu pula tidak dapat dijabarkan secara keseluruhan pada artikel ini. Namun, jika anda ingin mencari tahu lebih atau bahkan mendalami dari dasar-dasar basis data ini. <a href="http://www.w3schools.com/sql/default.asp">Link berikut</a> akan sangat membantu anda untuk memahami dan mempelajari hal-hal tersebut.</p>
 
 <h1 id="mengakses-basis-data-mysql-dari-php">Mengakses Basis Data MySQL dari PHP</h1>
 
@@ -253,10 +254,10 @@ $ chmod 644 inc/config.php
 <p>Kita isi dengan informasi host, pengguna, kata sandi dan basis data yang telah kita buat. (Perlu diketahui, hal ini bukanlah satu-satunya cara untuk melakukan ini. Anda akan menemukan banyak sekali cara/metode untuk mendefinisikan hal ini)</p>
 
 <pre><code class="language-php">&lt;?php
-    define('DB_HOST', 'localhost');
-    define('DB_USER', 'user_web');
-    define('DB_PASSWORD', '74ee55083a714aa3791f8d594fea00c9');
-    define('DB_NAME', 'web_sederhana');
+define('DB_HOST', 'localhost');
+define('DB_USER', 'user_web');
+define('DB_PASSWORD', '74ee55083a714aa3791f8d594fea00c9');
+define('DB_NAME', 'web_sederhana');
 ?&gt;
 </code></pre></li>
 
@@ -266,42 +267,45 @@ $ chmod 644 inc/config.php
 </code></pre>
 
 <pre><code class="language-php">&lt;?php
-    include_once __DIR__ . '/config.php';
-    $db = new PDO('mysql:host='.DB_HOST.';dbname='.DB_NAME.';charset=utf8', DB_USER, DB_PASSWORD);
+include_once __DIR__ . '/config.php';
+$db = new PDO('mysql:host='.DB_HOST.';dbname='.DB_NAME.';charset=utf8', DB_USER, DB_PASSWORD);
 ?&gt;
-</code></pre>
+</code></pre></li>
+</ul>
 
-<p>Pada bagian ini, kita memanggil file config.php agar konstan yang telah kita definisikan bisa kita gunakan pada file ini. Lalu kita membuat sebuah koneksi ke MySQL menggunakan PDO yang berisikan informasi-informasi yang sebelumnya telah kita definisikan. Dan kemudian kita assign ke $db sebagai reference.</p></li>
+<p>Pada bagian ini, kita memanggil file config.php agar konstan yang telah kita definisikan bisa kita gunakan pada file ini. Lalu kita membuat sebuah koneksi ke MySQL menggunakan PDO yang berisikan informasi-informasi yang sebelumnya telah kita definisikan. Dan kemudian kita assign ke $db sebagai reference.</p>
 
+<ul>
 <li><p>Mari kita uji coba dan menambahkan koneksi diatas ke dalam gallery.php, serta membaca kembali rekaman data dari daftar_gambar</p>
 
 <pre><code class="language-php">&lt;?php
-    include_once __DIR__.'/inc/Twig/lib/Twig/Autoloader.php';
-    // memanggil file untuk menghubungkan ke MySQL
-    include_once __DIR__.'/inc/db.php';
-    Twig_Autoloader::register();
-    $loader = new Twig_Loader_Filesystem(__DIR__ . '/template');
-    $twig = new Twig_Environment($loader, array());
+include_once __DIR__.'/inc/Twig/lib/Twig/Autoloader.php';
+// memanggil file untuk menghubungkan ke MySQL
+include_once __DIR__.'/inc/db.php';
+Twig_Autoloader::register();
+$loader = new Twig_Loader_Filesystem(__DIR__ . '/template');
+$twig = new Twig_Environment($loader, array());
 
-    $data = array(
-        'judul' =&gt; 'Web Sederhana',
-        'deskripsi' =&gt; 'Belajar membuat web sederhana',
-        'daftar_gambar' =&gt; []
-    );
-    // membaca kembali rekaman data dari daftar_gambar
-    $daftar_gambar = $db-&gt;query('SELECT * FROM `daftar_gambar`');
-    // memastikan bahwa $daftar_gambar memiliki nilai sebelum kita lakukan perulangan
-    if ($daftar_gambar) {
-        // $daftar_gambar merupakan sebuah tumpukan data, dan dapat kita lakukan perulangan
-        foreach ($daftar_gambar as $gambar) {
-            // menambahkan setiap alamat_gambar dari hasil perulangan
-            // kedalam tumpukan data $data['daftar_gambar']
-            array_push($data['daftar_gambar'], $gambar['alamat_gambar']);
-        }
+$data = array(
+    'judul' =&gt; 'Web Sederhana',
+    'deskripsi' =&gt; 'Belajar membuat web sederhana',
+    'daftar_gambar' =&gt; []
+);
+// membaca kembali rekaman data dari daftar_gambar
+$daftar_gambar = $db-&gt;query('SELECT * FROM `daftar_gambar`');
+// memastikan bahwa $daftar_gambar memiliki nilai sebelum kita lakukan perulangan
+if ($daftar_gambar) {
+    // $daftar_gambar merupakan sebuah tumpukan data, dan dapat kita lakukan perulangan
+    foreach ($daftar_gambar as $gambar) {
+        // menambahkan setiap alamat_gambar dari hasil perulangan
+        // kedalam tumpukan data $data['daftar_gambar']
+        array_push($data['daftar_gambar'], $gambar['alamat_gambar']);
     }
-    echo $twig-&gt;render('gallery.html', $data);
+}
+echo $twig-&gt;render('gallery.html', $data);
 ?&gt;
 </code></pre></li>
+</ul></li>
 </ul>
 
 <p>Nah, mari kita coba kembali menjalankan web sederhana kita ini menggunakan PHP Builtin Web Server dan mengakses halaman gallery.php</p>
@@ -381,7 +385,25 @@ $ chmod 644 inc/config.php
 
 <script src="https://ngurajeka.com/assets/main.js"></script>
 <script src="https://ngurajeka.com/assets/prism.js"></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-77797160-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
 
+  gtag('config', 'UA-77797160-1');
+</script>
+
+<script>
+    (function(h,o,t,j,a,r){
+        h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+        h._hjSettings={hjid:1330785,hjsv:6};
+        a=o.getElementsByTagName('head')[0];
+        r=o.createElement('script');r.async=1;
+        r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+        a.appendChild(r);
+    })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+</script>
 
   
 </div>

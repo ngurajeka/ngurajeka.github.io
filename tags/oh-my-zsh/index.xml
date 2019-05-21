@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Oh My Zsh on The Official Site of ngurajeka</title>
+    <title>oh-my-zsh on The Official Site of ngurajeka</title>
     <link>https://ngurajeka.com/tags/oh-my-zsh/</link>
-    <description>Recent content in Oh My Zsh on The Official Site of ngurajeka</description>
+    <description>Recent content in oh-my-zsh on The Official Site of ngurajeka</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 09 May 2017 19:05:20 +0700</lastBuildDate>

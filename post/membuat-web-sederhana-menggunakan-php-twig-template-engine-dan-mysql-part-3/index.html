@@ -211,19 +211,19 @@ Cara menggunakan Bootstrap didalam web sederhana kita ini terbilang cukup mudah,
     &lt;/div&gt;
 &lt;/div&gt;
 {% include 'foot.html' %}
-</code></pre></li>
-</ul>
+</code></pre>
 
 <h1 id="membuat-halaman-galeri">Membuat halaman galeri</h1>
 
 <p>Setelah halaman index telah kita buat, selanjutnya adalah halaman Galeri. (gallery.php dan gallery.html untuk templatenya)</p>
 
 <ul>
-<li><p>Membuat file-file yang dibutuhkan</p>
-
-<pre><code class="language-bash">$ touch gallery.php
+<li>Membuat file-file yang dibutuhkan
+<code>bash
+$ touch gallery.php
 $ touch template/gallery.html
-</code></pre></li>
+</code></li>
+</ul></li>
 
 <li><p>Menambahkan Pustaka Twig, Tumpukan Data, dan memanggil template di gallery.php</p>
 
@@ -251,28 +251,29 @@ $ touch template/gallery.html
 
 <p>Apa yang berbeda antara index.php dan gallery.php? Hanya ada dua, yaitu isi dari tumpukan data dan template yang akan dirender. Apa arti dari daftar_gambar?</p>
 
-<p>Halaman yang kita buat adalah gallery, yang dimana memiliki arti bahwa akan ada beberapa gambar yang terpajang. Gambar-gambar ini dibuat menjadi satu tumpukan data dengan nama daftar_gambar dan kita masukkan ke dalam tumpukan data $data (Biasanya disebut multidimensional array). Gambar-gambar ini saya ambil dari halaman Demo untuk salah satu template yang dibuat menggunakan Bootstrap. <a href="http://blacktie.co/demo/stanley/work01.html">Stanley</a> dari blacktie.</p></li>
+<p>Halaman yang kita buat adalah gallery, yang dimana memiliki arti bahwa akan ada beberapa gambar yang terpajang. Gambar-gambar ini dibuat menjadi satu tumpukan data dengan nama daftar_gambar dan kita masukkan ke dalam tumpukan data $data (Biasanya disebut multidimensional array). Gambar-gambar ini saya ambil dari halaman Demo untuk salah satu template yang dibuat menggunakan Bootstrap. <a href="http://blacktie.co/demo/stanley/work01.html">Stanley</a> dari blacktie.</p>
 
+<ul>
 <li><p>Mengatur tatap muka dan komponen-komponen untuk gallery.html</p>
 
-<pre><code class="language-html">    {% include 'head.html' %}
-    &lt;div class=&quot;container&quot;&gt;
-        &lt;div class=&quot;page-header&quot;&gt;
-            &lt;h1&gt;Gallery&lt;/h1&gt;
-        &lt;/div&gt;
+<pre><code class="language-html">{% include 'head.html' %}
+&lt;div class=&quot;container&quot;&gt;
+    &lt;div class=&quot;page-header&quot;&gt;
+        &lt;h1&gt;Gallery&lt;/h1&gt;
     &lt;/div&gt;
-    &lt;div class=&quot;container&quot;&gt;
-        &lt;div class=&quot;row&quot;&gt;
-            {% for gambar in daftar_gambar %}
-                &lt;div class=&quot;col-xs-6 col-md-4&quot;&gt;
-                    &lt;a href=&quot;#&quot; class=&quot;thumbnail&quot;&gt;
-                        &lt;img src=&quot;{{ gambar }}&quot; alt=&quot;&quot;&gt;
-                    &lt;/a&gt;
-                &lt;/div&gt;
-            {% endfor %}
-        &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;container&quot;&gt;
+    &lt;div class=&quot;row&quot;&gt;
+        {% for gambar in daftar_gambar %}
+            &lt;div class=&quot;col-xs-6 col-md-4&quot;&gt;
+                &lt;a href=&quot;#&quot; class=&quot;thumbnail&quot;&gt;
+                    &lt;img src=&quot;{{ gambar }}&quot; alt=&quot;&quot;&gt;
+                &lt;/a&gt;
+            &lt;/div&gt;
+        {% endfor %}
     &lt;/div&gt;
-    {% include 'foot.html' %}
+&lt;/div&gt;
+{% include 'foot.html' %}
 </code></pre>
 
 <p>Masih sama seperti template untuk halaman index, kita memanggil file head.html dan foot.html. Lalu yang berbeda hanyalah komponen-komponen yang hanya akan kita tampilkan di halaman gallery saja.</p>
@@ -280,13 +281,14 @@ $ touch template/gallery.html
 <p>Pada bagian</p>
 
 <pre><code class="language-html">{% for gambar in daftar_gambar %}
-    &lt;div class=&quot;col-xs-6 col-md-4&quot;&gt;
-        &lt;a href=&quot;#&quot; class=&quot;thumbnail&quot;&gt;
-            &lt;img src=&quot;{{ gambar }}&quot; alt=&quot;&quot;&gt;
-        &lt;/a&gt;
-    &lt;/div&gt;
+&lt;div class=&quot;col-xs-6 col-md-4&quot;&gt;
+    &lt;a href=&quot;#&quot; class=&quot;thumbnail&quot;&gt;
+        &lt;img src=&quot;{{ gambar }}&quot; alt=&quot;&quot;&gt;
+    &lt;/a&gt;
+&lt;/div&gt;
 {% endfor %}
-</code></pre>
+</code></pre></li>
+</ul>
 
 <p>kita melakukan looping atau perulangan dari tumpukan data daftar_gambar yang kita kirimkan dari gallery.php. Lalu apa itu gambar? gambar merupakan representatif dari nilai-nilai dari tumpukan data daftar_gambar yang sebelumnya kita definisikan. Jadi, ketimbang kita menuliskan semuanya satu persatu, seperti ini:</p>
 
@@ -492,7 +494,25 @@ $ touch template/gallery.html
 
 <script src="https://ngurajeka.com/assets/main.js"></script>
 <script src="https://ngurajeka.com/assets/prism.js"></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-77797160-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
 
+  gtag('config', 'UA-77797160-1');
+</script>
+
+<script>
+    (function(h,o,t,j,a,r){
+        h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+        h._hjSettings={hjid:1330785,hjsv:6};
+        a=o.getElementsByTagName('head')[0];
+        r=o.createElement('script');r.async=1;
+        r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+        a.appendChild(r);
+    })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+</script>
 
   
 </div>

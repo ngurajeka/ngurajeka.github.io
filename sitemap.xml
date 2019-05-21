@@ -3,8 +3,31 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://ngurajeka.com/categories/</loc>
+    <lastmod>2019-05-22T05:32:34+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://ngurajeka.com/podcast/introduction/</loc>
+    <lastmod>2019-05-22T05:32:34+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ngurajeka.com/</loc>
+    <lastmod>2019-05-22T05:32:34+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://ngurajeka.com/categories/podcast/</loc>
+    <lastmod>2019-05-22T05:32:34+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://ngurajeka.com/podcast/</loc>
-    <lastmod>2019-05-21T09:00:00+00:00</lastmod>
+    <lastmod>2019-05-21T09:00:00+07:00</lastmod>
   </url>
   
   <url>
@@ -20,6 +43,12 @@
   <url>
     <loc>https://ngurajeka.com/post/instead-of-blaming-find-the-solution/</loc>
     <lastmod>2019-02-06T18:04:35+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ngurajeka.com/post/</loc>
+    <lastmod>2019-02-06T18:04:35+07:00</lastmod>
+    <priority>0</priority>
   </url>
   
   <url>
@@ -78,8 +107,44 @@
   </url>
   
   <url>
+    <loc>https://ngurajeka.com/tags/</loc>
+    <lastmod>2017-05-09T19:05:20+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://ngurajeka.com/post/zsh-no-clobber/</loc>
     <lastmod>2017-05-09T19:05:20+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ngurajeka.com/tags/console/</loc>
+    <lastmod>2017-05-09T19:05:20+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://ngurajeka.com/tags/oh-my-zsh/</loc>
+    <lastmod>2017-05-09T19:05:20+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://ngurajeka.com/tags/prezto/</loc>
+    <lastmod>2017-05-09T19:05:20+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://ngurajeka.com/tags/terms/</loc>
+    <lastmod>2017-05-09T19:05:20+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://ngurajeka.com/tags/zsh/</loc>
+    <lastmod>2017-05-09T19:05:20+07:00</lastmod>
+    <priority>0</priority>
   </url>
   
   <url>
@@ -88,8 +153,44 @@
   </url>
   
   <url>
+    <loc>https://ngurajeka.com/tags/blog/</loc>
+    <lastmod>2017-05-09T11:25:04+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://ngurajeka.com/tags/hugo/</loc>
+    <lastmod>2017-05-09T11:25:04+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://ngurajeka.com/post/ansible-git-module-with-private-repository/</loc>
     <lastmod>2017-05-07T21:38:11+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ngurajeka.com/tags/ansible/</loc>
+    <lastmod>2017-05-07T21:38:11+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://ngurajeka.com/tags/deployment/</loc>
+    <lastmod>2017-05-07T21:38:11+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://ngurajeka.com/tags/git/</loc>
+    <lastmod>2017-05-07T21:38:11+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://ngurajeka.com/tags/sysadmin/</loc>
+    <lastmod>2017-05-07T21:38:11+07:00</lastmod>
+    <priority>0</priority>
   </url>
   
   <url>
@@ -98,8 +199,62 @@
   </url>
   
   <url>
+    <loc>https://ngurajeka.com/tags/commit/</loc>
+    <lastmod>2017-03-28T18:55:50+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://ngurajeka.com/tags/git-hook/</loc>
+    <lastmod>2017-03-28T18:55:50+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://ngurajeka.com/tags/go/</loc>
+    <lastmod>2017-03-28T18:55:50+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://ngurajeka.com/tags/hook/</loc>
+    <lastmod>2017-03-28T18:55:50+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://ngurajeka.com/tags/pre-commit/</loc>
+    <lastmod>2017-03-28T18:55:50+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://ngurajeka.com/post/not-found-handler-gorilla-mux/</loc>
     <lastmod>2017-03-18T20:19:41+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ngurajeka.com/tags/golang/</loc>
+    <lastmod>2017-03-18T20:19:41+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://ngurajeka.com/tags/gorilla/</loc>
+    <lastmod>2017-03-18T20:19:41+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://ngurajeka.com/tags/mux/</loc>
+    <lastmod>2017-03-18T20:19:41+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://ngurajeka.com/tags/web-dev/</loc>
+    <lastmod>2017-03-18T20:19:41+07:00</lastmod>
+    <priority>0</priority>
   </url>
   
   <url>
@@ -108,8 +263,50 @@
   </url>
   
   <url>
+    <loc>https://ngurajeka.com/tags/frontend/</loc>
+    <lastmod>2016-10-22T21:57:22+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://ngurajeka.com/tags/javascript/</loc>
+    <lastmod>2016-10-22T21:57:22+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://ngurajeka.com/tags/react-native/</loc>
+    <lastmod>2016-10-22T21:57:22+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://ngurajeka.com/tags/reactjs/</loc>
+    <lastmod>2016-10-22T21:57:22+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://ngurajeka.com/post/set-expires-to-epoch-in-go/</loc>
     <lastmod>2016-10-12T20:41:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ngurajeka.com/tags/http/</loc>
+    <lastmod>2016-10-12T20:41:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://ngurajeka.com/tags/net/http/</loc>
+    <lastmod>2016-10-12T20:41:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://ngurajeka.com/tags/web-development/</loc>
+    <lastmod>2016-10-12T20:41:00+00:00</lastmod>
+    <priority>0</priority>
   </url>
   
   <url>
@@ -125,6 +322,18 @@
   <url>
     <loc>https://ngurajeka.com/post/remap-ctrlp-in-macvim/</loc>
     <lastmod>2016-10-01T20:43:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ngurajeka.com/tags/text-editor/</loc>
+    <lastmod>2016-10-01T20:43:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://ngurajeka.com/tags/vim/</loc>
+    <lastmod>2016-10-01T20:43:00+00:00</lastmod>
+    <priority>0</priority>
   </url>
   
   <url>
@@ -185,203 +394,6 @@
   <url>
     <loc>https://ngurajeka.com/post/meetup-pythonid-april/</loc>
     <lastmod>2015-04-25T21:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ngurajeka.com/tags/ansible/</loc>
-    <lastmod>2017-05-07T21:38:11+07:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://ngurajeka.com/tags/blog/</loc>
-    <lastmod>2017-05-09T11:25:04+07:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://ngurajeka.com/categories/</loc>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://ngurajeka.com/tags/commit/</loc>
-    <lastmod>2017-03-28T18:55:50+07:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://ngurajeka.com/tags/console/</loc>
-    <lastmod>2017-05-09T19:05:20+07:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://ngurajeka.com/tags/deployment/</loc>
-    <lastmod>2017-05-07T21:38:11+07:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://ngurajeka.com/tags/frontend/</loc>
-    <lastmod>2016-10-22T21:57:22+07:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://ngurajeka.com/tags/git/</loc>
-    <lastmod>2017-05-07T21:38:11+07:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://ngurajeka.com/tags/git-hook/</loc>
-    <lastmod>2017-03-28T18:55:50+07:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://ngurajeka.com/tags/go/</loc>
-    <lastmod>2017-03-28T18:55:50+07:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://ngurajeka.com/tags/golang/</loc>
-    <lastmod>2017-03-18T20:19:41+07:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://ngurajeka.com/tags/gorilla/</loc>
-    <lastmod>2017-03-18T20:19:41+07:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://ngurajeka.com/tags/hook/</loc>
-    <lastmod>2017-03-28T18:55:50+07:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://ngurajeka.com/tags/http/</loc>
-    <lastmod>2016-10-12T20:41:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://ngurajeka.com/tags/hugo/</loc>
-    <lastmod>2017-05-09T11:25:04+07:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://ngurajeka.com/tags/javascript/</loc>
-    <lastmod>2016-10-22T21:57:22+07:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://ngurajeka.com/tags/mux/</loc>
-    <lastmod>2017-03-18T20:19:41+07:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://ngurajeka.com/tags/net-http/</loc>
-    <lastmod>2016-10-12T20:41:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://ngurajeka.com/tags/oh-my-zsh/</loc>
-    <lastmod>2017-05-09T19:05:20+07:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://ngurajeka.com/post/</loc>
-    <lastmod>2019-02-06T18:04:35+07:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://ngurajeka.com/tags/pre-commit/</loc>
-    <lastmod>2017-03-28T18:55:50+07:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://ngurajeka.com/tags/prezto/</loc>
-    <lastmod>2017-05-09T19:05:20+07:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://ngurajeka.com/tags/react-native/</loc>
-    <lastmod>2016-10-22T21:57:22+07:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://ngurajeka.com/tags/reactjs/</loc>
-    <lastmod>2016-10-22T21:57:22+07:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://ngurajeka.com/tags/sysadmin/</loc>
-    <lastmod>2017-05-07T21:38:11+07:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://ngurajeka.com/tags/</loc>
-    <lastmod>2017-05-07T21:38:11+07:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://ngurajeka.com/tags/terms/</loc>
-    <lastmod>2017-05-09T19:05:20+07:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://ngurajeka.com/tags/text-editor/</loc>
-    <lastmod>2016-10-01T20:43:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://ngurajeka.com/</loc>
-    <lastmod>2019-05-21T09:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://ngurajeka.com/tags/vim/</loc>
-    <lastmod>2016-10-01T20:43:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://ngurajeka.com/tags/web-dev/</loc>
-    <lastmod>2017-03-18T20:19:41+07:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://ngurajeka.com/tags/web-development/</loc>
-    <lastmod>2016-10-12T20:41:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://ngurajeka.com/tags/zsh/</loc>
-    <lastmod>2017-05-09T19:05:20+07:00</lastmod>
-    <priority>0</priority>
   </url>
   
 </urlset>
