@@ -129,6 +129,35 @@
 
     
     <div class="post on-list">
+      <h1 class="post-title"><a href="https://ngurajeka.com/post/how-to-check-struct-implement-or-has-method/">How to Check if Struct Has a Method or Implement a Method</a></h1>
+      <div class="post-meta">
+        <span class="post-date">
+          2016-10-05
+        </span>
+        
+        
+          <span class="post-read-time">— 2 min read</span>
+        
+      </div>
+
+
+      
+
+      
+
+      <div class="post-content">
+        
+          
+            In Go Programming Language, we will use interface very often. And sometimes, there are some struct that implemented more than one interface.
+An example:
+type Model interface { PrimaryKey() string } type SecretModel interface { GetUnexportedField() []string } type exModel struct { ID uint Name string CreatedAt time.Time } func (exModel) GetPrimaryKey() string { return &quot;ID&quot; } func (exModel) GetUnexportedField() []string { return []string{&quot;CreatedAt&quot;} } type otherModel struct { ID uint Name string Description string CreatedAt time.
+          
+        
+      </div>
+      <div><a class="read-more button" href="/post/how-to-check-struct-implement-or-has-method/">Read more →</a></div>
+    </div>
+    
+    <div class="post on-list">
       <h1 class="post-title"><a href="https://ngurajeka.com/post/300/">300</a></h1>
       <div class="post-meta">
         <span class="post-date">
@@ -250,36 +279,6 @@ Using git rm won&rsquo;t only remove it from the index but delete it too.
         
       </div>
       <div><a class="read-more button" href="/post/removing-file-directory-from-git-index/">Read more →</a></div>
-    </div>
-    
-    <div class="post on-list">
-      <h1 class="post-title"><a href="https://ngurajeka.com/post/playing-with-array-javascript/">Playing With Array on Javascript</a></h1>
-      <div class="post-meta">
-        <span class="post-date">
-          2016-08-14
-        </span>
-        
-        
-          <span class="post-read-time">— 1 min read</span>
-        
-      </div>
-
-
-      
-
-      
-
-      <div class="post-content">
-        
-          
-            I&rsquo;m not a FrontEnd Web Developer. So it&rsquo;s kind of a note for me.
-I have this simple list, or array.
-var arr = [23, 12, 1992];  I always use list or array to store data, and sometimes i need to check if some value is already exists on the list. Sometimes i need to check if an index has already exists on the list.
-How to check if some value has already exists?
-          
-        
-      </div>
-      <div><a class="read-more button" href="/post/playing-with-array-javascript/">Read more →</a></div>
     </div>
     
     <div class="pagination">
