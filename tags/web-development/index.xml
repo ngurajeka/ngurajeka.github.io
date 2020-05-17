@@ -1,25 +1,25 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>web development on The Official Site of ngurajeka</title>
-    <link>https://ngurajeka.com/tags/web-development/</link>
+    <link>/tags/web-development/</link>
     <description>Recent content in web development on The Official Site of ngurajeka</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 12 Oct 2016 20:41:00 +0000</lastBuildDate>
     
-	<atom:link href="https://ngurajeka.com/tags/web-development/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/tags/web-development/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Set Expires To Epoch Time In Go Http Response</title>
-      <link>https://ngurajeka.com/post/set-expires-to-epoch-in-go/</link>
+      <link>/post/set-expires-to-epoch-in-go/</link>
       <pubDate>Wed, 12 Oct 2016 20:41:00 +0000</pubDate>
       
-      <guid>https://ngurajeka.com/post/set-expires-to-epoch-in-go/</guid>
+      <guid>/post/set-expires-to-epoch-in-go/</guid>
       <description>Today i was having a problem with my web api in Go. A lot of my API&amp;rsquo;s are cached by the browser because the Expires time of the response was automatically set to 4 days than the first request.
 The expires time was a header information from the response, if you are not familiar with this. You can use
-curl -XGET -i http://url/api/endpoint  Or you can use the network inspector on modern web browser such as Google Chrome or Firefox and other.</description>
+curl -XGET -i http://url/api/endpointOr you can use the network inspector on modern web browser such as Google Chrome or Firefox and other.</description>
     </item>
     
   </channel>

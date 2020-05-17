@@ -1,0 +1,22 @@
+.content {
+	margin-top: 0;
+}
+
+.posts .posts-year {
+	font-size: 1.625rem;
+	margin-bottom: 0;
+	text-align: left;
+}
+
+.posts .posts-line {
+	text-align: left;
+}
+
+.posts-date,
+.posts-title {
+	display: inline-block;
+}
+
+.posts-date {
+	width: 60px;
+}

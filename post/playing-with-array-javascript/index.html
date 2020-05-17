@@ -8,30 +8,30 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
 <meta name="description" content="I&amp;rsquo;m not a FrontEnd Web Developer. So it&amp;rsquo;s kind of a note for me.
 I have this simple list, or array.
-var arr = [23, 12, 1992];  I always use list or array to store data, and sometimes i need to check if some value is already exists on the list. Sometimes i need to check if an index has already exists on the list.
+var arr = [23, 12, 1992]; I always use list or array to store data, and sometimes i need to check if some value is already exists on the list. Sometimes i need to check if an index has already exists on the list.
 How to check if some value has already exists?"/>
 <meta name="keywords" content=""/>
 <meta name="robots" content="noodp"/>
-<link rel="canonical" href="https://ngurajeka.com/post/playing-with-array-javascript/" />
+<link rel="canonical" href="/post/playing-with-array-javascript/" />
 
 
-<link rel="stylesheet" href="https://ngurajeka.com/assets/style.css">
+<link rel="stylesheet" href="/assets/style.css">
 
 
-<link rel="stylesheet" href="https://ngurajeka.com/style.css">
+<link rel="stylesheet" href="/style.css">
 
 
-<link rel="apple-touch-icon-precomposed" sizes="144x144" href="https://ngurajeka.com/img/apple-touch-icon-144-precomposed.png">
-<link rel="shortcut icon" href="https://ngurajeka.com/img/favicon.png">
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="/img/apple-touch-icon-144-precomposed.png">
+<link rel="shortcut icon" href="/img/favicon.png">
 
 
 <meta name="twitter:card" content="summary" />
 <meta name="twitter:title" content="Playing With Array on Javascript :: The Official Site of ngurajeka — an ordinary ceo" />
 <meta name="twitter:description" content="I&amp;rsquo;m not a FrontEnd Web Developer. So it&amp;rsquo;s kind of a note for me.
 I have this simple list, or array.
-var arr = [23, 12, 1992];  I always use list or array to store data, and sometimes i need to check if some value is already exists on the list. Sometimes i need to check if an index has already exists on the list.
+var arr = [23, 12, 1992]; I always use list or array to store data, and sometimes i need to check if some value is already exists on the list. Sometimes i need to check if an index has already exists on the list.
 How to check if some value has already exists?" />
-<meta name="twitter:site" content="https://ngurajeka.com/" />
+<meta name="twitter:site" content="/" />
 <meta name="twitter:creator" content="" />
 <meta name="twitter:image" content="">
 
@@ -41,9 +41,9 @@ How to check if some value has already exists?" />
 <meta property="og:title" content="Playing With Array on Javascript :: The Official Site of ngurajeka — an ordinary ceo">
 <meta property="og:description" content="I&amp;rsquo;m not a FrontEnd Web Developer. So it&amp;rsquo;s kind of a note for me.
 I have this simple list, or array.
-var arr = [23, 12, 1992];  I always use list or array to store data, and sometimes i need to check if some value is already exists on the list. Sometimes i need to check if an index has already exists on the list.
+var arr = [23, 12, 1992]; I always use list or array to store data, and sometimes i need to check if some value is already exists on the list. Sometimes i need to check if an index has already exists on the list.
 How to check if some value has already exists?" />
-<meta property="og:url" content="https://ngurajeka.com/post/playing-with-array-javascript/" />
+<meta property="og:url" content="/post/playing-with-array-javascript/" />
 <meta property="og:site_name" content="Playing With Array on Javascript" />
 <meta property="og:image" content="">
 <meta property="og:image:width" content="2048">
@@ -57,7 +57,8 @@ How to check if some value has already exists?" />
 
 
 
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+<link rel="stylesheet" href="/css/post.css" />
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous" />
 </head>
 <body class="dark-theme">
 <div class="container">
@@ -128,7 +129,7 @@ How to check if some value has already exists?" />
   <div class="content">
     
   <div class="post">
-    <h2 class="post-title"><a href="https://ngurajeka.com/post/playing-with-array-javascript/">Playing With Array on Javascript</a></h2>
+    <h2 class="post-title"><a href="/post/playing-with-array-javascript/">Playing With Array on Javascript</a></h2>
     <div class="post-meta">
       
         <span class="post-date">
@@ -147,32 +148,19 @@ How to check if some value has already exists?" />
 
     <div class="post-content">
       <p>I&rsquo;m not a FrontEnd Web Developer. So it&rsquo;s kind of a note for me.</p>
-
 <p>I have this simple list, or array.</p>
-
-<pre><code class="language-js">var arr = [23, 12, 1992];
-</code></pre>
-
-<p>I always use list or array to store data, and sometimes i need to check if some value is already exists on the list. Sometimes i need to check if an index has already exists on the list.</p>
-
+<div class="highlight"><pre class="chroma"><code class="language-js" data-lang="js"><span class="kd">var</span> <span class="nx">arr</span> <span class="o">=</span> <span class="p">[</span><span class="mi">23</span><span class="p">,</span> <span class="mi">12</span><span class="p">,</span> <span class="mi">1992</span><span class="p">];</span>
+</code></pre></div><p>I always use list or array to store data, and sometimes i need to check if some value is already exists on the list. Sometimes i need to check if an index has already exists on the list.</p>
 <p>How to check if some value has already exists?</p>
-
-<pre><code class="language-js">if (list.indexOf(value) !== -1) {
-    // it did exist
-}
-</code></pre>
-
-<p>How to check if some index has already exists?</p>
-
-<pre><code class="language-js">if (typeof list[index] !== 'undefined') {
-    // it did exist
-}
-</code></pre>
-
-<p>That&rsquo;s it. Well, it&rsquo;s not the only way of course. You may have another way to check or playing with an array in JavaScript.</p>
-
+<div class="highlight"><pre class="chroma"><code class="language-js" data-lang="js"><span class="k">if</span> <span class="p">(</span><span class="nx">list</span><span class="p">.</span><span class="nx">indexOf</span><span class="p">(</span><span class="nx">value</span><span class="p">)</span> <span class="o">!==</span> <span class="o">-</span><span class="mi">1</span><span class="p">)</span> <span class="p">{</span>
+    <span class="c1">// it did exist
+</span><span class="c1"></span><span class="p">}</span>
+</code></pre></div><p>How to check if some index has already exists?</p>
+<div class="highlight"><pre class="chroma"><code class="language-js" data-lang="js"><span class="k">if</span> <span class="p">(</span><span class="k">typeof</span> <span class="nx">list</span><span class="p">[</span><span class="nx">index</span><span class="p">]</span> <span class="o">!==</span> <span class="s1">&#39;undefined&#39;</span><span class="p">)</span> <span class="p">{</span>
+    <span class="c1">// it did exist
+</span><span class="c1"></span><span class="p">}</span>
+</code></pre></div><p>That&rsquo;s it. Well, it&rsquo;s not the only way of course. You may have another way to check or playing with an array in JavaScript.</p>
 <p>One thing, i used <code>===</code> so it compared not only the value but the type of the data too.</p>
-
 <p>Some people might say that using <code>===</code> are not wise, but hey you can use <code>==</code> on above example. ;)</p>
 
     </div>
@@ -185,7 +173,7 @@ How to check if some value has already exists?" />
         <div class="pagination__buttons">
           
             <span class="button previous">
-              <a href="https://ngurajeka.com/post/removing-file-directory-from-git-index/">
+              <a href="/post/removing-file-directory-from-git-index/">
                 <span class="button__icon">←</span>
                 <span class="button__text">Removing File or Directory from Git Index</span>
               </a>
@@ -193,7 +181,7 @@ How to check if some value has already exists?" />
           
           
             <span class="button next">
-              <a href="https://ngurajeka.com/post/parsing-time-from-json-string-go/">
+              <a href="/post/parsing-time-from-json-string-go/">
                 <span class="button__text">Parsing Time from JSON String in GO</span>
                 <span class="button__icon">→</span>
               </a>
@@ -225,15 +213,15 @@ How to check if some value has already exists?" />
 </a>
 
       <div class="copyright">
-        <span>© 2019 Powered by <a href="https://gohugo.io">Hugo</a></span>
+        <span>© 2020 Powered by <a href="https://gohugo.io">Hugo</a></span>
         <span>Theme created by <a href="https://twitter.com/panr">panr</a></span>
       </div>
     
   </div>
 </footer>
 
-<script src="https://ngurajeka.com/assets/main.js"></script>
-<script src="https://ngurajeka.com/assets/prism.js"></script>
+<script src="/assets/main.js"></script>
+<script src="/assets/prism.js"></script>
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-77797160-1"></script>
 <script>
   window.dataLayer = window.dataLayer || [];

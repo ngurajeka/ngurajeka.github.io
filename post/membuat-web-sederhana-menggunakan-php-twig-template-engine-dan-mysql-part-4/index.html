@@ -10,24 +10,24 @@
 Yang akan menjadi pertanyaan adalah, untuk apa kita membutuhkan basis data MySQL pada web sederhana kita ini? Sebelumnya, tumpukan data daftar gambar yang kita buat masih berada dalam kode PHP kita. Bayangkan jika suatu saat kita membutuhkan untuk merubah atau bahkan menambah daftar gambar tersebut?"/>
 <meta name="keywords" content=""/>
 <meta name="robots" content="noodp"/>
-<link rel="canonical" href="https://ngurajeka.com/post/membuat-web-sederhana-menggunakan-php-twig-template-engine-dan-mysql-part-4/" />
+<link rel="canonical" href="/post/membuat-web-sederhana-menggunakan-php-twig-template-engine-dan-mysql-part-4/" />
 
 
-<link rel="stylesheet" href="https://ngurajeka.com/assets/style.css">
+<link rel="stylesheet" href="/assets/style.css">
 
 
-<link rel="stylesheet" href="https://ngurajeka.com/style.css">
+<link rel="stylesheet" href="/style.css">
 
 
-<link rel="apple-touch-icon-precomposed" sizes="144x144" href="https://ngurajeka.com/img/apple-touch-icon-144-precomposed.png">
-<link rel="shortcut icon" href="https://ngurajeka.com/img/favicon.png">
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="/img/apple-touch-icon-144-precomposed.png">
+<link rel="shortcut icon" href="/img/favicon.png">
 
 
 <meta name="twitter:card" content="summary" />
 <meta name="twitter:title" content="Membuat Web Sederhana menggunakan PHP, Twig Template Engine dan MySQL: Part 4 :: The Official Site of ngurajeka — an ordinary ceo" />
 <meta name="twitter:description" content="Menyiapkan Basis Data (MySQL Database) MySQL merupakan basis data yang bersifat relasional dan juga salah satu basis data yang cukup banyak digunakan. Dan pada web sederhana ini kita juga akan menggunakan MySQL.
 Yang akan menjadi pertanyaan adalah, untuk apa kita membutuhkan basis data MySQL pada web sederhana kita ini? Sebelumnya, tumpukan data daftar gambar yang kita buat masih berada dalam kode PHP kita. Bayangkan jika suatu saat kita membutuhkan untuk merubah atau bahkan menambah daftar gambar tersebut?" />
-<meta name="twitter:site" content="https://ngurajeka.com/" />
+<meta name="twitter:site" content="/" />
 <meta name="twitter:creator" content="" />
 <meta name="twitter:image" content="">
 
@@ -37,7 +37,7 @@ Yang akan menjadi pertanyaan adalah, untuk apa kita membutuhkan basis data MySQL
 <meta property="og:title" content="Membuat Web Sederhana menggunakan PHP, Twig Template Engine dan MySQL: Part 4 :: The Official Site of ngurajeka — an ordinary ceo">
 <meta property="og:description" content="Menyiapkan Basis Data (MySQL Database) MySQL merupakan basis data yang bersifat relasional dan juga salah satu basis data yang cukup banyak digunakan. Dan pada web sederhana ini kita juga akan menggunakan MySQL.
 Yang akan menjadi pertanyaan adalah, untuk apa kita membutuhkan basis data MySQL pada web sederhana kita ini? Sebelumnya, tumpukan data daftar gambar yang kita buat masih berada dalam kode PHP kita. Bayangkan jika suatu saat kita membutuhkan untuk merubah atau bahkan menambah daftar gambar tersebut?" />
-<meta property="og:url" content="https://ngurajeka.com/post/membuat-web-sederhana-menggunakan-php-twig-template-engine-dan-mysql-part-4/" />
+<meta property="og:url" content="/post/membuat-web-sederhana-menggunakan-php-twig-template-engine-dan-mysql-part-4/" />
 <meta property="og:site_name" content="Membuat Web Sederhana menggunakan PHP, Twig Template Engine dan MySQL: Part 4" />
 <meta property="og:image" content="">
 <meta property="og:image:width" content="2048">
@@ -51,7 +51,8 @@ Yang akan menjadi pertanyaan adalah, untuk apa kita membutuhkan basis data MySQL
 
 
 
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+<link rel="stylesheet" href="/css/post.css" />
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous" />
 </head>
 <body class="dark-theme">
 <div class="container">
@@ -122,7 +123,7 @@ Yang akan menjadi pertanyaan adalah, untuk apa kita membutuhkan basis data MySQL
   <div class="content">
     
   <div class="post">
-    <h2 class="post-title"><a href="https://ngurajeka.com/post/membuat-web-sederhana-menggunakan-php-twig-template-engine-dan-mysql-part-4/">Membuat Web Sederhana menggunakan PHP, Twig Template Engine dan MySQL: Part 4</a></h2>
+    <h2 class="post-title"><a href="/post/membuat-web-sederhana-menggunakan-php-twig-template-engine-dan-mysql-part-4/">Membuat Web Sederhana menggunakan PHP, Twig Template Engine dan MySQL: Part 4</a></h2>
     <div class="post-meta">
       
         <span class="post-date">
@@ -140,189 +141,128 @@ Yang akan menjadi pertanyaan adalah, untuk apa kita membutuhkan basis data MySQL
     
 
     <div class="post-content">
-      
-
-<h1 id="menyiapkan-basis-data-mysql-database">Menyiapkan Basis Data (MySQL Database)</h1>
-
+      <h1 id="menyiapkan-basis-data-mysql-database">Menyiapkan Basis Data (MySQL Database)</h1>
 <p><a href="https://en.wikipedia.org/wiki/MySQL">MySQL</a> merupakan basis data yang bersifat relasional dan juga salah satu basis data yang cukup banyak digunakan. Dan pada web sederhana ini kita juga akan menggunakan MySQL.</p>
-
 <p>Yang akan menjadi pertanyaan adalah, untuk apa kita membutuhkan basis data MySQL pada web sederhana kita ini? Sebelumnya, tumpukan data daftar gambar yang kita buat masih berada dalam kode PHP kita. Bayangkan jika suatu saat kita membutuhkan untuk merubah atau bahkan menambah daftar gambar tersebut? Bukannya melakukan hal tersebut secara berulang-ulang akan terasa menyakitkan?</p>
-
 <p>Lalu, apakah hanya untuk itu saja? Oh tidak, alasan lainnya adalah untuk belajar bagaimana sih menggunakan MySQL itu. Konsep dasar penggunaannya yang akan kita pelajari pada bagian ini. Menurut anda bagaimana seseorang yang membuat sebuah blog? Media Sosial? Apakah tumpukan data-data mereka yang sifatnya dinamis (berubah-ubah) ditanamkan langsung ke kode mereka masing-masing? Apakah anda menggunakan Facebook, Twitter, ataupun yang lain setiap kali menambahkan data anda harus menulis kode? Disitulah Basis Data memiliki peran penting.</p>
-
 <p>Sebelum terlalu jauh pastikan kembali MySQL-Server atau MariaDB-Server telah terpasang di mesin anda. Dan juga pastikan anda memiliki akses untuk menggunakannya. Disini saya akan berasumsi bahwa user yang akan pertama kali digunakan adalah root.</p>
-
 <ul>
-<li><p>Mengakses shell dari MySQL dengan user root, localhost merupakan host dari MySQL-Server terpasang dan berjalan. Jika sebelumnya anda telah memasang sebuah kata sandi, maka hal tersebut akan dibutuhkan untuk dapat mengakses shell dari MySQL.</p>
-
-<pre><code class="language-bash">$ mysql -u root -p
-</code></pre>
-
-<ul>
-<li><p>Membuat sebuah basis data (database) dengan nama web_sederhana</p>
-
-<pre><code class="language-sql">mysql&gt; CREATE DATABASE web_sederhana;
-</code></pre>
-
-<p>Jika berhasil, maka akan terdapat output kurang lebih seperti berikut:</p>
-
-<pre><code class="language-sql">Query OK, 1 row affected (0.03 sec)
-</code></pre></li>
-
-<li><p>Membuat pengguna baru dengan nama user_web dan kata sandi 74ee55083a714aa3791f8d594fea00c9 (sangat disarankan untuk membuat satu pengguna baru, karena menggunakan akun root sangatlah tidak bijak dengan alasan keamanan. Serta sangat disarankan untuk menggunakan kata sandi yang aman). Setelah itu kita memberikan akses dari pengguna user_web ke database yang sebelumnya kita buat web_sederhana</p>
-
-<pre><code class="language-sql">mysql&gt; CREATE USER 'user_web'@'localhost' IDENTIFIED BY '74ee55083a714aa3791f8d594fea00c9';
-mysql&gt; GRANT ALL PRIVILEGES ON `web_sederhana` . * TO 'user_web'@'localhost';
-mysql&gt; FLUSH PRIVILEGES;
-mysql&gt; EXIT;
-</code></pre>
-
-<p>Sebelum melanjutkan, mari kita cek apakah semuanya telah siap. Kita akan mencoba untuk mengakses shell dari MySQL dengan menggunakan pengguna yang baru saja kita buat, dan membuka akses ke basis data yang juga baru saja kita buat.</p>
-
-<pre><code class="language-bash">$ mysql -u user_web -p
-</code></pre></li>
-</ul>
-
-<pre><code class="language-sql">mysql&gt; USE `web_sederhana`;
-</code></pre>
-
-<p>Jika berhasil, maka pada bagian akhir akan memperlihatkan keluaran Database changed yang dimana mengartikan bahwa kita telah dapat membuka akses ke basis data yang baru saja kita buat dengan pengguna yang juta baru dibuat. Namun, jika terdapat masalah sampai sejauh ini silahkan gunakan kolom komentar.</p>
-
+<li>
+<p>Mengakses shell dari MySQL dengan user root, localhost merupakan host dari MySQL-Server terpasang dan berjalan. Jika sebelumnya anda telah memasang sebuah kata sandi, maka hal tersebut akan dibutuhkan untuk dapat mengakses shell dari MySQL.</p>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">$ mysql -u root -p
+</code></pre></div></li>
+<li>
+<p>Membuat sebuah basis data (database) dengan nama web_sederhana</p>
+<div class="highlight"><pre class="chroma"><code class="language-sql" data-lang="sql"><span class="n">mysql</span><span class="o">&gt;</span> <span class="k">CREATE</span> <span class="k">DATABASE</span> <span class="n">web_sederhana</span><span class="p">;</span>
+</code></pre></div><p>Jika berhasil, maka akan terdapat output kurang lebih seperti berikut:</p>
+<div class="highlight"><pre class="chroma"><code class="language-sql" data-lang="sql"><span class="n">Query</span> <span class="n">OK</span><span class="p">,</span> <span class="mi">1</span> <span class="k">row</span> <span class="n">affected</span> <span class="p">(</span><span class="mi">0</span><span class="p">.</span><span class="mi">03</span> <span class="n">sec</span><span class="p">)</span>
+</code></pre></div></li>
+<li>
+<p>Membuat pengguna baru dengan nama user_web dan kata sandi 74ee55083a714aa3791f8d594fea00c9 (sangat disarankan untuk membuat satu pengguna baru, karena menggunakan akun root sangatlah tidak bijak dengan alasan keamanan. Serta sangat disarankan untuk menggunakan kata sandi yang aman). Setelah itu kita memberikan akses dari pengguna user_web ke database yang sebelumnya kita buat web_sederhana</p>
+<div class="highlight"><pre class="chroma"><code class="language-sql" data-lang="sql"><span class="n">mysql</span><span class="o">&gt;</span> <span class="k">CREATE</span> <span class="k">USER</span> <span class="s1">&#39;user_web&#39;</span><span class="o">@</span><span class="s1">&#39;localhost&#39;</span> <span class="n">IDENTIFIED</span> <span class="k">BY</span> <span class="s1">&#39;74ee55083a714aa3791f8d594fea00c9&#39;</span><span class="p">;</span>
+<span class="n">mysql</span><span class="o">&gt;</span> <span class="k">GRANT</span> <span class="k">ALL</span> <span class="k">PRIVILEGES</span> <span class="k">ON</span> <span class="o">`</span><span class="n">web_sederhana</span><span class="o">`</span> <span class="p">.</span> <span class="o">*</span> <span class="k">TO</span> <span class="s1">&#39;user_web&#39;</span><span class="o">@</span><span class="s1">&#39;localhost&#39;</span><span class="p">;</span>
+<span class="n">mysql</span><span class="o">&gt;</span> <span class="n">FLUSH</span> <span class="k">PRIVILEGES</span><span class="p">;</span>
+<span class="n">mysql</span><span class="o">&gt;</span> <span class="n">EXIT</span><span class="p">;</span>
+</code></pre></div><p>Sebelum melanjutkan, mari kita cek apakah semuanya telah siap. Kita akan mencoba untuk mengakses shell dari MySQL dengan menggunakan pengguna yang baru saja kita buat, dan membuka akses ke basis data yang juga baru saja kita buat.</p>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">$ mysql -u user_web -p
+</code></pre></div><div class="highlight"><pre class="chroma"><code class="language-sql" data-lang="sql"><span class="n">mysql</span><span class="o">&gt;</span> <span class="n">USE</span> <span class="o">`</span><span class="n">web_sederhana</span><span class="o">`</span><span class="p">;</span>
+</code></pre></div><p>Jika berhasil, maka pada bagian akhir akan memperlihatkan keluaran Database changed yang dimana mengartikan bahwa kita telah dapat membuka akses ke basis data yang baru saja kita buat dengan pengguna yang juta baru dibuat. Namun, jika terdapat masalah sampai sejauh ini silahkan gunakan kolom komentar.</p>
 <p>Seperti yang sebelumnya saya sampaikan, kita akan menyimpan tumpukan data daftar gambar ke dalam basis data. Dan yang untuk sementara kita butuhkan hanyalah alamat dari gambar tersebut, maka skema yang kita akan buat dan kita butuhkan pun untuk saat ini sangat-sangat sederhana.</p>
-
 <p>Kita akan membuat satu table (koleksi data) di MySQL dengan bernama daftar_gambar. Perlu diketahui, satu basis data dapat menyimpan banyak sekali table dan dalam satu table tentu saja memiliki kolom dan baris, atau dapat menyimpan banyak rekaman data (records / row).</p>
-
 <p>Namun hal yang kedepannya perlu diperhatikan adalah, membuat skema koleksi data dengan baik itu sangatlah penting. Karena akan sangat bijak jika data-data yang terekam akan mudah kita gunakan kembali (baca, atau ubah).</p>
-
 <p>Mari kita buat schemanya terlebih dahulu:</p>
-
-<pre><code class="language-sql">mysql&gt; CREATE TABLE `daftar_gambar` (
-    -&gt; `id` INT NOT NULL AUTO_INCREMENT,
-    -&gt; `alamat_gambar` VARCHAR(120) NOT NULL,
-    -&gt; PRIMARY KEY(`id`));
-</code></pre>
-
-<p>Diatas, kita membuat tabel daftar_gambar dengan kolom id dan alamat_gambar. Dimana id memiliki tipe data integer dan tidak boleh memiliki nilai NULL disetiap rekaman data dan juga bersifat auto increment yang berarti pada saat id tidak kita berikan nilai pada saat memasukkan data baru ia akan terisi dengan sendirinya sesuai dengan urutan id yang sebelumnya pernah ada. (Dimulai dari 0 yah **pertamina)</p>
-
+<div class="highlight"><pre class="chroma"><code class="language-sql" data-lang="sql"><span class="n">mysql</span><span class="o">&gt;</span> <span class="k">CREATE</span> <span class="k">TABLE</span> <span class="o">`</span><span class="n">daftar_gambar</span><span class="o">`</span> <span class="p">(</span>
+    <span class="o">-&gt;</span> <span class="o">`</span><span class="n">id</span><span class="o">`</span> <span class="nb">INT</span> <span class="k">NOT</span> <span class="k">NULL</span> <span class="n">AUTO_INCREMENT</span><span class="p">,</span>
+    <span class="o">-&gt;</span> <span class="o">`</span><span class="n">alamat_gambar</span><span class="o">`</span> <span class="nb">VARCHAR</span><span class="p">(</span><span class="mi">120</span><span class="p">)</span> <span class="k">NOT</span> <span class="k">NULL</span><span class="p">,</span>
+    <span class="o">-&gt;</span> <span class="k">PRIMARY</span> <span class="k">KEY</span><span class="p">(</span><span class="o">`</span><span class="n">id</span><span class="o">`</span><span class="p">));</span>
+</code></pre></div><p>Diatas, kita membuat tabel daftar_gambar dengan kolom id dan alamat_gambar. Dimana id memiliki tipe data integer dan tidak boleh memiliki nilai NULL disetiap rekaman data dan juga bersifat auto increment yang berarti pada saat id tidak kita berikan nilai pada saat memasukkan data baru ia akan terisi dengan sendirinya sesuai dengan urutan id yang sebelumnya pernah ada. (Dimulai dari 0 yah **pertamina)</p>
 <p>Dan kemudian, alamat_gambar kita beri tipe data varchar dengan ukuran 120. Silahkan buka <a href="http://www.w3schools.com/sql/sql_datatypes.asp">Tipe Data MySQL</a> untuk penjelasan lebih lengkap. Tipe data kita definisikan menyesuaikan dengan data apa yang akan kita rekam. Dari contoh diatas, alamat gambar hanya akan berisikan teks dari alamat gambar-gambar yang sebelumnya kita masukkan ke satu tumpukan data di gallery.php (boleh ditambah, diubah)</p>
-
 <p>Dan terakhir, PRIMARY KEY menandakan sebuah nilai unik yang digunakan untuk mengidentifikasikan setiap data yang berhasil terekam. Dalam hal ini kita menggunakan id, dimana id ini akan bernilai 1,2,3,4… dan seterusnya.</p>
-
 <p>Apa yang akan kita lakukan selanjutnya? Apakah kita telah bisa melanjutkan kode kita di PHP? Belum, mari kita mencoba membaca data dari table yang diatas telah kita buat dengan menggunakan query language yang telah disediakan MySQL tentunya.</p>
-
-<pre><code class="language-sql">mysql&gt; SELECT * from `daftar_gambar`;
-</code></pre>
-
-<p>Maka tentu saja keluaran dari perintah diatas adalah Empty set (x.xx sec) yang dikarenakan table daftar_gambar belum memiliki rekaman data sama sekali. Karena diatas, kita hanya membuat tablenya saja. Mari kita coba menambahkan satu atau lebih rekaman data. Lalu kita baca kembali</p>
-
-<pre><code class="language-sql">mysql&gt; INSERT INTO `daftar_gambar` (`alamat_gambar`) VALUES
-    -&gt; ('http://blacktie.co/demo/stanley/assets/img/portfolio/port01.jpg');
-mysql&gt; INSERT INTO `daftar_gambar` (`alamat_gambar`) VALUES
-    -&gt; ('http://blacktie.co/demo/stanley/assets/img/portfolio/port02.jpg'),
-    -&gt; ('http://blacktie.co/demo/stanley/assets/img/portfolio/port03.jpg');
-mysql&gt; SELECT * from `daftar_gambar`;
-+----+-----------------------------------------------------------------+
-| id | alamat_gambar                                                   |
-+----+-----------------------------------------------------------------+
-|  1 | http://blacktie.co/demo/stanley/assets/img/portfolio/port01.jpg |
-|  2 | http://blacktie.co/demo/stanley/assets/img/portfolio/port02.jpg |
-|  3 | http://blacktie.co/demo/stanley/assets/img/portfolio/port03.jpg |
-+----+-----------------------------------------------------------------+
-3 rows in set (0.01 sec)
-</code></pre>
-
-<p>Setelah kita menambahkan tiga data selesai, dan saat membaca kembali rekaman data yang telah kita masukkan maka hasilnya kurang lebih seperti diatas. Jika semua berjalan dengan, silahkan masukkan kembali gambar-gambar lainnya yang belum dimasukkan (boleh ditambah sesuai keinginan)</p>
-
+<div class="highlight"><pre class="chroma"><code class="language-sql" data-lang="sql"><span class="n">mysql</span><span class="o">&gt;</span> <span class="k">SELECT</span> <span class="o">*</span> <span class="k">from</span> <span class="o">`</span><span class="n">daftar_gambar</span><span class="o">`</span><span class="p">;</span>
+</code></pre></div><p>Maka tentu saja keluaran dari perintah diatas adalah Empty set (x.xx sec) yang dikarenakan table daftar_gambar belum memiliki rekaman data sama sekali. Karena diatas, kita hanya membuat tablenya saja. Mari kita coba menambahkan satu atau lebih rekaman data. Lalu kita baca kembali</p>
+<div class="highlight"><pre class="chroma"><code class="language-sql" data-lang="sql"><span class="n">mysql</span><span class="o">&gt;</span> <span class="k">INSERT</span> <span class="k">INTO</span> <span class="o">`</span><span class="n">daftar_gambar</span><span class="o">`</span> <span class="p">(</span><span class="o">`</span><span class="n">alamat_gambar</span><span class="o">`</span><span class="p">)</span> <span class="k">VALUES</span>
+    <span class="o">-&gt;</span> <span class="p">(</span><span class="s1">&#39;http://blacktie.co/demo/stanley/assets/img/portfolio/port01.jpg&#39;</span><span class="p">);</span>
+<span class="n">mysql</span><span class="o">&gt;</span> <span class="k">INSERT</span> <span class="k">INTO</span> <span class="o">`</span><span class="n">daftar_gambar</span><span class="o">`</span> <span class="p">(</span><span class="o">`</span><span class="n">alamat_gambar</span><span class="o">`</span><span class="p">)</span> <span class="k">VALUES</span>
+    <span class="o">-&gt;</span> <span class="p">(</span><span class="s1">&#39;http://blacktie.co/demo/stanley/assets/img/portfolio/port02.jpg&#39;</span><span class="p">),</span>
+    <span class="o">-&gt;</span> <span class="p">(</span><span class="s1">&#39;http://blacktie.co/demo/stanley/assets/img/portfolio/port03.jpg&#39;</span><span class="p">);</span>
+<span class="n">mysql</span><span class="o">&gt;</span> <span class="k">SELECT</span> <span class="o">*</span> <span class="k">from</span> <span class="o">`</span><span class="n">daftar_gambar</span><span class="o">`</span><span class="p">;</span>
+<span class="o">+</span><span class="c1">----+-----------------------------------------------------------------+
+</span><span class="c1"></span><span class="o">|</span> <span class="n">id</span> <span class="o">|</span> <span class="n">alamat_gambar</span>                                                   <span class="o">|</span>
+<span class="o">+</span><span class="c1">----+-----------------------------------------------------------------+
+</span><span class="c1"></span><span class="o">|</span>  <span class="mi">1</span> <span class="o">|</span> <span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">blacktie</span><span class="p">.</span><span class="n">co</span><span class="o">/</span><span class="n">demo</span><span class="o">/</span><span class="n">stanley</span><span class="o">/</span><span class="n">assets</span><span class="o">/</span><span class="n">img</span><span class="o">/</span><span class="n">portfolio</span><span class="o">/</span><span class="n">port01</span><span class="p">.</span><span class="n">jpg</span> <span class="o">|</span>
+<span class="o">|</span>  <span class="mi">2</span> <span class="o">|</span> <span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">blacktie</span><span class="p">.</span><span class="n">co</span><span class="o">/</span><span class="n">demo</span><span class="o">/</span><span class="n">stanley</span><span class="o">/</span><span class="n">assets</span><span class="o">/</span><span class="n">img</span><span class="o">/</span><span class="n">portfolio</span><span class="o">/</span><span class="n">port02</span><span class="p">.</span><span class="n">jpg</span> <span class="o">|</span>
+<span class="o">|</span>  <span class="mi">3</span> <span class="o">|</span> <span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">blacktie</span><span class="p">.</span><span class="n">co</span><span class="o">/</span><span class="n">demo</span><span class="o">/</span><span class="n">stanley</span><span class="o">/</span><span class="n">assets</span><span class="o">/</span><span class="n">img</span><span class="o">/</span><span class="n">portfolio</span><span class="o">/</span><span class="n">port03</span><span class="p">.</span><span class="n">jpg</span> <span class="o">|</span>
+<span class="o">+</span><span class="c1">----+-----------------------------------------------------------------+
+</span><span class="c1"></span><span class="mi">3</span> <span class="k">rows</span> <span class="k">in</span> <span class="k">set</span> <span class="p">(</span><span class="mi">0</span><span class="p">.</span><span class="mi">01</span> <span class="n">sec</span><span class="p">)</span>
+</code></pre></div><p>Setelah kita menambahkan tiga data selesai, dan saat membaca kembali rekaman data yang telah kita masukkan maka hasilnya kurang lebih seperti diatas. Jika semua berjalan dengan, silahkan masukkan kembali gambar-gambar lainnya yang belum dimasukkan (boleh ditambah sesuai keinginan)</p>
 <p>Apa saja sih yang sebenarnya bisa kita lakukan dengan basis data beserta table yang telah kita buat ini? Ada banyak, bahkan sangat banyak. Dan karena alasan itu pula tidak dapat dijabarkan secara keseluruhan pada artikel ini. Namun, jika anda ingin mencari tahu lebih atau bahkan mendalami dari dasar-dasar basis data ini. <a href="http://www.w3schools.com/sql/default.asp">Link berikut</a> akan sangat membantu anda untuk memahami dan mempelajari hal-hal tersebut.</p>
-
+</li>
+</ul>
 <h1 id="mengakses-basis-data-mysql-dari-php">Mengakses Basis Data MySQL dari PHP</h1>
-
-<p>Ada beberapa cara atau metode yang dapat digunakan untuk mengakses Basis Data MySQL dari PHP. Menggunakan mysql<em>* atau mysqli</em>* atau PDO_MYSQL. Dan kali ini kita akan menggunakan PDO_MYSQL (PHP Data Objects).</p>
-
+<p>Ada beberapa cara atau metode yang dapat digunakan untuk mengakses Basis Data MySQL dari PHP. Menggunakan mysql_* atau mysqli_* atau PDO_MYSQL. Dan kali ini kita akan menggunakan PDO_MYSQL (PHP Data Objects).</p>
 <p>Kenapa harus menggunakan PDO_MYSQL? Alasannya cukup mudah, PDO bisa dikatakan lebih aman dan lebih baik untuk digunakan ketimbang kedua metode lain yang saya sebutkan diatas. Aman yang saya maksudkan adalah dikarenakan mysql sendiri sudah tidak disarankan untuk digunakan dari pihak pengembang PHP itu sendiri. Kemudian, PDO sendiri memiliki dukungan yang lebih baik. Misalnya, PDO memiliki dukungan untuk prepare statement, store procedures transaction dan beberapa hal lainnya (tolong dikoreksi jika salah).</p>
-
 <p>Selain itu, buat saya (sebelum menggunakan ORM-Object Relational Mapping) PDO lebih nyaman digunakan karena memiliki fitur untuk mengembalikan nilai Exception (throw exception) disaat query yang dijalankan bermasalah.</p>
-
 <ul>
-<li><p>Membuat file konfigurasi untuk MySQL dan memberikan hak akses pada file tersebut</p>
+<li>
+<p>Membuat file konfigurasi untuk MySQL dan memberikan hak akses pada file tersebut</p>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">$ touch inc/config.php
+$ chmod <span class="m">644</span> inc/config.php
+</code></pre></div><p>Kita isi dengan informasi host, pengguna, kata sandi dan basis data yang telah kita buat. (Perlu diketahui, hal ini bukanlah satu-satunya cara untuk melakukan ini. Anda akan menemukan banyak sekali cara/metode untuk mendefinisikan hal ini)</p>
+<div class="highlight"><pre class="chroma"><code class="language-php" data-lang="php"><span class="cp">&lt;?php</span>
+    <span class="nx">define</span><span class="p">(</span><span class="s1">&#39;DB_HOST&#39;</span><span class="p">,</span> <span class="s1">&#39;localhost&#39;</span><span class="p">);</span>
+    <span class="nx">define</span><span class="p">(</span><span class="s1">&#39;DB_USER&#39;</span><span class="p">,</span> <span class="s1">&#39;user_web&#39;</span><span class="p">);</span>
+    <span class="nx">define</span><span class="p">(</span><span class="s1">&#39;DB_PASSWORD&#39;</span><span class="p">,</span> <span class="s1">&#39;74ee55083a714aa3791f8d594fea00c9&#39;</span><span class="p">);</span>
+    <span class="nx">define</span><span class="p">(</span><span class="s1">&#39;DB_NAME&#39;</span><span class="p">,</span> <span class="s1">&#39;web_sederhana&#39;</span><span class="p">);</span>
+<span class="cp">?&gt;</span>
+</code></pre></div></li>
+<li>
+<p>Membuat file untuk menghubungkan ke MySQL</p>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">$ touch inc/db.php
+</code></pre></div><div class="highlight"><pre class="chroma"><code class="language-php" data-lang="php"><span class="cp">&lt;?php</span>
+    <span class="k">include_once</span> <span class="no">__DIR__</span> <span class="o">.</span> <span class="s1">&#39;/config.php&#39;</span><span class="p">;</span>
+    <span class="nv">$db</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">PDO</span><span class="p">(</span><span class="s1">&#39;mysql:host=&#39;</span><span class="o">.</span><span class="nx">DB_HOST</span><span class="o">.</span><span class="s1">&#39;;dbname=&#39;</span><span class="o">.</span><span class="nx">DB_NAME</span><span class="o">.</span><span class="s1">&#39;;charset=utf8&#39;</span><span class="p">,</span> <span class="nx">DB_USER</span><span class="p">,</span> <span class="nx">DB_PASSWORD</span><span class="p">);</span>
+<span class="cp">?&gt;</span>
+</code></pre></div><p>Pada bagian ini, kita memanggil file config.php agar konstan yang telah kita definisikan bisa kita gunakan pada file ini. Lalu kita membuat sebuah koneksi ke MySQL menggunakan PDO yang berisikan informasi-informasi yang sebelumnya telah kita definisikan. Dan kemudian kita assign ke $db sebagai reference.</p>
+</li>
+<li>
+<p>Mari kita uji coba dan menambahkan koneksi diatas ke dalam gallery.php, serta membaca kembali rekaman data dari daftar_gambar</p>
+<div class="highlight"><pre class="chroma"><code class="language-php" data-lang="php"><span class="cp">&lt;?php</span>
+    <span class="k">include_once</span> <span class="no">__DIR__</span><span class="o">.</span><span class="s1">&#39;/inc/Twig/lib/Twig/Autoloader.php&#39;</span><span class="p">;</span>
+    <span class="c1">// memanggil file untuk menghubungkan ke MySQL
+</span><span class="c1"></span>    <span class="k">include_once</span> <span class="no">__DIR__</span><span class="o">.</span><span class="s1">&#39;/inc/db.php&#39;</span><span class="p">;</span>
+    <span class="nx">Twig_Autoloader</span><span class="o">::</span><span class="na">register</span><span class="p">();</span>
+    <span class="nv">$loader</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Twig_Loader_Filesystem</span><span class="p">(</span><span class="no">__DIR__</span> <span class="o">.</span> <span class="s1">&#39;/template&#39;</span><span class="p">);</span>
+    <span class="nv">$twig</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Twig_Environment</span><span class="p">(</span><span class="nv">$loader</span><span class="p">,</span> <span class="k">array</span><span class="p">());</span>
 
-<pre><code class="language-bash">$ touch inc/config.php
-$ chmod 644 inc/config.php
-</code></pre>
-
-<p>Kita isi dengan informasi host, pengguna, kata sandi dan basis data yang telah kita buat. (Perlu diketahui, hal ini bukanlah satu-satunya cara untuk melakukan ini. Anda akan menemukan banyak sekali cara/metode untuk mendefinisikan hal ini)</p>
-
-<pre><code class="language-php">&lt;?php
-define('DB_HOST', 'localhost');
-define('DB_USER', 'user_web');
-define('DB_PASSWORD', '74ee55083a714aa3791f8d594fea00c9');
-define('DB_NAME', 'web_sederhana');
-?&gt;
-</code></pre></li>
-
-<li><p>Membuat file untuk menghubungkan ke MySQL</p>
-
-<pre><code class="language-bash">$ touch inc/db.php
-</code></pre>
-
-<pre><code class="language-php">&lt;?php
-include_once __DIR__ . '/config.php';
-$db = new PDO('mysql:host='.DB_HOST.';dbname='.DB_NAME.';charset=utf8', DB_USER, DB_PASSWORD);
-?&gt;
-</code></pre></li>
+    <span class="nv">$data</span> <span class="o">=</span> <span class="k">array</span><span class="p">(</span>
+        <span class="s1">&#39;judul&#39;</span> <span class="o">=&gt;</span> <span class="s1">&#39;Web Sederhana&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;deskripsi&#39;</span> <span class="o">=&gt;</span> <span class="s1">&#39;Belajar membuat web sederhana&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;daftar_gambar&#39;</span> <span class="o">=&gt;</span> <span class="p">[]</span>
+    <span class="p">);</span>
+    <span class="c1">// membaca kembali rekaman data dari daftar_gambar
+</span><span class="c1"></span>    <span class="nv">$daftar_gambar</span> <span class="o">=</span> <span class="nv">$db</span><span class="o">-&gt;</span><span class="na">query</span><span class="p">(</span><span class="s1">&#39;SELECT * FROM `daftar_gambar`&#39;</span><span class="p">);</span>
+    <span class="c1">// memastikan bahwa $daftar_gambar memiliki nilai sebelum kita lakukan perulangan
+</span><span class="c1"></span>    <span class="k">if</span> <span class="p">(</span><span class="nv">$daftar_gambar</span><span class="p">)</span> <span class="p">{</span>
+        <span class="c1">// $daftar_gambar merupakan sebuah tumpukan data, dan dapat kita lakukan perulangan
+</span><span class="c1"></span>        <span class="k">foreach</span> <span class="p">(</span><span class="nv">$daftar_gambar</span> <span class="k">as</span> <span class="nv">$gambar</span><span class="p">)</span> <span class="p">{</span>
+            <span class="c1">// menambahkan setiap alamat_gambar dari hasil perulangan
+</span><span class="c1"></span>            <span class="c1">// kedalam tumpukan data $data[&#39;daftar_gambar&#39;]
+</span><span class="c1"></span>            <span class="nx">array_push</span><span class="p">(</span><span class="nv">$data</span><span class="p">[</span><span class="s1">&#39;daftar_gambar&#39;</span><span class="p">],</span> <span class="nv">$gambar</span><span class="p">[</span><span class="s1">&#39;alamat_gambar&#39;</span><span class="p">]);</span>
+        <span class="p">}</span>
+    <span class="p">}</span>
+    <span class="k">echo</span> <span class="nv">$twig</span><span class="o">-&gt;</span><span class="na">render</span><span class="p">(</span><span class="s1">&#39;gallery.html&#39;</span><span class="p">,</span> <span class="nv">$data</span><span class="p">);</span>
+<span class="cp">?&gt;</span>
+</code></pre></div></li>
 </ul>
-
-<p>Pada bagian ini, kita memanggil file config.php agar konstan yang telah kita definisikan bisa kita gunakan pada file ini. Lalu kita membuat sebuah koneksi ke MySQL menggunakan PDO yang berisikan informasi-informasi yang sebelumnya telah kita definisikan. Dan kemudian kita assign ke $db sebagai reference.</p>
-
-<ul>
-<li><p>Mari kita uji coba dan menambahkan koneksi diatas ke dalam gallery.php, serta membaca kembali rekaman data dari daftar_gambar</p>
-
-<pre><code class="language-php">&lt;?php
-include_once __DIR__.'/inc/Twig/lib/Twig/Autoloader.php';
-// memanggil file untuk menghubungkan ke MySQL
-include_once __DIR__.'/inc/db.php';
-Twig_Autoloader::register();
-$loader = new Twig_Loader_Filesystem(__DIR__ . '/template');
-$twig = new Twig_Environment($loader, array());
-
-$data = array(
-    'judul' =&gt; 'Web Sederhana',
-    'deskripsi' =&gt; 'Belajar membuat web sederhana',
-    'daftar_gambar' =&gt; []
-);
-// membaca kembali rekaman data dari daftar_gambar
-$daftar_gambar = $db-&gt;query('SELECT * FROM `daftar_gambar`');
-// memastikan bahwa $daftar_gambar memiliki nilai sebelum kita lakukan perulangan
-if ($daftar_gambar) {
-    // $daftar_gambar merupakan sebuah tumpukan data, dan dapat kita lakukan perulangan
-    foreach ($daftar_gambar as $gambar) {
-        // menambahkan setiap alamat_gambar dari hasil perulangan
-        // kedalam tumpukan data $data['daftar_gambar']
-        array_push($data['daftar_gambar'], $gambar['alamat_gambar']);
-    }
-}
-echo $twig-&gt;render('gallery.html', $data);
-?&gt;
-</code></pre></li>
-</ul></li>
-</ul>
-
 <p>Nah, mari kita coba kembali menjalankan web sederhana kita ini menggunakan PHP Builtin Web Server dan mengakses halaman gallery.php</p>
-
 <p>Bagaimana? Apakah sesuai? Jika semua berjalan dengan baik, maka gambar-gambar yang dimunculkan akan sesuai dengan jumlah rekaman data yang telah kita masukkan ke basis data yang kita buat. Jika ingin lebih, hal yang perlu dilakukan adalah menambahkan rekaman data pada table daftar_gambar.</p>
-
 <p>Jika terjadi kesalahan, maka silahkan tuliskan di komentar. Kami akan senang hati untuk membantu anda.</p>
-
 <p>Tulisan ini menutup Topik tentang “Membuat Web Sederhana menggunakan PHP, Twig Template Engine dan MySQL”. Kritik, ataupun saran adalah hal yang sangat kami butuhkan agar topik ini bisa kami ubah jika memang ada kekurangan. Dan juga sebagai pembelajaran untuk penulisan topik-topik berikutnya.</p>
-
-<h4 id="membuat-web-sederhana-menggunakan-php-twig-template-engine-dan-mysql-part-1-post-membuat-web-sederhana-menggunakan-php-twig-template-engine-dan-mysql"><a href="/post/membuat-web-sederhana-menggunakan-php-twig-template-engine-dan-mysql">Membuat Web Sederhana menggunakan PHP, Twig Template Engine dan MySQL: Part 1</a></h4>
-
-<h4 id="membuat-web-sederhana-menggunakan-php-twig-template-engine-dan-mysql-part-2-post-membuat-web-sederhana-menggunakan-php-twig-template-engine-dan-mysql-part-2"><a href="/post/membuat-web-sederhana-menggunakan-php-twig-template-engine-dan-mysql-part-2">Membuat Web Sederhana menggunakan PHP, Twig Template Engine dan MySQL: Part 2</a></h4>
-
-<h4 id="membuat-web-sederhana-menggunakan-php-twig-template-engine-dan-mysql-part-3-post-membuat-web-sederhana-menggunakan-php-twig-template-engine-dan-mysql-part-3"><a href="/post/membuat-web-sederhana-menggunakan-php-twig-template-engine-dan-mysql-part-3">Membuat Web Sederhana menggunakan PHP, Twig Template Engine dan MySQL: Part 3</a></h4>
-
+<h4 id="membuat-web-sederhana-menggunakan-php-twig-template-engine-dan-mysql-part-1postmembuat-web-sederhana-menggunakan-php-twig-template-engine-dan-mysql"><a href="/post/membuat-web-sederhana-menggunakan-php-twig-template-engine-dan-mysql">Membuat Web Sederhana menggunakan PHP, Twig Template Engine dan MySQL: Part 1</a></h4>
+<h4 id="membuat-web-sederhana-menggunakan-php-twig-template-engine-dan-mysql-part-2postmembuat-web-sederhana-menggunakan-php-twig-template-engine-dan-mysql-part-2"><a href="/post/membuat-web-sederhana-menggunakan-php-twig-template-engine-dan-mysql-part-2">Membuat Web Sederhana menggunakan PHP, Twig Template Engine dan MySQL: Part 2</a></h4>
+<h4 id="membuat-web-sederhana-menggunakan-php-twig-template-engine-dan-mysql-part-3postmembuat-web-sederhana-menggunakan-php-twig-template-engine-dan-mysql-part-3"><a href="/post/membuat-web-sederhana-menggunakan-php-twig-template-engine-dan-mysql-part-3">Membuat Web Sederhana menggunakan PHP, Twig Template Engine dan MySQL: Part 3</a></h4>
 <h4 id="membuat-web-sederhana-menggunakan-php-twig-template-engine-dan-mysql-part-4">Membuat Web Sederhana menggunakan PHP, Twig Template Engine dan MySQL: Part 4</h4>
-
 <h2 id="happy-hacking">Happy Hacking</h2>
 
     </div>
@@ -335,7 +275,7 @@ echo $twig-&gt;render('gallery.html', $data);
         <div class="pagination__buttons">
           
             <span class="button previous">
-              <a href="https://ngurajeka.com/post/migrate-to-hugo/">
+              <a href="/post/migrate-to-hugo/">
                 <span class="button__icon">←</span>
                 <span class="button__text">Replacing Flask with Hugo</span>
               </a>
@@ -343,7 +283,7 @@ echo $twig-&gt;render('gallery.html', $data);
           
           
             <span class="button next">
-              <a href="https://ngurajeka.com/post/membuat-web-sederhana-menggunakan-php-twig-template-engine-dan-mysql-part-3/">
+              <a href="/post/membuat-web-sederhana-menggunakan-php-twig-template-engine-dan-mysql-part-3/">
                 <span class="button__text">Membuat Web Sederhana menggunakan PHP, Twig Template Engine dan MySQL: Part 3</span>
                 <span class="button__icon">→</span>
               </a>
@@ -375,15 +315,15 @@ echo $twig-&gt;render('gallery.html', $data);
 </a>
 
       <div class="copyright">
-        <span>© 2019 Powered by <a href="https://gohugo.io">Hugo</a></span>
+        <span>© 2020 Powered by <a href="https://gohugo.io">Hugo</a></span>
         <span>Theme created by <a href="https://twitter.com/panr">panr</a></span>
       </div>
     
   </div>
 </footer>
 
-<script src="https://ngurajeka.com/assets/main.js"></script>
-<script src="https://ngurajeka.com/assets/prism.js"></script>
+<script src="/assets/main.js"></script>
+<script src="/assets/prism.js"></script>
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-77797160-1"></script>
 <script>
   window.dataLayer = window.dataLayer || [];

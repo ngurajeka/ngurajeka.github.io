@@ -13,17 +13,17 @@ That&amp;rsquo;s why i think i have disable or remap the key. In the official re
 But, if you are using MacVim replacing the key to cmd&#43;p is not as easy as it looks like."/>
 <meta name="keywords" content=""/>
 <meta name="robots" content="noodp"/>
-<link rel="canonical" href="https://ngurajeka.com/post/remap-ctrlp-in-macvim/" />
+<link rel="canonical" href="/post/remap-ctrlp-in-macvim/" />
 
 
-<link rel="stylesheet" href="https://ngurajeka.com/assets/style.css">
+<link rel="stylesheet" href="/assets/style.css">
 
 
-<link rel="stylesheet" href="https://ngurajeka.com/style.css">
+<link rel="stylesheet" href="/style.css">
 
 
-<link rel="apple-touch-icon-precomposed" sizes="144x144" href="https://ngurajeka.com/img/apple-touch-icon-144-precomposed.png">
-<link rel="shortcut icon" href="https://ngurajeka.com/img/favicon.png">
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="/img/apple-touch-icon-144-precomposed.png">
+<link rel="shortcut icon" href="/img/favicon.png">
 
 
 <meta name="twitter:card" content="summary" />
@@ -33,7 +33,7 @@ Have you ever found that pressing ctrl&#43;p is not easy on mac?
 For me, it is faster when pressing cmd&#43;p instead of pressing ctrl&#43;p.
 That&amp;rsquo;s why i think i have disable or remap the key. In the official repository of CtrlP has been explained very well to changed this keymap.
 But, if you are using MacVim replacing the key to cmd&#43;p is not as easy as it looks like." />
-<meta name="twitter:site" content="https://ngurajeka.com/" />
+<meta name="twitter:site" content="/" />
 <meta name="twitter:creator" content="" />
 <meta name="twitter:image" content="">
 
@@ -46,7 +46,7 @@ Have you ever found that pressing ctrl&#43;p is not easy on mac?
 For me, it is faster when pressing cmd&#43;p instead of pressing ctrl&#43;p.
 That&amp;rsquo;s why i think i have disable or remap the key. In the official repository of CtrlP has been explained very well to changed this keymap.
 But, if you are using MacVim replacing the key to cmd&#43;p is not as easy as it looks like." />
-<meta property="og:url" content="https://ngurajeka.com/post/remap-ctrlp-in-macvim/" />
+<meta property="og:url" content="/post/remap-ctrlp-in-macvim/" />
 <meta property="og:site_name" content="ReMap CtrlP in MacVim" />
 <meta property="og:image" content="">
 <meta property="og:image:width" content="2048">
@@ -60,7 +60,8 @@ But, if you are using MacVim replacing the key to cmd&#43;p is not as easy as it
 
 
 
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+<link rel="stylesheet" href="/css/post.css" />
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous" />
 </head>
 <body class="dark-theme">
 <div class="container">
@@ -131,7 +132,7 @@ But, if you are using MacVim replacing the key to cmd&#43;p is not as easy as it
   <div class="content">
     
   <div class="post">
-    <h2 class="post-title"><a href="https://ngurajeka.com/post/remap-ctrlp-in-macvim/">ReMap CtrlP in MacVim</a></h2>
+    <h2 class="post-title"><a href="/post/remap-ctrlp-in-macvim/">ReMap CtrlP in MacVim</a></h2>
     <div class="post-meta">
       
         <span class="post-date">
@@ -147,9 +148,9 @@ But, if you are using MacVim replacing the key to cmd&#43;p is not as easy as it
     
       <span class="post-tags">
         
-          #<a href="https://ngurajeka.com/tags/vim/">vim</a>&nbsp;
+          #<a href="/tags/vim/">vim</a>&nbsp;
         
-          #<a href="https://ngurajeka.com/tags/text-editor/">text editor</a>&nbsp;
+          #<a href="/tags/text-editor/">text editor</a>&nbsp;
         
       </span>
     
@@ -158,33 +159,21 @@ But, if you are using MacVim replacing the key to cmd&#43;p is not as easy as it
 
     <div class="post-content">
       <p>Are you using MacVim and using CtrlP plugin?</p>
-
 <p>Have you ever found that pressing ctrl+p is not easy on mac?</p>
-
 <p>For me, it is faster when pressing cmd+p instead of pressing ctrl+p.</p>
-
 <p>That&rsquo;s why i think i have disable or remap the key. In the official repository of CtrlP has been explained very well to changed this keymap.</p>
-
 <p>But, if you are using MacVim replacing the key to cmd+p is not as easy as it looks like. Because cmd+p has been registered to do the &ldquo;Print Job&rdquo;. Replacing the keymap on .vimrc (vim configuration file) didn&rsquo;t solve the problem.</p>
-
 <p>On Stackoverflow, someone explain that .vimrc are loaded after the gui has been created. So we have to disable the key to be registered as print job before the gui launch.</p>
-
 <p>To do this, we simply put our configuration into .gvimrc not .vimrc. And the configuration should be look like this:</p>
-
 <pre><code>if has(&quot;gui_macvim&quot;)
-    macmenu &amp;File.Print key=&lt;nop&gt;
+	macmenu &amp;File.Print key=&lt;nop&gt;
 endif
-</code></pre>
-
-<p>And then, on our .vimrc</p>
-
+</code></pre><p>And then, on our .vimrc</p>
 <pre><code>if has(&quot;gui_macvim&quot;)
-    let g:ctrlp_map = '&lt;D-p&gt;'
-    let g:ctrlp_cmd = 'CtrlP'
+	let g:ctrlp_map = '&lt;D-p&gt;'
+	let g:ctrlp_cmd = 'CtrlP'
 endif
-</code></pre>
-
-<p>Restart your macvim, and voilaaaaaa!!!</p>
+</code></pre><p>Restart your macvim, and voilaaaaaa!!!</p>
 
     </div>
     
@@ -196,7 +185,7 @@ endif
         <div class="pagination__buttons">
           
             <span class="button previous">
-              <a href="https://ngurajeka.com/post/300/">
+              <a href="/post/300/">
                 <span class="button__icon">←</span>
                 <span class="button__text">300</span>
               </a>
@@ -204,7 +193,7 @@ endif
           
           
             <span class="button next">
-              <a href="https://ngurajeka.com/post/flask.ext.script-deprecated/">
+              <a href="/post/flask.ext.script-deprecated/">
                 <span class="button__text">flask.ext.script Deprecated</span>
                 <span class="button__icon">→</span>
               </a>
@@ -236,15 +225,15 @@ endif
 </a>
 
       <div class="copyright">
-        <span>© 2019 Powered by <a href="https://gohugo.io">Hugo</a></span>
+        <span>© 2020 Powered by <a href="https://gohugo.io">Hugo</a></span>
         <span>Theme created by <a href="https://twitter.com/panr">panr</a></span>
       </div>
     
   </div>
 </footer>
 
-<script src="https://ngurajeka.com/assets/main.js"></script>
-<script src="https://ngurajeka.com/assets/prism.js"></script>
+<script src="/assets/main.js"></script>
+<script src="/assets/prism.js"></script>
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-77797160-1"></script>
 <script>
   window.dataLayer = window.dataLayer || [];

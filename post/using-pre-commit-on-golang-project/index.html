@@ -12,17 +12,17 @@ Hook is an operation that could be executed before, or after our main operation.
 So pre-commit is an operation that executed right before the commit processed on git."/>
 <meta name="keywords" content=""/>
 <meta name="robots" content="noodp"/>
-<link rel="canonical" href="https://ngurajeka.com/post/using-pre-commit-on-golang-project/" />
+<link rel="canonical" href="/post/using-pre-commit-on-golang-project/" />
 
 
-<link rel="stylesheet" href="https://ngurajeka.com/assets/style.css">
+<link rel="stylesheet" href="/assets/style.css">
 
 
-<link rel="stylesheet" href="https://ngurajeka.com/style.css">
+<link rel="stylesheet" href="/style.css">
 
 
-<link rel="apple-touch-icon-precomposed" sizes="144x144" href="https://ngurajeka.com/img/apple-touch-icon-144-precomposed.png">
-<link rel="shortcut icon" href="https://ngurajeka.com/img/favicon.png">
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="/img/apple-touch-icon-144-precomposed.png">
+<link rel="shortcut icon" href="/img/favicon.png">
 
 
 <meta name="twitter:card" content="summary" />
@@ -31,7 +31,7 @@ So pre-commit is an operation that executed right before the commit processed on
 Git is one of many version control that exist nowadays. Git helps developer, programmer, engineer to manage their code, versioning their project, library or even just as file storage.
 Hook is an operation that could be executed before, or after our main operation.
 So pre-commit is an operation that executed right before the commit processed on git." />
-<meta name="twitter:site" content="https://ngurajeka.com/" />
+<meta name="twitter:site" content="/" />
 <meta name="twitter:creator" content="" />
 <meta name="twitter:image" content="">
 
@@ -43,7 +43,7 @@ So pre-commit is an operation that executed right before the commit processed on
 Git is one of many version control that exist nowadays. Git helps developer, programmer, engineer to manage their code, versioning their project, library or even just as file storage.
 Hook is an operation that could be executed before, or after our main operation.
 So pre-commit is an operation that executed right before the commit processed on git." />
-<meta property="og:url" content="https://ngurajeka.com/post/using-pre-commit-on-golang-project/" />
+<meta property="og:url" content="/post/using-pre-commit-on-golang-project/" />
 <meta property="og:site_name" content="Using Pre Commit on Golang Project" />
 <meta property="og:image" content="">
 <meta property="og:image:width" content="2048">
@@ -57,7 +57,8 @@ So pre-commit is an operation that executed right before the commit processed on
 
 
 
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+<link rel="stylesheet" href="/css/post.css" />
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous" />
 </head>
 <body class="dark-theme">
 <div class="container">
@@ -128,7 +129,7 @@ So pre-commit is an operation that executed right before the commit processed on
   <div class="content">
     
   <div class="post">
-    <h2 class="post-title"><a href="https://ngurajeka.com/post/using-pre-commit-on-golang-project/">Using Pre Commit on Golang Project</a></h2>
+    <h2 class="post-title"><a href="/post/using-pre-commit-on-golang-project/">Using Pre Commit on Golang Project</a></h2>
     <div class="post-meta">
       
         <span class="post-date">
@@ -144,17 +145,17 @@ So pre-commit is an operation that executed right before the commit processed on
     
       <span class="post-tags">
         
-          #<a href="https://ngurajeka.com/tags/go/">go</a>&nbsp;
+          #<a href="/tags/go/">go</a>&nbsp;
         
-          #<a href="https://ngurajeka.com/tags/git/">git</a>&nbsp;
+          #<a href="/tags/git/">git</a>&nbsp;
         
-          #<a href="https://ngurajeka.com/tags/commit/">commit</a>&nbsp;
+          #<a href="/tags/commit/">commit</a>&nbsp;
         
-          #<a href="https://ngurajeka.com/tags/pre-commit/">pre-commit</a>&nbsp;
+          #<a href="/tags/pre-commit/">pre-commit</a>&nbsp;
         
-          #<a href="https://ngurajeka.com/tags/hook/">hook</a>&nbsp;
+          #<a href="/tags/hook/">hook</a>&nbsp;
         
-          #<a href="https://ngurajeka.com/tags/git-hook/">git hook</a>&nbsp;
+          #<a href="/tags/git-hook/">git hook</a>&nbsp;
         
       </span>
     
@@ -163,86 +164,52 @@ So pre-commit is an operation that executed right before the commit processed on
 
     <div class="post-content">
       <p>Are you using Git to manage your code? Have you ever heard of hooks? pre-commit hook?</p>
-
 <p>Git is one of many version control that exist nowadays. Git helps developer, programmer, engineer to manage their code, versioning their project, library or even just as file storage.</p>
-
 <p>Hook is an operation that could be executed before, or after our main operation.</p>
-
 <p>So pre-commit is an operation that executed right before the commit processed on git. We can use pre-commit to do things like linter/formatter, or automatic testing.</p>
-
 <p>I used Go in my projects, and i wrote test script to automatically testing the project itself.</p>
-
 <p>As your information, my go projects use glide to manage dependencies. Its created a directory called vendor to store all of my dependencies.</p>
-
 <p>Why use glide instead of go get or govendor? Well, such a long story. Maybe another time.</p>
-
 <p>So, how do i run my test?</p>
-
-<pre><code class="language-sh">go test ./...
-</code></pre>
-
-<p>Above command will running go test into every sub-directory/sub-packages on active directory or active project.</p>
-
+<div class="highlight"><pre class="chroma"><code class="language-sh" data-lang="sh">go <span class="nb">test</span> ./...
+</code></pre></div><p>Above command will running go test into every sub-directory/sub-packages on active directory or active project.</p>
 <p>But, because i&rsquo;m using glide (govendor will got this too) an error occured because it test the dependencies too.</p>
-
 <p>So i need to exclude the vendor directory.</p>
-
 <p>Unfortunately, go test doesn&rsquo;t have such parameters to exclude directory/package (as my experience).</p>
-
 <p>But, that&rsquo;s not a problem since we have go list command and grep command.</p>
-
 <p>Go list is a command that provided by go itself to print list of packages. (go list -h)
 And Grep is an utility to search from any input, it could be text, or files. And grep have a lot of search options.</p>
-
-<pre><code class="language-sh">go list ./...
-</code></pre>
-
-<p>With the command above, we can see all of our packages within the active directory including sub packages. And of course my vendor package.</p>
-
-<pre><code class="language-sh">go list ./... | grep -v /vendor/
-</code></pre>
-
-<p>With above command, the output from go list becoming an input on grep command. Parameter -v means that we are going to select any lines that aren&rsquo;t match with the parameter value. Which is in this case is /vendor/.</p>
-
+<div class="highlight"><pre class="chroma"><code class="language-sh" data-lang="sh">go list ./...
+</code></pre></div><p>With the command above, we can see all of our packages within the active directory including sub packages. And of course my vendor package.</p>
+<div class="highlight"><pre class="chroma"><code class="language-sh" data-lang="sh">go list ./... <span class="p">|</span> grep -v /vendor/
+</code></pre></div><p>With above command, the output from go list becoming an input on grep command. Parameter -v means that we are going to select any lines that aren&rsquo;t match with the parameter value. Which is in this case is /vendor/.</p>
 <p>So with this command, i&rsquo;ll get any of my packages and sub packages without any vendor package. Lets integrate with go test command</p>
-
-<pre><code class="language-sh">go test $(go list ./... | grep -v /vendor/)
-</code></pre>
-
-<p>With above command, our test will be running only through our packages and not vendor packages.</p>
-
+<div class="highlight"><pre class="chroma"><code class="language-sh" data-lang="sh">go <span class="nb">test</span> <span class="k">$(</span>go list ./... <span class="p">|</span> grep -v /vendor/<span class="k">)</span>
+</code></pre></div><p>With above command, our test will be running only through our packages and not vendor packages.</p>
 <p>So, lets write our pre-commit script. pre-commit script will be written in bash/sh language.</p>
-
 <p>The original file is listed on gosample app from tokopedia, <a href="https://raw.githubusercontent.com/tokopedia/gosample/master/pre-commit.sh">here</a>.</p>
-
 <p>The only changes that i&rsquo;ve made is the go test command.</p>
-
-<script src="https://gist.github.com/ngurajeka/3508bdd23dd874c6a62c1d499587c0c4.js"></script>
-
+<!-- raw HTML omitted -->
 <p>How to use the pre-commit script that we wrote?</p>
-
 <ul>
-<li>I simply put the file into my main project, with the name pre-commit.sh</li>
-<li>Give an executable permission to that file</li>
-
-<li><p>And link the file into the .git/hooks directory</p>
-
-<pre><code class="language-sh">ln -s $(pwd)/pre-commit.sh $(pwd)/.git/hooks/pre-commit
-</code></pre>
-
-<p>Examples when i&rsquo;m running git commit, the pre-commit running before committing the changes.</p>
-
-<p><img src="https://farm4.staticflickr.com/3674/32856670344_d829173dc6_z_d.jpg" alt="" /></p>
-
-<p>If the test failed, the commit itself will be canceled.</p>
-
-<p>But, what if we need to do the commit even the test failed?</p>
-
-<pre><code class="language-sh">git commit -m 'message' --no-verify
+<li>
+<p>I simply put the file into my main project, with the name pre-commit.sh</p>
+</li>
+<li>
+<p>Give an executable permission to that file</p>
+</li>
+<li>
+<p>And link the file into the .git/hooks directory</p>
+<div class="highlight"><pre class="chroma"><code class="language-sh" data-lang="sh">ln -s <span class="k">$(</span><span class="nb">pwd</span><span class="k">)</span>/pre-commit.sh <span class="k">$(</span><span class="nb">pwd</span><span class="k">)</span>/.git/hooks/pre-commit
+</code></pre></div><pre><code>
 </code></pre></li>
 </ul>
-
-<p>There you go!</p>
+<p>Examples when i&rsquo;m running git commit, the pre-commit running before committing the changes.</p>
+<p><img src="https://farm4.staticflickr.com/3674/32856670344_d829173dc6_z_d.jpg" alt=""></p>
+<p>If the test failed, the commit itself will be canceled.</p>
+<p>But, what if we need to do the commit even the test failed?</p>
+<div class="highlight"><pre class="chroma"><code class="language-sh" data-lang="sh">git commit -m <span class="s1">&#39;message&#39;</span> --no-verify
+</code></pre></div><p>There you go!</p>
 
     </div>
     
@@ -254,7 +221,7 @@ And Grep is an utility to search from any input, it could be text, or files. And
         <div class="pagination__buttons">
           
             <span class="button previous">
-              <a href="https://ngurajeka.com/post/ansible-git-module-with-private-repository/">
+              <a href="/post/ansible-git-module-with-private-repository/">
                 <span class="button__icon">←</span>
                 <span class="button__text">Ansible Git Module for Private Repository</span>
               </a>
@@ -262,7 +229,7 @@ And Grep is an utility to search from any input, it could be text, or files. And
           
           
             <span class="button next">
-              <a href="https://ngurajeka.com/post/not-found-handler-gorilla-mux/">
+              <a href="/post/not-found-handler-gorilla-mux/">
                 <span class="button__text">Not Found Handler Gorilla Mux</span>
                 <span class="button__icon">→</span>
               </a>
@@ -294,15 +261,15 @@ And Grep is an utility to search from any input, it could be text, or files. And
 </a>
 
       <div class="copyright">
-        <span>© 2019 Powered by <a href="https://gohugo.io">Hugo</a></span>
+        <span>© 2020 Powered by <a href="https://gohugo.io">Hugo</a></span>
         <span>Theme created by <a href="https://twitter.com/panr">panr</a></span>
       </div>
     
   </div>
 </footer>
 
-<script src="https://ngurajeka.com/assets/main.js"></script>
-<script src="https://ngurajeka.com/assets/prism.js"></script>
+<script src="/assets/main.js"></script>
+<script src="/assets/prism.js"></script>
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-77797160-1"></script>
 <script>
   window.dataLayer = window.dataLayer || [];

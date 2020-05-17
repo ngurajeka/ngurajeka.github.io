@@ -9,20 +9,20 @@
 <meta name="description" content="Parsing date or time from a JSON String in Go is not as easy it is. Recently i found this problem when i used gin.Context.BindJSON() function to binding a json raw body from client into a struct of mine.
 For any other data types, i could easily add &amp;ldquo;string&amp;rdquo; on the struct tags. But it does not seem like to be working on time.Time types.
 Example:
-type MyStruct struct { Amount float64 `json:&amp;quot;amount,string&amp;quot;` }  Above type struct will be working smoothly, but for this:"/>
+type MyStruct struct {Amount float64 `json:&amp;quot;amount,string&amp;quot;`}Above type struct will be working smoothly, but for this:"/>
 <meta name="keywords" content=""/>
 <meta name="robots" content="noodp"/>
-<link rel="canonical" href="https://ngurajeka.com/post/parsing-time-from-json-string-go/" />
+<link rel="canonical" href="/post/parsing-time-from-json-string-go/" />
 
 
-<link rel="stylesheet" href="https://ngurajeka.com/assets/style.css">
+<link rel="stylesheet" href="/assets/style.css">
 
 
-<link rel="stylesheet" href="https://ngurajeka.com/style.css">
+<link rel="stylesheet" href="/style.css">
 
 
-<link rel="apple-touch-icon-precomposed" sizes="144x144" href="https://ngurajeka.com/img/apple-touch-icon-144-precomposed.png">
-<link rel="shortcut icon" href="https://ngurajeka.com/img/favicon.png">
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="/img/apple-touch-icon-144-precomposed.png">
+<link rel="shortcut icon" href="/img/favicon.png">
 
 
 <meta name="twitter:card" content="summary" />
@@ -30,8 +30,8 @@ type MyStruct struct { Amount float64 `json:&amp;quot;amount,string&amp;quot;` }
 <meta name="twitter:description" content="Parsing date or time from a JSON String in Go is not as easy it is. Recently i found this problem when i used gin.Context.BindJSON() function to binding a json raw body from client into a struct of mine.
 For any other data types, i could easily add &amp;ldquo;string&amp;rdquo; on the struct tags. But it does not seem like to be working on time.Time types.
 Example:
-type MyStruct struct { Amount float64 `json:&amp;quot;amount,string&amp;quot;` }  Above type struct will be working smoothly, but for this:" />
-<meta name="twitter:site" content="https://ngurajeka.com/" />
+type MyStruct struct {Amount float64 `json:&amp;quot;amount,string&amp;quot;`}Above type struct will be working smoothly, but for this:" />
+<meta name="twitter:site" content="/" />
 <meta name="twitter:creator" content="" />
 <meta name="twitter:image" content="">
 
@@ -42,8 +42,8 @@ type MyStruct struct { Amount float64 `json:&amp;quot;amount,string&amp;quot;` }
 <meta property="og:description" content="Parsing date or time from a JSON String in Go is not as easy it is. Recently i found this problem when i used gin.Context.BindJSON() function to binding a json raw body from client into a struct of mine.
 For any other data types, i could easily add &amp;ldquo;string&amp;rdquo; on the struct tags. But it does not seem like to be working on time.Time types.
 Example:
-type MyStruct struct { Amount float64 `json:&amp;quot;amount,string&amp;quot;` }  Above type struct will be working smoothly, but for this:" />
-<meta property="og:url" content="https://ngurajeka.com/post/parsing-time-from-json-string-go/" />
+type MyStruct struct {Amount float64 `json:&amp;quot;amount,string&amp;quot;`}Above type struct will be working smoothly, but for this:" />
+<meta property="og:url" content="/post/parsing-time-from-json-string-go/" />
 <meta property="og:site_name" content="Parsing Time from JSON String in GO" />
 <meta property="og:image" content="">
 <meta property="og:image:width" content="2048">
@@ -57,7 +57,8 @@ type MyStruct struct { Amount float64 `json:&amp;quot;amount,string&amp;quot;` }
 
 
 
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+<link rel="stylesheet" href="/css/post.css" />
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous" />
 </head>
 <body class="dark-theme">
 <div class="container">
@@ -128,7 +129,7 @@ type MyStruct struct { Amount float64 `json:&amp;quot;amount,string&amp;quot;` }
   <div class="content">
     
   <div class="post">
-    <h2 class="post-title"><a href="https://ngurajeka.com/post/parsing-time-from-json-string-go/">Parsing Time from JSON String in GO</a></h2>
+    <h2 class="post-title"><a href="/post/parsing-time-from-json-string-go/">Parsing Time from JSON String in GO</a></h2>
     <div class="post-meta">
       
         <span class="post-date">
@@ -147,51 +148,34 @@ type MyStruct struct { Amount float64 `json:&amp;quot;amount,string&amp;quot;` }
 
     <div class="post-content">
       <p>Parsing date or time from a JSON String in Go is not as easy it is. Recently i found this problem when i used gin.Context.BindJSON() function to binding a json raw body from client into a struct of mine.</p>
-
 <p>For any other data types, i could easily add &ldquo;string&rdquo; on the struct tags. But it does not seem like to be working on time.Time types.</p>
-
 <p>Example:</p>
-
 <pre><code>type MyStruct struct {
-    Amount float64 `json:&quot;amount,string&quot;`
+	Amount float64 `json:&quot;amount,string&quot;`
 }
-</code></pre>
-
-<p>Above type struct will be working smoothly, but for this:</p>
-
+</code></pre><p>Above type struct will be working smoothly, but for this:</p>
 <pre><code>type MyStruct struct {
-    Date time.Time `json:&quot;time,string&quot;`
+	Date time.Time `json:&quot;time,string&quot;`
 }
-</code></pre>
-
-<p>The parser from BindJSON() always failed to unmarshall the input.</p>
-
+</code></pre><p>The parser from BindJSON() always failed to unmarshall the input.</p>
 <p>So, i came up with a simple solution.</p>
-
 <pre><code>type MyStruct struct {
-    Date string `json:&quot;time&quot;`
+	Date string `json:&quot;time&quot;`
 }
-</code></pre>
-
-<p>So, instead of telling the BindJSON() to parse the input as a time.Time it simply tell it to just parsing the input as a standard string.</p>
-
+</code></pre><p>So, instead of telling the BindJSON() to parse the input as a time.Time it simply tell it to just parsing the input as a standard string.</p>
 <p>But, did i still get the date format? Yes, of course. This is how</p>
-
 <pre><code>var input MyStruct
 
 if err := context.BindJSON(&amp;input); err != nil {
-    //doSomething(err)
+	//doSomething(err)
 }
 
 // Parse the input as a time. You can use any format that available. Check time in godoc.org
 date, _ := time.Parse(&quot;2006-01-02 15:04:05&quot;, input.Date)
 
 // do the rest
-</code></pre>
-
-<p>So, as you can see. When the input came as a string, we could do anything as we need. And i could get the date / time as i need it.</p>
-
-<p>If you have any question or something on your mind, please tell me at <a href="mailto:ganteng@ngurajeka.com">ganteng@ngurajeka.com</a></p>
+</code></pre><p>So, as you can see. When the input came as a string, we could do anything as we need. And i could get the date / time as i need it.</p>
+<p>If you have any question or something on your mind, please tell me at <!-- raw HTML omitted --><a href="mailto:ganteng@ngurajeka.com">ganteng@ngurajeka.com</a><!-- raw HTML omitted --></p>
 
     </div>
     
@@ -203,7 +187,7 @@ date, _ := time.Parse(&quot;2006-01-02 15:04:05&quot;, input.Date)
         <div class="pagination__buttons">
           
             <span class="button previous">
-              <a href="https://ngurajeka.com/post/playing-with-array-javascript/">
+              <a href="/post/playing-with-array-javascript/">
                 <span class="button__icon">←</span>
                 <span class="button__text">Playing With Array on Javascript</span>
               </a>
@@ -211,7 +195,7 @@ date, _ := time.Parse(&quot;2006-01-02 15:04:05&quot;, input.Date)
           
           
             <span class="button next">
-              <a href="https://ngurajeka.com/post/10km-per-year/">
+              <a href="/post/10km-per-year/">
                 <span class="button__text">Run 10KM Per Year</span>
                 <span class="button__icon">→</span>
               </a>
@@ -243,15 +227,15 @@ date, _ := time.Parse(&quot;2006-01-02 15:04:05&quot;, input.Date)
 </a>
 
       <div class="copyright">
-        <span>© 2019 Powered by <a href="https://gohugo.io">Hugo</a></span>
+        <span>© 2020 Powered by <a href="https://gohugo.io">Hugo</a></span>
         <span>Theme created by <a href="https://twitter.com/panr">panr</a></span>
       </div>
     
   </div>
 </footer>
 
-<script src="https://ngurajeka.com/assets/main.js"></script>
-<script src="https://ngurajeka.com/assets/prism.js"></script>
+<script src="/assets/main.js"></script>
+<script src="/assets/prism.js"></script>
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-77797160-1"></script>
 <script>
   window.dataLayer = window.dataLayer || [];

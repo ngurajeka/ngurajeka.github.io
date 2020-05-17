@@ -1,22 +1,22 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>go on The Official Site of ngurajeka</title>
-    <link>https://ngurajeka.com/tags/go/</link>
+    <link>/tags/go/</link>
     <description>Recent content in go on The Official Site of ngurajeka</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 28 Mar 2017 18:55:50 +0700</lastBuildDate>
     
-	<atom:link href="https://ngurajeka.com/tags/go/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/tags/go/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Using Pre Commit on Golang Project</title>
-      <link>https://ngurajeka.com/post/using-pre-commit-on-golang-project/</link>
+      <link>/post/using-pre-commit-on-golang-project/</link>
       <pubDate>Tue, 28 Mar 2017 18:55:50 +0700</pubDate>
       
-      <guid>https://ngurajeka.com/post/using-pre-commit-on-golang-project/</guid>
+      <guid>/post/using-pre-commit-on-golang-project/</guid>
       <description>Are you using Git to manage your code? Have you ever heard of hooks? pre-commit hook?
 Git is one of many version control that exist nowadays. Git helps developer, programmer, engineer to manage their code, versioning their project, library or even just as file storage.
 Hook is an operation that could be executed before, or after our main operation.
@@ -25,10 +25,10 @@ So pre-commit is an operation that executed right before the commit processed on
     
     <item>
       <title>Not Found Handler Gorilla Mux</title>
-      <link>https://ngurajeka.com/post/not-found-handler-gorilla-mux/</link>
+      <link>/post/not-found-handler-gorilla-mux/</link>
       <pubDate>Sat, 18 Mar 2017 20:19:41 +0700</pubDate>
       
-      <guid>https://ngurajeka.com/post/not-found-handler-gorilla-mux/</guid>
+      <guid>/post/not-found-handler-gorilla-mux/</guid>
       <description>Recently i used Gorilla Mux as my http router in Go. For your information, gorilla mux is one of the popular http router in Go Programming Language.
 It happens when i&amp;rsquo;m trying to write a new microservice in go, and i&amp;rsquo;m ended up using go-kit. Go-Kit is a great tools when it comes to Microservices, especially in Go.
 The microservices is still using REST as the communication mechanism, thats why the service itself served using gorilla.</description>
@@ -36,13 +36,13 @@ The microservices is still using REST as the communication mechanism, thats why 
     
     <item>
       <title>Set Expires To Epoch Time In Go Http Response</title>
-      <link>https://ngurajeka.com/post/set-expires-to-epoch-in-go/</link>
+      <link>/post/set-expires-to-epoch-in-go/</link>
       <pubDate>Wed, 12 Oct 2016 20:41:00 +0000</pubDate>
       
-      <guid>https://ngurajeka.com/post/set-expires-to-epoch-in-go/</guid>
+      <guid>/post/set-expires-to-epoch-in-go/</guid>
       <description>Today i was having a problem with my web api in Go. A lot of my API&amp;rsquo;s are cached by the browser because the Expires time of the response was automatically set to 4 days than the first request.
 The expires time was a header information from the response, if you are not familiar with this. You can use
-curl -XGET -i http://url/api/endpoint  Or you can use the network inspector on modern web browser such as Google Chrome or Firefox and other.</description>
+curl -XGET -i http://url/api/endpointOr you can use the network inspector on modern web browser such as Google Chrome or Firefox and other.</description>
     </item>
     
   </channel>

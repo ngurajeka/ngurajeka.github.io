@@ -8,28 +8,28 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
 <meta name="description" content="In Go Programming Language, we will use interface very often. And sometimes, there are some struct that implemented more than one interface.
 An example:
-type Model interface { PrimaryKey() string } type SecretModel interface { GetUnexportedField() []string } type exModel struct { ID uint Name string CreatedAt time.Time } func (exModel) GetPrimaryKey() string { return &amp;quot;ID&amp;quot; } func (exModel) GetUnexportedField() []string { return []string{&amp;quot;CreatedAt&amp;quot;} } type otherModel struct { ID uint Name string Description string CreatedAt time."/>
+type Model interface {PrimaryKey() string}type SecretModel interface {GetUnexportedField() []string}type exModel struct {ID uintName stringCreatedAt time.Time}func (exModel) GetPrimaryKey() string {return &amp;quot;ID&amp;quot;}func (exModel) GetUnexportedField() []string {return []string{&amp;quot;CreatedAt&amp;quot;}}type otherModel struct {ID uintName stringDescription stringCreatedAt time."/>
 <meta name="keywords" content=""/>
 <meta name="robots" content="noodp"/>
-<link rel="canonical" href="https://ngurajeka.com/post/how-to-check-struct-implement-or-has-method/" />
+<link rel="canonical" href="/post/how-to-check-struct-implement-or-has-method/" />
 
 
-<link rel="stylesheet" href="https://ngurajeka.com/assets/style.css">
+<link rel="stylesheet" href="/assets/style.css">
 
 
-<link rel="stylesheet" href="https://ngurajeka.com/style.css">
+<link rel="stylesheet" href="/style.css">
 
 
-<link rel="apple-touch-icon-precomposed" sizes="144x144" href="https://ngurajeka.com/img/apple-touch-icon-144-precomposed.png">
-<link rel="shortcut icon" href="https://ngurajeka.com/img/favicon.png">
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="/img/apple-touch-icon-144-precomposed.png">
+<link rel="shortcut icon" href="/img/favicon.png">
 
 
 <meta name="twitter:card" content="summary" />
 <meta name="twitter:title" content="How to Check if Struct Has a Method or Implement a Method :: The Official Site of ngurajeka — an ordinary ceo" />
 <meta name="twitter:description" content="In Go Programming Language, we will use interface very often. And sometimes, there are some struct that implemented more than one interface.
 An example:
-type Model interface { PrimaryKey() string } type SecretModel interface { GetUnexportedField() []string } type exModel struct { ID uint Name string CreatedAt time.Time } func (exModel) GetPrimaryKey() string { return &amp;quot;ID&amp;quot; } func (exModel) GetUnexportedField() []string { return []string{&amp;quot;CreatedAt&amp;quot;} } type otherModel struct { ID uint Name string Description string CreatedAt time." />
-<meta name="twitter:site" content="https://ngurajeka.com/" />
+type Model interface {PrimaryKey() string}type SecretModel interface {GetUnexportedField() []string}type exModel struct {ID uintName stringCreatedAt time.Time}func (exModel) GetPrimaryKey() string {return &amp;quot;ID&amp;quot;}func (exModel) GetUnexportedField() []string {return []string{&amp;quot;CreatedAt&amp;quot;}}type otherModel struct {ID uintName stringDescription stringCreatedAt time." />
+<meta name="twitter:site" content="/" />
 <meta name="twitter:creator" content="" />
 <meta name="twitter:image" content="">
 
@@ -39,8 +39,8 @@ type Model interface { PrimaryKey() string } type SecretModel interface { GetUne
 <meta property="og:title" content="How to Check if Struct Has a Method or Implement a Method :: The Official Site of ngurajeka — an ordinary ceo">
 <meta property="og:description" content="In Go Programming Language, we will use interface very often. And sometimes, there are some struct that implemented more than one interface.
 An example:
-type Model interface { PrimaryKey() string } type SecretModel interface { GetUnexportedField() []string } type exModel struct { ID uint Name string CreatedAt time.Time } func (exModel) GetPrimaryKey() string { return &amp;quot;ID&amp;quot; } func (exModel) GetUnexportedField() []string { return []string{&amp;quot;CreatedAt&amp;quot;} } type otherModel struct { ID uint Name string Description string CreatedAt time." />
-<meta property="og:url" content="https://ngurajeka.com/post/how-to-check-struct-implement-or-has-method/" />
+type Model interface {PrimaryKey() string}type SecretModel interface {GetUnexportedField() []string}type exModel struct {ID uintName stringCreatedAt time.Time}func (exModel) GetPrimaryKey() string {return &amp;quot;ID&amp;quot;}func (exModel) GetUnexportedField() []string {return []string{&amp;quot;CreatedAt&amp;quot;}}type otherModel struct {ID uintName stringDescription stringCreatedAt time." />
+<meta property="og:url" content="/post/how-to-check-struct-implement-or-has-method/" />
 <meta property="og:site_name" content="How to Check if Struct Has a Method or Implement a Method" />
 <meta property="og:image" content="">
 <meta property="og:image:width" content="2048">
@@ -54,7 +54,8 @@ type Model interface { PrimaryKey() string } type SecretModel interface { GetUne
 
 
 
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+<link rel="stylesheet" href="/css/post.css" />
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous" />
 </head>
 <body class="dark-theme">
 <div class="container">
@@ -125,7 +126,7 @@ type Model interface { PrimaryKey() string } type SecretModel interface { GetUne
   <div class="content">
     
   <div class="post">
-    <h2 class="post-title"><a href="https://ngurajeka.com/post/how-to-check-struct-implement-or-has-method/">How to Check if Struct Has a Method or Implement a Method</a></h2>
+    <h2 class="post-title"><a href="/post/how-to-check-struct-implement-or-has-method/">How to Check if Struct Has a Method or Implement a Method</a></h2>
     <div class="post-meta">
       
         <span class="post-date">
@@ -144,67 +145,55 @@ type Model interface { PrimaryKey() string } type SecretModel interface { GetUne
 
     <div class="post-content">
       <p>In Go Programming Language, we will use interface very often. And sometimes, there are some struct that implemented more than one interface.</p>
-
 <p>An example:</p>
-
 <pre><code>type Model interface {
-    PrimaryKey() string
+	PrimaryKey() string
 }
 
 type SecretModel interface {
-    GetUnexportedField() []string
+	GetUnexportedField() []string
 }
 
 type exModel struct {
-    ID uint
-    Name string
-    CreatedAt time.Time
+	ID uint
+	Name string
+	CreatedAt time.Time
 }
 
 func (exModel) GetPrimaryKey() string {
-    return &quot;ID&quot;
+	return &quot;ID&quot;
 }
 
 func (exModel) GetUnexportedField() []string {
-    return []string{&quot;CreatedAt&quot;}
+	return []string{&quot;CreatedAt&quot;}
 }
 
 type otherModel struct {
-    ID uint
-    Name string
-    Description string
-    CreatedAt time.Time
+	ID uint
+	Name string
+	Description string
+	CreatedAt time.Time
 }
 
 func (otherModel) GetPrimaryKey() string {
-    return &quot;ID&quot;
+	return &quot;ID&quot;
 }
-</code></pre>
-
-<p>As you can see, the exModel implement two interfaces and otherModel just implemented one interface.</p>
-
+</code></pre><p>As you can see, the exModel implement two interfaces and otherModel just implemented one interface.</p>
 <p>And then, i have this kind of method to build data from model, exporting field and it&rsquo;s value if it&rsquo;s not secret field (implement secretmodel).</p>
-
 <pre><code>func exportData(model Model) map[string]interface{} {
-    return ...
+	return ...
 }
-</code></pre>
-
-<p>In my export data function, i simply put the Model interface as parameter. Of course, i need to check the model if it&rsquo;s implement secret model as well.</p>
-
+</code></pre><p>In my export data function, i simply put the Model interface as parameter. Of course, i need to check the model if it&rsquo;s implement secret model as well.</p>
 <p>As the very simple solution is using type assertion, but we can use reflect too.</p>
-
 <pre><code>func exportData(model Model) map[string]interface{} {
-    if secretmodel, ok := model.(secretModel); ok {
-        for _, unexportedField := range secretmodel.GetUnexportedField() {
-            // ...
-        }
-    }
-    return ...
+	if secretmodel, ok := model.(secretModel); ok {
+		for _, unexportedField := range secretmodel.GetUnexportedField() {
+			// ...
+		}
+	}
+	return ...
 }
-</code></pre>
-
-<p>From the above example, we can assume that type assertion in Go has multiple return value. First, it&rsquo;s new value and the second is the boolean expression that tells us if the type assertion was succed or failed.</p>
+</code></pre><p>From the above example, we can assume that type assertion in Go has multiple return value. First, it&rsquo;s new value and the second is the boolean expression that tells us if the type assertion was succed or failed.</p>
 
     </div>
     
@@ -216,7 +205,7 @@ func (otherModel) GetPrimaryKey() string {
         <div class="pagination__buttons">
           
             <span class="button previous">
-              <a href="https://ngurajeka.com/post/set-expires-to-epoch-in-go/">
+              <a href="/post/set-expires-to-epoch-in-go/">
                 <span class="button__icon">←</span>
                 <span class="button__text">Set Expires To Epoch Time In Go Http Response</span>
               </a>
@@ -224,7 +213,7 @@ func (otherModel) GetPrimaryKey() string {
           
           
             <span class="button next">
-              <a href="https://ngurajeka.com/post/300/">
+              <a href="/post/300/">
                 <span class="button__text">300</span>
                 <span class="button__icon">→</span>
               </a>
@@ -256,15 +245,15 @@ func (otherModel) GetPrimaryKey() string {
 </a>
 
       <div class="copyright">
-        <span>© 2019 Powered by <a href="https://gohugo.io">Hugo</a></span>
+        <span>© 2020 Powered by <a href="https://gohugo.io">Hugo</a></span>
         <span>Theme created by <a href="https://twitter.com/panr">panr</a></span>
       </div>
     
   </div>
 </footer>
 
-<script src="https://ngurajeka.com/assets/main.js"></script>
-<script src="https://ngurajeka.com/assets/prism.js"></script>
+<script src="/assets/main.js"></script>
+<script src="/assets/prism.js"></script>
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-77797160-1"></script>
 <script>
   window.dataLayer = window.dataLayer || [];

@@ -1,22 +1,22 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>pre-commit on The Official Site of ngurajeka</title>
-    <link>https://ngurajeka.com/tags/pre-commit/</link>
+    <link>/tags/pre-commit/</link>
     <description>Recent content in pre-commit on The Official Site of ngurajeka</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 28 Mar 2017 18:55:50 +0700</lastBuildDate>
     
-	<atom:link href="https://ngurajeka.com/tags/pre-commit/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/tags/pre-commit/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Using Pre Commit on Golang Project</title>
-      <link>https://ngurajeka.com/post/using-pre-commit-on-golang-project/</link>
+      <link>/post/using-pre-commit-on-golang-project/</link>
       <pubDate>Tue, 28 Mar 2017 18:55:50 +0700</pubDate>
       
-      <guid>https://ngurajeka.com/post/using-pre-commit-on-golang-project/</guid>
+      <guid>/post/using-pre-commit-on-golang-project/</guid>
       <description>Are you using Git to manage your code? Have you ever heard of hooks? pre-commit hook?
 Git is one of many version control that exist nowadays. Git helps developer, programmer, engineer to manage their code, versioning their project, library or even just as file storage.
 Hook is an operation that could be executed before, or after our main operation.

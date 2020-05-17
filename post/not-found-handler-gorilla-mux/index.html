@@ -11,17 +11,17 @@ It happens when i&amp;rsquo;m trying to write a new microservice in go, and i&am
 The microservices is still using REST as the communication mechanism, thats why the service itself served using gorilla."/>
 <meta name="keywords" content=""/>
 <meta name="robots" content="noodp"/>
-<link rel="canonical" href="https://ngurajeka.com/post/not-found-handler-gorilla-mux/" />
+<link rel="canonical" href="/post/not-found-handler-gorilla-mux/" />
 
 
-<link rel="stylesheet" href="https://ngurajeka.com/assets/style.css">
+<link rel="stylesheet" href="/assets/style.css">
 
 
-<link rel="stylesheet" href="https://ngurajeka.com/style.css">
+<link rel="stylesheet" href="/style.css">
 
 
-<link rel="apple-touch-icon-precomposed" sizes="144x144" href="https://ngurajeka.com/img/apple-touch-icon-144-precomposed.png">
-<link rel="shortcut icon" href="https://ngurajeka.com/img/favicon.png">
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="/img/apple-touch-icon-144-precomposed.png">
+<link rel="shortcut icon" href="/img/favicon.png">
 
 
 <meta name="twitter:card" content="summary" />
@@ -29,7 +29,7 @@ The microservices is still using REST as the communication mechanism, thats why 
 <meta name="twitter:description" content="Recently i used Gorilla Mux as my http router in Go. For your information, gorilla mux is one of the popular http router in Go Programming Language.
 It happens when i&amp;rsquo;m trying to write a new microservice in go, and i&amp;rsquo;m ended up using go-kit. Go-Kit is a great tools when it comes to Microservices, especially in Go.
 The microservices is still using REST as the communication mechanism, thats why the service itself served using gorilla." />
-<meta name="twitter:site" content="https://ngurajeka.com/" />
+<meta name="twitter:site" content="/" />
 <meta name="twitter:creator" content="" />
 <meta name="twitter:image" content="">
 
@@ -40,7 +40,7 @@ The microservices is still using REST as the communication mechanism, thats why 
 <meta property="og:description" content="Recently i used Gorilla Mux as my http router in Go. For your information, gorilla mux is one of the popular http router in Go Programming Language.
 It happens when i&amp;rsquo;m trying to write a new microservice in go, and i&amp;rsquo;m ended up using go-kit. Go-Kit is a great tools when it comes to Microservices, especially in Go.
 The microservices is still using REST as the communication mechanism, thats why the service itself served using gorilla." />
-<meta property="og:url" content="https://ngurajeka.com/post/not-found-handler-gorilla-mux/" />
+<meta property="og:url" content="/post/not-found-handler-gorilla-mux/" />
 <meta property="og:site_name" content="Not Found Handler Gorilla Mux" />
 <meta property="og:image" content="">
 <meta property="og:image:width" content="2048">
@@ -54,7 +54,8 @@ The microservices is still using REST as the communication mechanism, thats why 
 
 
 
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+<link rel="stylesheet" href="/css/post.css" />
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous" />
 </head>
 <body class="dark-theme">
 <div class="container">
@@ -125,7 +126,7 @@ The microservices is still using REST as the communication mechanism, thats why 
   <div class="content">
     
   <div class="post">
-    <h2 class="post-title"><a href="https://ngurajeka.com/post/not-found-handler-gorilla-mux/">Not Found Handler Gorilla Mux</a></h2>
+    <h2 class="post-title"><a href="/post/not-found-handler-gorilla-mux/">Not Found Handler Gorilla Mux</a></h2>
     <div class="post-meta">
       
         <span class="post-date">
@@ -141,15 +142,15 @@ The microservices is still using REST as the communication mechanism, thats why 
     
       <span class="post-tags">
         
-          #<a href="https://ngurajeka.com/tags/go/">go</a>&nbsp;
+          #<a href="/tags/go/">go</a>&nbsp;
         
-          #<a href="https://ngurajeka.com/tags/golang/">golang</a>&nbsp;
+          #<a href="/tags/golang/">golang</a>&nbsp;
         
-          #<a href="https://ngurajeka.com/tags/web-dev/">web dev</a>&nbsp;
+          #<a href="/tags/web-dev/">web dev</a>&nbsp;
         
-          #<a href="https://ngurajeka.com/tags/gorilla/">gorilla</a>&nbsp;
+          #<a href="/tags/gorilla/">gorilla</a>&nbsp;
         
-          #<a href="https://ngurajeka.com/tags/mux/">mux</a>&nbsp;
+          #<a href="/tags/mux/">mux</a>&nbsp;
         
       </span>
     
@@ -159,19 +160,14 @@ The microservices is still using REST as the communication mechanism, thats why 
     <div class="post-content">
       <p>Recently i used Gorilla Mux as my http router in Go.
 For your information, gorilla mux is one of the popular http router in Go Programming Language.</p>
-
 <p>It happens when i&rsquo;m trying to write a new microservice in go, and i&rsquo;m ended up using go-kit. Go-Kit is a great tools when it comes to Microservices, especially in Go.</p>
-
 <p>The microservices is still using REST as the communication mechanism, thats why the service itself served using gorilla.</p>
-
 <p>The services works fine, i just need to address the http request from client to see a more human message with json style response.</p>
-
 <p>All i need to do, is wrap up a new handlerfunc and pass it to NotFoundHandler of the router</p>
-
 <pre><code>import (
-    ...
-    &quot;net/http&quot;
-    ...
+	...
+	&quot;net/http&quot;
+	...
 )
 
 r := mux.NewRouter()
@@ -179,17 +175,16 @@ r := mux.NewRouter()
 ...
 
 r.NotFoundHandler = http.HandlerFunc(func (w http.ResponseWriter, req *http.Request) {
-    w.Header.Set(&quot;Content-Type&quot;, &quot;application/json; charset=utf-8&quot;)
-    w.WriteHeader(http.StatusNotFound)
-    json.NewEncoder(w).Encode(map[string]interface{}{
-        &quot;message&quot;: &quot;request not found&quot;,
-    })
+	w.Header.Set(&quot;Content-Type&quot;, &quot;application/json; charset=utf-8&quot;)
+	w.WriteHeader(http.StatusNotFound)
+	json.NewEncoder(w).Encode(map[string]interface{}{
+		&quot;message&quot;: &quot;request not found&quot;,
+	})
 })
 
 ...
 
 </code></pre>
-
     </div>
     
       <div class="pagination">
@@ -200,7 +195,7 @@ r.NotFoundHandler = http.HandlerFunc(func (w http.ResponseWriter, req *http.Requ
         <div class="pagination__buttons">
           
             <span class="button previous">
-              <a href="https://ngurajeka.com/post/using-pre-commit-on-golang-project/">
+              <a href="/post/using-pre-commit-on-golang-project/">
                 <span class="button__icon">←</span>
                 <span class="button__text">Using Pre Commit on Golang Project</span>
               </a>
@@ -208,7 +203,7 @@ r.NotFoundHandler = http.HandlerFunc(func (w http.ResponseWriter, req *http.Requ
           
           
             <span class="button next">
-              <a href="https://ngurajeka.com/post/i-am-in-love-with-react/">
+              <a href="/post/i-am-in-love-with-react/">
                 <span class="button__text">I Am In Love With React</span>
                 <span class="button__icon">→</span>
               </a>
@@ -240,15 +235,15 @@ r.NotFoundHandler = http.HandlerFunc(func (w http.ResponseWriter, req *http.Requ
 </a>
 
       <div class="copyright">
-        <span>© 2019 Powered by <a href="https://gohugo.io">Hugo</a></span>
+        <span>© 2020 Powered by <a href="https://gohugo.io">Hugo</a></span>
         <span>Theme created by <a href="https://twitter.com/panr">panr</a></span>
       </div>
     
   </div>
 </footer>
 
-<script src="https://ngurajeka.com/assets/main.js"></script>
-<script src="https://ngurajeka.com/assets/prism.js"></script>
+<script src="/assets/main.js"></script>
+<script src="/assets/prism.js"></script>
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-77797160-1"></script>
 <script>
   window.dataLayer = window.dataLayer || [];

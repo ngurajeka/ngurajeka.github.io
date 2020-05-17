@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>sharing-session on The Official Site of ngurajeka</title>
+    <link>/categories/sharing-session/</link>
+    <description>Recent content in sharing-session on The Official Site of ngurajeka</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 01 Oct 2016 20:43:00 +0000</lastBuildDate>
+    
+	<atom:link href="/categories/sharing-session/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>300</title>
+      <link>/post/300/</link>
+      <pubDate>Sat, 01 Oct 2016 20:43:00 +0000</pubDate>
+      
+      <guid>/post/300/</guid>
+      <description>http://www.python.or.id/2016/10/300-calon-programmer-dari-tangerang.html</description>
+    </item>
+    
+  </channel>
+</rss>

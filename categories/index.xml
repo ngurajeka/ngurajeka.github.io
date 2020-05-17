@@ -1,22 +1,40 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Categories on The Official Site of ngurajeka</title>
-    <link>https://ngurajeka.com/categories/</link>
+    <link>/categories/</link>
     <description>Recent content in Categories on The Official Site of ngurajeka</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 22 May 2019 05:32:34 +0700</lastBuildDate>
     
-	<atom:link href="https://ngurajeka.com/categories/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/categories/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>podcast</title>
-      <link>https://ngurajeka.com/categories/podcast/</link>
+      <link>/categories/podcast/</link>
       <pubDate>Wed, 22 May 2019 05:32:34 +0700</pubDate>
       
-      <guid>https://ngurajeka.com/categories/podcast/</guid>
+      <guid>/categories/podcast/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>meetup</title>
+      <link>/categories/meetup/</link>
+      <pubDate>Sat, 01 Oct 2016 20:43:00 +0000</pubDate>
+      
+      <guid>/categories/meetup/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>sharing-session</title>
+      <link>/categories/sharing-session/</link>
+      <pubDate>Sat, 01 Oct 2016 20:43:00 +0000</pubDate>
+      
+      <guid>/categories/sharing-session/</guid>
       <description></description>
     </item>
     

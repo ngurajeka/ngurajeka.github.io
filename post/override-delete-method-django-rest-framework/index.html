@@ -7,27 +7,27 @@
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
 <meta name="description" content="https://stackoverflow.com/questions/32513388/how-would-i-override-the-perform-destroy-method-in-django-rest-framework
-from rest_framework import status,viewsets from rest_framework.response import Response from django.http import Http404 class ExampleDestoryViewset(viewset.ModelViewSet): def destroy(self, request, *args, **kwargs): try: instance = self.get_object() self.perform_destroy(instance) except Http404: pass return Response(status=status.HTTP_204_NO_CONTENT)  "/>
+from rest_framework import status,viewsetsfrom rest_framework.response import Responsefrom django.http import Http404class ExampleDestoryViewset(viewset.ModelViewSet):def destroy(self, request, *args, **kwargs):try:instance = self.get_object()self.perform_destroy(instance)except Http404:passreturn Response(status=status.HTTP_204_NO_CONTENT)"/>
 <meta name="keywords" content=""/>
 <meta name="robots" content="noodp"/>
-<link rel="canonical" href="https://ngurajeka.com/post/override-delete-method-django-rest-framework/" />
+<link rel="canonical" href="/post/override-delete-method-django-rest-framework/" />
 
 
-<link rel="stylesheet" href="https://ngurajeka.com/assets/style.css">
+<link rel="stylesheet" href="/assets/style.css">
 
 
-<link rel="stylesheet" href="https://ngurajeka.com/style.css">
+<link rel="stylesheet" href="/style.css">
 
 
-<link rel="apple-touch-icon-precomposed" sizes="144x144" href="https://ngurajeka.com/img/apple-touch-icon-144-precomposed.png">
-<link rel="shortcut icon" href="https://ngurajeka.com/img/favicon.png">
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="/img/apple-touch-icon-144-precomposed.png">
+<link rel="shortcut icon" href="/img/favicon.png">
 
 
 <meta name="twitter:card" content="summary" />
 <meta name="twitter:title" content="Override Delete Method Django Rest Framework :: The Official Site of ngurajeka — an ordinary ceo" />
 <meta name="twitter:description" content="https://stackoverflow.com/questions/32513388/how-would-i-override-the-perform-destroy-method-in-django-rest-framework
-from rest_framework import status,viewsets from rest_framework.response import Response from django.http import Http404 class ExampleDestoryViewset(viewset.ModelViewSet): def destroy(self, request, *args, **kwargs): try: instance = self.get_object() self.perform_destroy(instance) except Http404: pass return Response(status=status.HTTP_204_NO_CONTENT)  " />
-<meta name="twitter:site" content="https://ngurajeka.com/" />
+from rest_framework import status,viewsetsfrom rest_framework.response import Responsefrom django.http import Http404class ExampleDestoryViewset(viewset.ModelViewSet):def destroy(self, request, *args, **kwargs):try:instance = self.get_object()self.perform_destroy(instance)except Http404:passreturn Response(status=status.HTTP_204_NO_CONTENT)" />
+<meta name="twitter:site" content="/" />
 <meta name="twitter:creator" content="" />
 <meta name="twitter:image" content="">
 
@@ -36,8 +36,8 @@ from rest_framework import status,viewsets from rest_framework.response import R
 <meta property="og:type" content="article" />
 <meta property="og:title" content="Override Delete Method Django Rest Framework :: The Official Site of ngurajeka — an ordinary ceo">
 <meta property="og:description" content="https://stackoverflow.com/questions/32513388/how-would-i-override-the-perform-destroy-method-in-django-rest-framework
-from rest_framework import status,viewsets from rest_framework.response import Response from django.http import Http404 class ExampleDestoryViewset(viewset.ModelViewSet): def destroy(self, request, *args, **kwargs): try: instance = self.get_object() self.perform_destroy(instance) except Http404: pass return Response(status=status.HTTP_204_NO_CONTENT)  " />
-<meta property="og:url" content="https://ngurajeka.com/post/override-delete-method-django-rest-framework/" />
+from rest_framework import status,viewsetsfrom rest_framework.response import Responsefrom django.http import Http404class ExampleDestoryViewset(viewset.ModelViewSet):def destroy(self, request, *args, **kwargs):try:instance = self.get_object()self.perform_destroy(instance)except Http404:passreturn Response(status=status.HTTP_204_NO_CONTENT)" />
+<meta property="og:url" content="/post/override-delete-method-django-rest-framework/" />
 <meta property="og:site_name" content="Override Delete Method Django Rest Framework" />
 <meta property="og:image" content="">
 <meta property="og:image:width" content="2048">
@@ -51,7 +51,8 @@ from rest_framework import status,viewsets from rest_framework.response import R
 
 
 
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+<link rel="stylesheet" href="/css/post.css" />
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous" />
 </head>
 <body class="dark-theme">
 <div class="container">
@@ -122,7 +123,7 @@ from rest_framework import status,viewsets from rest_framework.response import R
   <div class="content">
     
   <div class="post">
-    <h2 class="post-title"><a href="https://ngurajeka.com/post/override-delete-method-django-rest-framework/">Override Delete Method Django Rest Framework</a></h2>
+    <h2 class="post-title"><a href="/post/override-delete-method-django-rest-framework/">Override Delete Method Django Rest Framework</a></h2>
     <div class="post-meta">
       
         <span class="post-date">
@@ -141,7 +142,6 @@ from rest_framework import status,viewsets from rest_framework.response import R
 
     <div class="post-content">
       <p><a href="https://stackoverflow.com/questions/32513388/how-would-i-override-the-perform-destroy-method-in-django-rest-framework">https://stackoverflow.com/questions/32513388/how-would-i-override-the-perform-destroy-method-in-django-rest-framework</a></p>
-
 <pre><code>from rest_framework import status,viewsets
 from rest_framework.response import Response
 from django.http import Http404
@@ -155,7 +155,6 @@ class ExampleDestoryViewset(viewset.ModelViewSet):
             pass
         return Response(status=status.HTTP_204_NO_CONTENT)
 </code></pre>
-
     </div>
     
       <div class="pagination">
@@ -166,7 +165,7 @@ class ExampleDestoryViewset(viewset.ModelViewSet):
         <div class="pagination__buttons">
           
             <span class="button previous">
-              <a href="https://ngurajeka.com/post/angularjs-ui-router-with-condition/">
+              <a href="/post/angularjs-ui-router-with-condition/">
                 <span class="button__icon">←</span>
                 <span class="button__text">Angularjs UI-Router With Condition</span>
               </a>
@@ -174,7 +173,7 @@ class ExampleDestoryViewset(viewset.ModelViewSet):
           
           
             <span class="button next">
-              <a href="https://ngurajeka.com/post/using-ack-to-replace-text-in-large-file/">
+              <a href="/post/using-ack-to-replace-text-in-large-file/">
                 <span class="button__text">Using Ack to Replace Text in Large File</span>
                 <span class="button__icon">→</span>
               </a>
@@ -206,15 +205,15 @@ class ExampleDestoryViewset(viewset.ModelViewSet):
 </a>
 
       <div class="copyright">
-        <span>© 2019 Powered by <a href="https://gohugo.io">Hugo</a></span>
+        <span>© 2020 Powered by <a href="https://gohugo.io">Hugo</a></span>
         <span>Theme created by <a href="https://twitter.com/panr">panr</a></span>
       </div>
     
   </div>
 </footer>
 
-<script src="https://ngurajeka.com/assets/main.js"></script>
-<script src="https://ngurajeka.com/assets/prism.js"></script>
+<script src="/assets/main.js"></script>
+<script src="/assets/prism.js"></script>
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-77797160-1"></script>
 <script>
   window.dataLayer = window.dataLayer || [];

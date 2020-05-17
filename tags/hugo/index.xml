@@ -1,22 +1,22 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>hugo on The Official Site of ngurajeka</title>
-    <link>https://ngurajeka.com/tags/hugo/</link>
+    <link>/tags/hugo/</link>
     <description>Recent content in hugo on The Official Site of ngurajeka</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 09 May 2017 11:25:04 +0700</lastBuildDate>
     
-	<atom:link href="https://ngurajeka.com/tags/hugo/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/tags/hugo/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Hugo is Great</title>
-      <link>https://ngurajeka.com/post/hugo-is-great/</link>
+      <link>/post/hugo-is-great/</link>
       <pubDate>Tue, 09 May 2017 11:25:04 +0700</pubDate>
       
-      <guid>https://ngurajeka.com/post/hugo-is-great/</guid>
+      <guid>/post/hugo-is-great/</guid>
       <description>Hugo is one of the best static web generator nowadays. Hugo built on top of Go and its easy to use, easy to deploy.
 If you&amp;rsquo;re not familiar with Static Web Generator, you can visit staticgen.com to see how many libraries or tools that exist for this such thing. And also you can google about Static Web Generator.
 This web is build using Hugo, and i used Jekyll before migrating to Hugo.</description>

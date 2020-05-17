@@ -10,20 +10,20 @@
 I use Django Web Framework and use MySQL for data storage.
 To use mysql in django we need to install a connector driver, i use python module called MySQL-Python.
 I&amp;rsquo;m using Python 2.7.x and OSx Sierra. And MySQL-Python depends on mysql-connector-c in OSx. Installing the connector is easier with brew.
-brew install mysql-connector-c  Like always, i use pip to install dependency of my application."/>
+brew install mysql-connector-cLike always, i use pip to install dependency of my application."/>
 <meta name="keywords" content=""/>
 <meta name="robots" content="noodp"/>
-<link rel="canonical" href="https://ngurajeka.com/post/cannot-install-mysql-python-on-osx/" />
+<link rel="canonical" href="/post/cannot-install-mysql-python-on-osx/" />
 
 
-<link rel="stylesheet" href="https://ngurajeka.com/assets/style.css">
+<link rel="stylesheet" href="/assets/style.css">
 
 
-<link rel="stylesheet" href="https://ngurajeka.com/style.css">
+<link rel="stylesheet" href="/style.css">
 
 
-<link rel="apple-touch-icon-precomposed" sizes="144x144" href="https://ngurajeka.com/img/apple-touch-icon-144-precomposed.png">
-<link rel="shortcut icon" href="https://ngurajeka.com/img/favicon.png">
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="/img/apple-touch-icon-144-precomposed.png">
+<link rel="shortcut icon" href="/img/favicon.png">
 
 
 <meta name="twitter:card" content="summary" />
@@ -32,8 +32,8 @@ brew install mysql-connector-c  Like always, i use pip to install dependency of 
 I use Django Web Framework and use MySQL for data storage.
 To use mysql in django we need to install a connector driver, i use python module called MySQL-Python.
 I&amp;rsquo;m using Python 2.7.x and OSx Sierra. And MySQL-Python depends on mysql-connector-c in OSx. Installing the connector is easier with brew.
-brew install mysql-connector-c  Like always, i use pip to install dependency of my application." />
-<meta name="twitter:site" content="https://ngurajeka.com/" />
+brew install mysql-connector-cLike always, i use pip to install dependency of my application." />
+<meta name="twitter:site" content="/" />
 <meta name="twitter:creator" content="" />
 <meta name="twitter:image" content="">
 
@@ -45,8 +45,8 @@ brew install mysql-connector-c  Like always, i use pip to install dependency of 
 I use Django Web Framework and use MySQL for data storage.
 To use mysql in django we need to install a connector driver, i use python module called MySQL-Python.
 I&amp;rsquo;m using Python 2.7.x and OSx Sierra. And MySQL-Python depends on mysql-connector-c in OSx. Installing the connector is easier with brew.
-brew install mysql-connector-c  Like always, i use pip to install dependency of my application." />
-<meta property="og:url" content="https://ngurajeka.com/post/cannot-install-mysql-python-on-osx/" />
+brew install mysql-connector-cLike always, i use pip to install dependency of my application." />
+<meta property="og:url" content="/post/cannot-install-mysql-python-on-osx/" />
 <meta property="og:site_name" content="Cannot install MySQL Python on OSx" />
 <meta property="og:image" content="">
 <meta property="og:image:width" content="2048">
@@ -60,7 +60,8 @@ brew install mysql-connector-c  Like always, i use pip to install dependency of 
 
 
 
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+<link rel="stylesheet" href="/css/post.css" />
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous" />
 </head>
 <body class="dark-theme">
 <div class="container">
@@ -131,7 +132,7 @@ brew install mysql-connector-c  Like always, i use pip to install dependency of 
   <div class="content">
     
   <div class="post">
-    <h2 class="post-title"><a href="https://ngurajeka.com/post/cannot-install-mysql-python-on-osx/">Cannot install MySQL Python on OSx</a></h2>
+    <h2 class="post-title"><a href="/post/cannot-install-mysql-python-on-osx/">Cannot install MySQL Python on OSx</a></h2>
     <div class="post-meta">
       
         <span class="post-date">
@@ -150,43 +151,23 @@ brew install mysql-connector-c  Like always, i use pip to install dependency of 
 
     <div class="post-content">
       <p>Recently, i worked a lot using Python on creating a web application and web api.</p>
-
 <p>I use <strong>Django Web Framework</strong> and use <strong>MySQL</strong> for data storage.</p>
-
 <p>To use mysql in django we need to install a connector driver, i use python module called <code>MySQL-Python</code>.</p>
-
 <p>I&rsquo;m using <strong>Python 2.7.x</strong> and OSx Sierra. And <code>MySQL-Python</code> depends on <code>mysql-connector-c</code> in OSx. Installing the connector is easier with brew.</p>
-
 <pre><code>brew install mysql-connector-c
-</code></pre>
-
-<p>Like always, i use pip to install dependency of my application. And then i run the following command to install <code>MySQL-Python</code>.</p>
-
+</code></pre><p>Like always, i use pip to install dependency of my application. And then i run the following command to install <code>MySQL-Python</code>.</p>
 <pre><code>pip install MySQL-Python
-</code></pre>
-
-<p>Unfortunately, the installation failed and cause an error such:</p>
-
+</code></pre><p>Unfortunately, the installation failed and cause an error such:</p>
 <pre><code>IndexError: string index out of range
-</code></pre>
-
-<p>Then i check on google on how to solve the issue, and i found that the mysql_config hasn&rsquo;t load the mysql configuration (yet). I don&rsquo;t know if problem only exist on the latest mysql-connector-c package or the OSx version. Because i&rsquo;ve never encounter the same error before.</p>
-
+</code></pre><p>Then i check on google on how to solve the issue, and i found that the mysql_config hasn&rsquo;t load the mysql configuration (yet). I don&rsquo;t know if problem only exist on the latest mysql-connector-c package or the OSx version. Because i&rsquo;ve never encounter the same error before.</p>
 <p>To resolve the issue, we need to load or add mysql libs on mysql_config command</p>
-
-<pre><code class="language-sh">$ # editing mysql_config
-$ vi `which mysql_config`
-$ # or
+<div class="highlight"><pre class="chroma"><code class="language-sh" data-lang="sh">$ <span class="c1"># editing mysql_config</span>
+$ vi <span class="sb">`</span>which mysql_config<span class="sb">`</span>
+$ <span class="c1"># or</span>
 $ vi /usr/local/bin/mysql_config
-</code></pre>
-
-<p>On the line <code># Create Options</code>, we just need to add new line with:</p>
-
+</code></pre></div><p>On the line <code># Create Options</code>, we just need to add new line with:</p>
 <pre><code>libs=&quot;$libs -lmysqlclient -lssl -lcrypto&quot;
-</code></pre>
-
-<p>To make sure the mysqlclient has been loaded, we can try to reinstall the <code>MySQL-Python</code> module using pip.</p>
-
+</code></pre><p>To make sure the mysqlclient has been loaded, we can try to reinstall the <code>MySQL-Python</code> module using pip.</p>
 <p>ref: <a href="https://github.com/PyMySQL/mysqlclient-python/issues/169">https://github.com/PyMySQL/mysqlclient-python/issues/169</a></p>
 
     </div>
@@ -199,7 +180,7 @@ $ vi /usr/local/bin/mysql_config
         <div class="pagination__buttons">
           
             <span class="button previous">
-              <a href="https://ngurajeka.com/post/move-column-position-without-deleting/">
+              <a href="/post/move-column-position-without-deleting/">
                 <span class="button__icon">←</span>
                 <span class="button__text">Move Column Position Without Deleting (MySQL/MariaDB)</span>
               </a>
@@ -207,7 +188,7 @@ $ vi /usr/local/bin/mysql_config
           
           
             <span class="button next">
-              <a href="https://ngurajeka.com/post/zsh-no-clobber/">
+              <a href="/post/zsh-no-clobber/">
                 <span class="button__text">ZSH NoClobber: Keep File save from overwriting</span>
                 <span class="button__icon">→</span>
               </a>
@@ -239,15 +220,15 @@ $ vi /usr/local/bin/mysql_config
 </a>
 
       <div class="copyright">
-        <span>© 2019 Powered by <a href="https://gohugo.io">Hugo</a></span>
+        <span>© 2020 Powered by <a href="https://gohugo.io">Hugo</a></span>
         <span>Theme created by <a href="https://twitter.com/panr">panr</a></span>
       </div>
     
   </div>
 </footer>
 
-<script src="https://ngurajeka.com/assets/main.js"></script>
-<script src="https://ngurajeka.com/assets/prism.js"></script>
+<script src="/assets/main.js"></script>
+<script src="/assets/prism.js"></script>
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-77797160-1"></script>
 <script>
   window.dataLayer = window.dataLayer || [];

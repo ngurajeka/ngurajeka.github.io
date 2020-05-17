@@ -1,101 +1,79 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>The Official Site of ngurajeka</title>
-    <link>https://ngurajeka.com/</link>
+    <link>/</link>
     <description>Recent content on The Official Site of ngurajeka</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 18 Oct 2019 17:30:00 +0700</lastBuildDate>
+    <lastBuildDate>Mon, 20 May 2019 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://ngurajeka.com/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     
-    
-    <item>
-      <title>I hate meeting</title>
-      <link>https://ngurajeka.com/post/i-hate-meetings/</link>
-      <pubDate>Fri, 18 Oct 2019 17:30:00 +0700</pubDate>
-      
-      <guid>https://ngurajeka.com/post/i-hate-meetings/</guid>
-      <description>Meeting is boring, it is a productivity killer.
-I always hate any meetings with anyone without a clear context of what we are discussing.
-I always trying to reject or avoid any meetings if it&amp;rsquo;s not necessary, especially when i don&amp;rsquo;t have to be on the meeting but invited anyway.
-Sometimes, a discussion through meeting can be done by an email.</description>
-    </item>
     
     <item>
       <title>Introduction to Podcast ngurajeka</title>
-      <link>https://ngurajeka.com/podcast/introduction/</link>
+      <link>/podcast/introduction/</link>
       <pubDate>Wed, 22 May 2019 05:32:34 +0700</pubDate>
       
-      <guid>https://ngurajeka.com/podcast/introduction/</guid>
-      <description> </description>
+      <guid>/podcast/introduction/</guid>
+      <description></description>
     </item>
     
     <item>
-      <title>Screencast</title>
-      <link>https://ngurajeka.com/screencast/</link>
+      <title>Docker Screencast</title>
+      <link>/screencast/docker/</link>
       <pubDate>Mon, 20 May 2019 09:00:00 +0000</pubDate>
       
-      <guid>https://ngurajeka.com/screencast/</guid>
-      <description> Docker  Installation of Docker Your first docker container  </description>
+      <guid>/screencast/docker/</guid>
+      <description></description>
     </item>
     
     <item>
       <title>About</title>
-      <link>https://ngurajeka.com/about/</link>
+      <link>/about/</link>
       <pubDate>Mon, 20 May 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://ngurajeka.com/about/</guid>
+      <guid>/about/</guid>
       <description>My name is Ady Rahmat MA or you can call me ngurajeka. Currently i&amp;rsquo;m working as a CEO @Valutac. Full Time Superheroes. Living the day by Writing Codes, Travelling, Drinking Coffee, and Fighting SuperVillain.</description>
     </item>
     
     <item>
       <title>Instead of Blaming Find the Solution</title>
-      <link>https://ngurajeka.com/post/instead-of-blaming-find-the-solution/</link>
+      <link>/post/instead-of-blaming-find-the-solution/</link>
       <pubDate>Wed, 06 Feb 2019 18:04:35 +0700</pubDate>
       
-      <guid>https://ngurajeka.com/post/instead-of-blaming-find-the-solution/</guid>
+      <guid>/post/instead-of-blaming-find-the-solution/</guid>
       <description>One of the usual thing happens in an organization is that everytime someone make some mistake, they will be blamed. It&amp;rsquo;s not okay to focus on the blame instead of finding the solution of the problem.
 I see a lot of people are really like to staying on the situation of blaming other people just because they made a mistake. For me, i always tell my team that our organization is fail friendly.</description>
     </item>
     
     <item>
       <title>Trying Beta Feature in Pull Request Bitbucket</title>
-      <link>https://ngurajeka.com/post/trying-beta-feature-in-pull-request-bitbucket/</link>
+      <link>/post/trying-beta-feature-in-pull-request-bitbucket/</link>
       <pubDate>Mon, 04 Feb 2019 20:35:02 +0700</pubDate>
       
-      <guid>https://ngurajeka.com/post/trying-beta-feature-in-pull-request-bitbucket/</guid>
+      <guid>/post/trying-beta-feature-in-pull-request-bitbucket/</guid>
       <description>As a code reviewer, i use Github / BitBucket Pull Request a lot. And in a few months ago, we moved all of our codebase From GitHub into Bitbucket.
 Let me tell you our workflow, we have a single development branch and everyone use that as a starting point on developing new features or even fixing a bug. After that everyone will create a New Pull Request to be reviewed by me.</description>
     </item>
     
     <item>
       <title>I Am Not Looking for Money</title>
-      <link>https://ngurajeka.com/post/i-am-not-looking-for-money/</link>
+      <link>/post/i-am-not-looking-for-money/</link>
       <pubDate>Fri, 01 Feb 2019 20:55:13 +0700</pubDate>
       
-      <guid>https://ngurajeka.com/post/i-am-not-looking-for-money/</guid>
+      <guid>/post/i-am-not-looking-for-money/</guid>
       <description>I&amp;rsquo;m a workaholic based on http://www.bbc.com/capital/story/20161017-how-to-tell-if-youre-a-workaholic. Although i&amp;rsquo;m a workaholic, its never been my intention to work for money. I&amp;rsquo;m working cause i love doing it. I love to learn, solving problems, get new challenges, improve myself, and many more.
 I remember when i became a Teacher in my high school, i was very excited to be on the school everyday. It&amp;rsquo;s not because i need to be there, it&amp;rsquo;s simply because i wanted to be there.</description>
     </item>
     
     <item>
-      <title>How to Make Yourself Efficient</title>
-      <link>https://ngurajeka.com/post/how-to-make-yourself-efficient/</link>
-      <pubDate>Thu, 31 Jan 2019 17:21:52 +0700</pubDate>
-      
-      <guid>https://ngurajeka.com/post/how-to-make-yourself-efficient/</guid>
-      <description>This morning before i go to the office, i spent about an hour to watch a video from iTunes U on the course How to Start a Startup. The content is good, lots of Startup founders in this course are sharing their experience on how they are building products and startups. From Sam Altman, Paul Graham, and many more.
-I watched the video &amp;ldquo;Before the Startup&amp;rdquo; today by Paul Graham. He mention a lot about how to start a startup, and also about growths.</description>
-    </item>
-    
-    <item>
       <title>PKIX Validation Sengrid-Java</title>
-      <link>https://ngurajeka.com/post/pkix-validation-sengrid-java/</link>
+      <link>/post/pkix-validation-sengrid-java/</link>
       <pubDate>Wed, 30 Jan 2019 15:17:48 +0700</pubDate>
       
-      <guid>https://ngurajeka.com/post/pkix-validation-sengrid-java/</guid>
+      <guid>/post/pkix-validation-sengrid-java/</guid>
       <description>Have you ever use Sendgrid? Well, let me tell you my story using Sendgrid.
 In the last few days, my team were develop a notification system. The notification is an Email Service which is using Sendgrid as the Provider. We use the Sendgrid API to communicate with Sendgrid.
 Well, in one of our clients we started testing and let them try the Notification system. They are testing it with many scenarios.</description>
@@ -103,93 +81,93 @@ Well, in one of our clients we started testing and let them try the Notification
     
     <item>
       <title>Force Nginx to Disable Cache</title>
-      <link>https://ngurajeka.com/post/force-nginx-to-disable-cache/</link>
+      <link>/post/force-nginx-to-disable-cache/</link>
       <pubDate>Sat, 08 Sep 2018 10:44:49 +0700</pubDate>
       
-      <guid>https://ngurajeka.com/post/force-nginx-to-disable-cache/</guid>
+      <guid>/post/force-nginx-to-disable-cache/</guid>
       <description>Add add_header Cache-Control no-cache; in location that will be not cached
 Reference: https://serverfault.com/questions/549200/how-do-i-force-nginx-to-load-new-static-files</description>
     </item>
     
     <item>
       <title>Angularjs UI-Router With Condition</title>
-      <link>https://ngurajeka.com/post/angularjs-ui-router-with-condition/</link>
+      <link>/post/angularjs-ui-router-with-condition/</link>
       <pubDate>Tue, 19 Sep 2017 20:45:16 +0700</pubDate>
       
-      <guid>https://ngurajeka.com/post/angularjs-ui-router-with-condition/</guid>
-      <description>&amp;lt;a ui-sref=&amp;quot;{{condition ? &#39;.childState&#39; : &#39;.&#39;}}&amp;quot;&amp;gt; Conditional Link &amp;lt;/a&amp;gt;  </description>
+      <guid>/post/angularjs-ui-router-with-condition/</guid>
+      <description>&amp;lt;a ui-sref=&amp;#34;{{condition ? &amp;#39;.childState&amp;#39; : &amp;#39;.&amp;#39;}}&amp;#34;&amp;gt; Conditional Link &amp;lt;/a&amp;gt; </description>
     </item>
     
     <item>
       <title>Override Delete Method Django Rest Framework</title>
-      <link>https://ngurajeka.com/post/override-delete-method-django-rest-framework/</link>
+      <link>/post/override-delete-method-django-rest-framework/</link>
       <pubDate>Wed, 30 Aug 2017 16:11:17 +0700</pubDate>
       
-      <guid>https://ngurajeka.com/post/override-delete-method-django-rest-framework/</guid>
+      <guid>/post/override-delete-method-django-rest-framework/</guid>
       <description>https://stackoverflow.com/questions/32513388/how-would-i-override-the-perform-destroy-method-in-django-rest-framework
-from rest_framework import status,viewsets from rest_framework.response import Response from django.http import Http404 class ExampleDestoryViewset(viewset.ModelViewSet): def destroy(self, request, *args, **kwargs): try: instance = self.get_object() self.perform_destroy(instance) except Http404: pass return Response(status=status.HTTP_204_NO_CONTENT)  </description>
+from rest_framework import status,viewsetsfrom rest_framework.response import Responsefrom django.http import Http404class ExampleDestoryViewset(viewset.ModelViewSet):def destroy(self, request, *args, **kwargs):try:instance = self.get_object()self.perform_destroy(instance)except Http404:passreturn Response(status=status.HTTP_204_NO_CONTENT)</description>
     </item>
     
     <item>
       <title>Using Ack to Replace Text in Large File</title>
-      <link>https://ngurajeka.com/post/using-ack-to-replace-text-in-large-file/</link>
+      <link>/post/using-ack-to-replace-text-in-large-file/</link>
       <pubDate>Wed, 30 Aug 2017 14:24:51 +0700</pubDate>
       
-      <guid>https://ngurajeka.com/post/using-ack-to-replace-text-in-large-file/</guid>
+      <guid>/post/using-ack-to-replace-text-in-large-file/</guid>
       <description>https://stackoverflow.com/questions/4792561/how-to-do-search-replace-with-ack-in-vim
 ack -l &#39;pattern&#39; | xargs perl -pi -E &#39;s/pattern/replacement/g&#39;</description>
     </item>
     
     <item>
       <title>Using AngularJS filter inside ternary operation</title>
-      <link>https://ngurajeka.com/post/using-angularjs-filter-inside-ternary-operation/</link>
+      <link>/post/using-angularjs-filter-inside-ternary-operation/</link>
       <pubDate>Tue, 04 Jul 2017 18:25:31 +0800</pubDate>
       
-      <guid>https://ngurajeka.com/post/using-angularjs-filter-inside-ternary-operation/</guid>
+      <guid>/post/using-angularjs-filter-inside-ternary-operation/</guid>
       <description>{{ null != filter ? (field | filter) : field }}</description>
     </item>
     
     <item>
       <title>Move Column Position Without Deleting (MySQL/MariaDB)</title>
-      <link>https://ngurajeka.com/post/move-column-position-without-deleting/</link>
+      <link>/post/move-column-position-without-deleting/</link>
       <pubDate>Sat, 03 Jun 2017 22:12:36 +0700</pubDate>
       
-      <guid>https://ngurajeka.com/post/move-column-position-without-deleting/</guid>
-      <description>ALTER TABLE tablename MODIFY COLUMN TYPE(length) AFTER x;  </description>
+      <guid>/post/move-column-position-without-deleting/</guid>
+      <description>ALTER TABLE tablename MODIFY COLUMN TYPE(length) AFTER x; </description>
     </item>
     
     <item>
       <title>Cannot install MySQL Python on OSx</title>
-      <link>https://ngurajeka.com/post/cannot-install-mysql-python-on-osx/</link>
+      <link>/post/cannot-install-mysql-python-on-osx/</link>
       <pubDate>Tue, 23 May 2017 18:30:13 +0700</pubDate>
       
-      <guid>https://ngurajeka.com/post/cannot-install-mysql-python-on-osx/</guid>
+      <guid>/post/cannot-install-mysql-python-on-osx/</guid>
       <description>Recently, i worked a lot using Python on creating a web application and web api.
 I use Django Web Framework and use MySQL for data storage.
 To use mysql in django we need to install a connector driver, i use python module called MySQL-Python.
 I&amp;rsquo;m using Python 2.7.x and OSx Sierra. And MySQL-Python depends on mysql-connector-c in OSx. Installing the connector is easier with brew.
-brew install mysql-connector-c  Like always, i use pip to install dependency of my application.</description>
+brew install mysql-connector-cLike always, i use pip to install dependency of my application.</description>
     </item>
     
     <item>
       <title>ZSH NoClobber: Keep File save from overwriting</title>
-      <link>https://ngurajeka.com/post/zsh-no-clobber/</link>
+      <link>/post/zsh-no-clobber/</link>
       <pubDate>Tue, 09 May 2017 19:05:20 +0700</pubDate>
       
-      <guid>https://ngurajeka.com/post/zsh-no-clobber/</guid>
+      <guid>/post/zsh-no-clobber/</guid>
       <description>Last night, i build some script in sh to change an existing value from a few files.
 Let say, i have this command:
-echo &amp;quot;Hai&amp;quot; &amp;gt; outputfile.txt  If the file outputfile.txt isn&amp;rsquo;t already exist, the command will be executed successfully.
+echo &amp;quot;Hai&amp;quot; &amp;gt; outputfile.txtIf the file outputfile.txt isn&amp;rsquo;t already exist, the command will be executed successfully.
 But, if the outfile.txt was an existing file, we will got an error zsh: file exists: outputfile.txt. (zsh is my current shell)
 And of course, i got the very same error last night because i wanted to change a value from an existing files.</description>
     </item>
     
     <item>
       <title>Hugo is Great</title>
-      <link>https://ngurajeka.com/post/hugo-is-great/</link>
+      <link>/post/hugo-is-great/</link>
       <pubDate>Tue, 09 May 2017 11:25:04 +0700</pubDate>
       
-      <guid>https://ngurajeka.com/post/hugo-is-great/</guid>
+      <guid>/post/hugo-is-great/</guid>
       <description>Hugo is one of the best static web generator nowadays. Hugo built on top of Go and its easy to use, easy to deploy.
 If you&amp;rsquo;re not familiar with Static Web Generator, you can visit staticgen.com to see how many libraries or tools that exist for this such thing. And also you can google about Static Web Generator.
 This web is build using Hugo, and i used Jekyll before migrating to Hugo.</description>
@@ -197,21 +175,22 @@ This web is build using Hugo, and i used Jekyll before migrating to Hugo.</descr
     
     <item>
       <title>Ansible Git Module for Private Repository</title>
-      <link>https://ngurajeka.com/post/ansible-git-module-with-private-repository/</link>
+      <link>/post/ansible-git-module-with-private-repository/</link>
       <pubDate>Sun, 07 May 2017 21:38:11 +0700</pubDate>
       
-      <guid>https://ngurajeka.com/post/ansible-git-module-with-private-repository/</guid>
+      <guid>/post/ansible-git-module-with-private-repository/</guid>
       <description>Ansible is one of the best tool when it comes to deployment and any related things as well. I&amp;rsquo;m using ansible to deploy my website, and a few of my projects.
 Using git modules on Ansible is quite easy, for examples:
-- name: pull the latest code from git git: repo: https://github.com/username/repo.git dest: /path/to/remote/dir  With a simple configuration, the git module will clone or update the from repo to the destination directory.</description>
+- name:pullthelatestcodefromgitgit:repo:https://github.com/username/repo.gitdest:/path/to/remote/dirWith a simple configuration, the git module will clone or update the from repo to the destination directory. Thats if your repository is Public.
+But, if you&amp;rsquo;re trying to use the very same method for Private Repository, you&amp;rsquo;ll got an error that you have no rights to access the repository.</description>
     </item>
     
     <item>
       <title>Using Pre Commit on Golang Project</title>
-      <link>https://ngurajeka.com/post/using-pre-commit-on-golang-project/</link>
+      <link>/post/using-pre-commit-on-golang-project/</link>
       <pubDate>Tue, 28 Mar 2017 18:55:50 +0700</pubDate>
       
-      <guid>https://ngurajeka.com/post/using-pre-commit-on-golang-project/</guid>
+      <guid>/post/using-pre-commit-on-golang-project/</guid>
       <description>Are you using Git to manage your code? Have you ever heard of hooks? pre-commit hook?
 Git is one of many version control that exist nowadays. Git helps developer, programmer, engineer to manage their code, versioning their project, library or even just as file storage.
 Hook is an operation that could be executed before, or after our main operation.
@@ -220,10 +199,10 @@ So pre-commit is an operation that executed right before the commit processed on
     
     <item>
       <title>Not Found Handler Gorilla Mux</title>
-      <link>https://ngurajeka.com/post/not-found-handler-gorilla-mux/</link>
+      <link>/post/not-found-handler-gorilla-mux/</link>
       <pubDate>Sat, 18 Mar 2017 20:19:41 +0700</pubDate>
       
-      <guid>https://ngurajeka.com/post/not-found-handler-gorilla-mux/</guid>
+      <guid>/post/not-found-handler-gorilla-mux/</guid>
       <description>Recently i used Gorilla Mux as my http router in Go. For your information, gorilla mux is one of the popular http router in Go Programming Language.
 It happens when i&amp;rsquo;m trying to write a new microservice in go, and i&amp;rsquo;m ended up using go-kit. Go-Kit is a great tools when it comes to Microservices, especially in Go.
 The microservices is still using REST as the communication mechanism, thats why the service itself served using gorilla.</description>
@@ -231,10 +210,10 @@ The microservices is still using REST as the communication mechanism, thats why 
     
     <item>
       <title>I Am In Love With React</title>
-      <link>https://ngurajeka.com/post/i-am-in-love-with-react/</link>
+      <link>/post/i-am-in-love-with-react/</link>
       <pubDate>Sat, 22 Oct 2016 21:57:22 +0700</pubDate>
       
-      <guid>https://ngurajeka.com/post/i-am-in-love-with-react/</guid>
+      <guid>/post/i-am-in-love-with-react/</guid>
       <description>I&amp;rsquo;m In Love.
 Few days ago i started to use ReactJS more frequently to write a client side of an application.
 I&amp;rsquo;ve been known ReactJS since years ago, but i&amp;rsquo;ve never been using it before to build some application.
@@ -244,41 +223,41 @@ I hate the Frontend kind of thing, hate the frameworks, hate all of the things a
     
     <item>
       <title>Set Expires To Epoch Time In Go Http Response</title>
-      <link>https://ngurajeka.com/post/set-expires-to-epoch-in-go/</link>
+      <link>/post/set-expires-to-epoch-in-go/</link>
       <pubDate>Wed, 12 Oct 2016 20:41:00 +0000</pubDate>
       
-      <guid>https://ngurajeka.com/post/set-expires-to-epoch-in-go/</guid>
+      <guid>/post/set-expires-to-epoch-in-go/</guid>
       <description>Today i was having a problem with my web api in Go. A lot of my API&amp;rsquo;s are cached by the browser because the Expires time of the response was automatically set to 4 days than the first request.
 The expires time was a header information from the response, if you are not familiar with this. You can use
-curl -XGET -i http://url/api/endpoint  Or you can use the network inspector on modern web browser such as Google Chrome or Firefox and other.</description>
+curl -XGET -i http://url/api/endpointOr you can use the network inspector on modern web browser such as Google Chrome or Firefox and other.</description>
     </item>
     
     <item>
       <title>How to Check if Struct Has a Method or Implement a Method</title>
-      <link>https://ngurajeka.com/post/how-to-check-struct-implement-or-has-method/</link>
+      <link>/post/how-to-check-struct-implement-or-has-method/</link>
       <pubDate>Wed, 05 Oct 2016 10:16:00 +0000</pubDate>
       
-      <guid>https://ngurajeka.com/post/how-to-check-struct-implement-or-has-method/</guid>
+      <guid>/post/how-to-check-struct-implement-or-has-method/</guid>
       <description>In Go Programming Language, we will use interface very often. And sometimes, there are some struct that implemented more than one interface.
 An example:
-type Model interface { PrimaryKey() string } type SecretModel interface { GetUnexportedField() []string } type exModel struct { ID uint Name string CreatedAt time.Time } func (exModel) GetPrimaryKey() string { return &amp;quot;ID&amp;quot; } func (exModel) GetUnexportedField() []string { return []string{&amp;quot;CreatedAt&amp;quot;} } type otherModel struct { ID uint Name string Description string CreatedAt time.</description>
+type Model interface {PrimaryKey() string}type SecretModel interface {GetUnexportedField() []string}type exModel struct {ID uintName stringCreatedAt time.Time}func (exModel) GetPrimaryKey() string {return &amp;quot;ID&amp;quot;}func (exModel) GetUnexportedField() []string {return []string{&amp;quot;CreatedAt&amp;quot;}}type otherModel struct {ID uintName stringDescription stringCreatedAt time.</description>
     </item>
     
     <item>
       <title>300</title>
-      <link>https://ngurajeka.com/post/300/</link>
+      <link>/post/300/</link>
       <pubDate>Sat, 01 Oct 2016 20:43:00 +0000</pubDate>
       
-      <guid>https://ngurajeka.com/post/300/</guid>
+      <guid>/post/300/</guid>
       <description>http://www.python.or.id/2016/10/300-calon-programmer-dari-tangerang.html</description>
     </item>
     
     <item>
       <title>ReMap CtrlP in MacVim</title>
-      <link>https://ngurajeka.com/post/remap-ctrlp-in-macvim/</link>
+      <link>/post/remap-ctrlp-in-macvim/</link>
       <pubDate>Sat, 01 Oct 2016 20:43:00 +0000</pubDate>
       
-      <guid>https://ngurajeka.com/post/remap-ctrlp-in-macvim/</guid>
+      <guid>/post/remap-ctrlp-in-macvim/</guid>
       <description>Are you using MacVim and using CtrlP plugin?
 Have you ever found that pressing ctrl+p is not easy on mac?
 For me, it is faster when pressing cmd+p instead of pressing ctrl+p.
@@ -288,10 +267,10 @@ But, if you are using MacVim replacing the key to cmd+p is not as easy as it loo
     
     <item>
       <title>flask.ext.script Deprecated</title>
-      <link>https://ngurajeka.com/post/flask.ext.script-deprecated/</link>
+      <link>/post/flask.ext.script-deprecated/</link>
       <pubDate>Fri, 16 Sep 2016 21:03:00 +0000</pubDate>
       
-      <guid>https://ngurajeka.com/post/flask.ext.script-deprecated/</guid>
+      <guid>/post/flask.ext.script-deprecated/</guid>
       <description>Flask is one of the best Micro Framework that i&amp;rsquo;ve been using. It is based on Python, and it&amp;rsquo;s been a while since i was not using Python in Web Development.
 Tonight, i started to create some small web application using Flask.
 The recipe: - Flask (the Framework) - SQLAlchemy (ORM) - Flask Script (Manager) - Flask Migrate (Migration Tool)
@@ -300,10 +279,10 @@ I use this small boilerplate https://github.com/BugisDev/flask-app to start my d
     
     <item>
       <title>Removing File or Directory from Git Index</title>
-      <link>https://ngurajeka.com/post/removing-file-directory-from-git-index/</link>
+      <link>/post/removing-file-directory-from-git-index/</link>
       <pubDate>Wed, 24 Aug 2016 10:19:00 +0000</pubDate>
       
-      <guid>https://ngurajeka.com/post/removing-file-directory-from-git-index/</guid>
+      <guid>/post/removing-file-directory-from-git-index/</guid>
       <description>Have you ever found a problem when you ignoring files or directory on git, but it is still saying it&amp;rsquo;s modified? Well, i am. A lot.
 It is usually because the file or directory has been modified before and has been indexed on the git tree.
 What we need to do is removing it from the index. But,
@@ -312,34 +291,34 @@ Using git rm won&amp;rsquo;t only remove it from the index but delete it too.</d
     
     <item>
       <title>Playing With Array on Javascript</title>
-      <link>https://ngurajeka.com/post/playing-with-array-javascript/</link>
+      <link>/post/playing-with-array-javascript/</link>
       <pubDate>Sun, 14 Aug 2016 18:24:00 +0000</pubDate>
       
-      <guid>https://ngurajeka.com/post/playing-with-array-javascript/</guid>
+      <guid>/post/playing-with-array-javascript/</guid>
       <description>I&amp;rsquo;m not a FrontEnd Web Developer. So it&amp;rsquo;s kind of a note for me.
 I have this simple list, or array.
-var arr = [23, 12, 1992];  I always use list or array to store data, and sometimes i need to check if some value is already exists on the list. Sometimes i need to check if an index has already exists on the list.
+var arr = [23, 12, 1992]; I always use list or array to store data, and sometimes i need to check if some value is already exists on the list. Sometimes i need to check if an index has already exists on the list.
 How to check if some value has already exists?</description>
     </item>
     
     <item>
       <title>Parsing Time from JSON String in GO</title>
-      <link>https://ngurajeka.com/post/parsing-time-from-json-string-go/</link>
+      <link>/post/parsing-time-from-json-string-go/</link>
       <pubDate>Tue, 31 May 2016 17:53:00 +0000</pubDate>
       
-      <guid>https://ngurajeka.com/post/parsing-time-from-json-string-go/</guid>
+      <guid>/post/parsing-time-from-json-string-go/</guid>
       <description>Parsing date or time from a JSON String in Go is not as easy it is. Recently i found this problem when i used gin.Context.BindJSON() function to binding a json raw body from client into a struct of mine.
 For any other data types, i could easily add &amp;ldquo;string&amp;rdquo; on the struct tags. But it does not seem like to be working on time.Time types.
 Example:
-type MyStruct struct { Amount float64 `json:&amp;quot;amount,string&amp;quot;` }  Above type struct will be working smoothly, but for this:</description>
+type MyStruct struct {Amount float64 `json:&amp;quot;amount,string&amp;quot;`}Above type struct will be working smoothly, but for this:</description>
     </item>
     
     <item>
       <title>Run 10KM Per Year</title>
-      <link>https://ngurajeka.com/post/10km-per-year/</link>
+      <link>/post/10km-per-year/</link>
       <pubDate>Sun, 22 May 2016 21:07:00 +0000</pubDate>
       
-      <guid>https://ngurajeka.com/post/10km-per-year/</guid>
+      <guid>/post/10km-per-year/</guid>
       <description>10 April 2016. The day that my father died.
 I have this promise to my father when he died. I&amp;rsquo;m gonna Run 10KM per Year on April.
 I miss my father, so much.
@@ -349,10 +328,10 @@ He always want me to become a Police Officer just like him.</description>
     
     <item>
       <title>cmus - C* Music Player</title>
-      <link>https://ngurajeka.com/post/cmus-music-player/</link>
+      <link>/post/cmus-music-player/</link>
       <pubDate>Tue, 17 May 2016 20:49:00 +0000</pubDate>
       
-      <guid>https://ngurajeka.com/post/cmus-music-player/</guid>
+      <guid>/post/cmus-music-player/</guid>
       <description>Music is like a part of me. Music helps me think, especially when i&amp;rsquo;m writing some codes.
 cmus - C* Music Player is an app that i used to play my favorite song. It is simple, vim-like keybind.
 This is why i used cmus as my music player:
@@ -361,52 +340,52 @@ This is why i used cmus as my music player:
     
     <item>
       <title>Replacing Flask with Hugo</title>
-      <link>https://ngurajeka.com/post/migrate-to-hugo/</link>
+      <link>/post/migrate-to-hugo/</link>
       <pubDate>Mon, 16 May 2016 19:47:00 +0000</pubDate>
       
-      <guid>https://ngurajeka.com/post/migrate-to-hugo/</guid>
+      <guid>/post/migrate-to-hugo/</guid>
       <description>Since a few months ago my own website become silent. It&amp;rsquo;s because i don&amp;rsquo;t have the time to write some new articles. Then a few days ago i started to think about &amp;ldquo;I want to replace my website using Go, i&amp;rsquo;m not writing a Python Code anymore&amp;rdquo;.
 Well, it&amp;rsquo;s been more than six months i&amp;rsquo;ve been learning and using Go Programming Language. I even start to migrate all of my works from Python or PHP to Go.</description>
     </item>
     
     <item>
       <title>Membuat Web Sederhana menggunakan PHP, Twig Template Engine dan MySQL: Part 4</title>
-      <link>https://ngurajeka.com/post/membuat-web-sederhana-menggunakan-php-twig-template-engine-dan-mysql-part-4/</link>
+      <link>/post/membuat-web-sederhana-menggunakan-php-twig-template-engine-dan-mysql-part-4/</link>
       <pubDate>Thu, 19 Nov 2015 00:00:00 +0000</pubDate>
       
-      <guid>https://ngurajeka.com/post/membuat-web-sederhana-menggunakan-php-twig-template-engine-dan-mysql-part-4/</guid>
+      <guid>/post/membuat-web-sederhana-menggunakan-php-twig-template-engine-dan-mysql-part-4/</guid>
       <description>Menyiapkan Basis Data (MySQL Database) MySQL merupakan basis data yang bersifat relasional dan juga salah satu basis data yang cukup banyak digunakan. Dan pada web sederhana ini kita juga akan menggunakan MySQL.
 Yang akan menjadi pertanyaan adalah, untuk apa kita membutuhkan basis data MySQL pada web sederhana kita ini? Sebelumnya, tumpukan data daftar gambar yang kita buat masih berada dalam kode PHP kita. Bayangkan jika suatu saat kita membutuhkan untuk merubah atau bahkan menambah daftar gambar tersebut?</description>
     </item>
     
     <item>
       <title>Membuat Web Sederhana menggunakan PHP, Twig Template Engine dan MySQL: Part 3</title>
-      <link>https://ngurajeka.com/post/membuat-web-sederhana-menggunakan-php-twig-template-engine-dan-mysql-part-3/</link>
+      <link>/post/membuat-web-sederhana-menggunakan-php-twig-template-engine-dan-mysql-part-3/</link>
       <pubDate>Wed, 18 Nov 2015 00:00:00 +0000</pubDate>
       
-      <guid>https://ngurajeka.com/post/membuat-web-sederhana-menggunakan-php-twig-template-engine-dan-mysql-part-3/</guid>
+      <guid>/post/membuat-web-sederhana-menggunakan-php-twig-template-engine-dan-mysql-part-3/</guid>
       <description>Menggunakan Bootstrap Bootstrap adalah salah satu CSS Framework yang cukup populer dan banyak digunakan untuk pengembangan Web. Bootstrap adalah pustaka yang dimana pustaka ini telah memiliki banyak sekali komponen-komponen yang dapat kita gunakan kembali dengan sangat mudah.
 Cara menggunakan Bootstrap didalam web sederhana kita ini terbilang cukup mudah, hal yang perlu dilakukan hanyalah memanggil file css dan js dari pustaka Bootstrap kedalam file-file html kita.
- Menambahkan link css kita ke head.</description>
+  Menambahkan link css kita ke head.</description>
     </item>
     
     <item>
       <title>Membuat Web Sederhana menggunakan PHP, Twig Template Engine dan MySQL: Part 2</title>
-      <link>https://ngurajeka.com/post/membuat-web-sederhana-menggunakan-php-twig-template-engine-dan-mysql-part-2/</link>
+      <link>/post/membuat-web-sederhana-menggunakan-php-twig-template-engine-dan-mysql-part-2/</link>
       <pubDate>Tue, 17 Nov 2015 00:00:00 +0000</pubDate>
       
-      <guid>https://ngurajeka.com/post/membuat-web-sederhana-menggunakan-php-twig-template-engine-dan-mysql-part-2/</guid>
+      <guid>/post/membuat-web-sederhana-menggunakan-php-twig-template-engine-dan-mysql-part-2/</guid>
       <description>Template Engine Template Engine adalah salah satu alat bantu yang digunakan untuk memisahkan pengerjaan antara logic dan tatap muka. Dalam hal ini, Template Engine yang akan kita gunakan adalah Twig.
 Twig merupakan salah satu Template Engine untuk Bahasa Pemrograman PHP. Pada dasarnya, menggunakan PHP terkadang akan terasa seperti menggunakan sebuah Template Engine. Dan banyak yang mengatakan bahwa PHP sendiri awalnya dibuat seperti sebuah template engine. Contoh:
-&amp;lt;h1&amp;gt;&amp;lt;?php echo $title; ?</description>
+&amp;lt;h1&amp;gt;&amp;lt;?php echo $title; ?&amp;gt;&amp;lt;/h1&amp;gt; &amp;lt;p&amp;gt;&amp;lt;?</description>
     </item>
     
     <item>
       <title>Membuat Web Sederhana menggunakan PHP, Twig Template Engine dan MySQL</title>
-      <link>https://ngurajeka.com/post/membuat-web-sederhana-menggunakan-php-twig-template-engine-dan-mysql/</link>
+      <link>/post/membuat-web-sederhana-menggunakan-php-twig-template-engine-dan-mysql/</link>
       <pubDate>Mon, 16 Nov 2015 00:00:00 +0000</pubDate>
       
-      <guid>https://ngurajeka.com/post/membuat-web-sederhana-menggunakan-php-twig-template-engine-dan-mysql/</guid>
+      <guid>/post/membuat-web-sederhana-menggunakan-php-twig-template-engine-dan-mysql/</guid>
       <description>Ringkasan Membuat web sederhana menggunakan Bahasa Pemrograman PHP, Twig Template Engine beserta MySQL sebagai basis penyimpanan data.
 Persyaratan dan Persiapan Untuk dapat mengikuti tulisan ini ada hal-hal yang perlu untuk dipersiapkan dan diketahui:
  Pastikan bahwa Interpreter PHP telah terinstall di mesin (Laptop/PC) anda. Pastikan bahwa MySQL-Server / MariaDB-Server telah terinstall di mesin anda. Kita hanya akan menggunakan PHP Builtin-Web Server untuk menjalankan web yang akan kita buat dari tulisan ini.</description>
@@ -414,10 +393,10 @@ Persyaratan dan Persiapan Untuk dapat mengikuti tulisan ini ada hal-hal yang per
     
     <item>
       <title>MeetUp Python-ID</title>
-      <link>https://ngurajeka.com/post/meetup-pythonid-april/</link>
+      <link>/post/meetup-pythonid-april/</link>
       <pubDate>Sat, 25 Apr 2015 21:00:00 +0000</pubDate>
       
-      <guid>https://ngurajeka.com/post/meetup-pythonid-april/</guid>
+      <guid>/post/meetup-pythonid-april/</guid>
       <description>25 April 2015. Hari ini saya memiliki pengalaman yang cukup menarik. Pengalaman ini saya dapatkan sewaktu mengikuti acara “MeetUp PythonID” yang dilaksanakan di kantor Detik.com
 Pertemuan kali ini adalah ajang sharing tentang Python. Acara sharingnya masih seputaran basic atau pengenalan Python. Jadi bagi saya tidaklah begitu sulit untuk mengikuti materinya. Kemudian acaranya ditutup dengan sharing dari beberapa orang yang sudah bekerja menggunakan Python atau bisa dikatakan “sesepuh” dari PythonID.
 Namun bukan hal tersebut yang membuat hari ini buat saya terasa “wah”.</description>
@@ -425,11 +404,11 @@ Namun bukan hal tersebut yang membuat hari ini buat saya terasa “wah”.</desc
     
     <item>
       <title>End to End Testing - Podcast ngurajeka</title>
-      <link>https://ngurajeka.com/podcast/end-to-end-testing/</link>
+      <link>/podcast/end-to-end-testing/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://ngurajeka.com/podcast/end-to-end-testing/</guid>
-      <description> </description>
+      <guid>/podcast/end-to-end-testing/</guid>
+      <description></description>
     </item>
     
   </channel>

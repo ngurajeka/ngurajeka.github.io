@@ -11,17 +11,17 @@ In the last few days, my team were develop a notification system. The notificati
 Well, in one of our clients we started testing and let them try the Notification system. They are testing it with many scenarios."/>
 <meta name="keywords" content=""/>
 <meta name="robots" content="noodp"/>
-<link rel="canonical" href="https://ngurajeka.com/post/pkix-validation-sengrid-java/" />
+<link rel="canonical" href="/post/pkix-validation-sengrid-java/" />
 
 
-<link rel="stylesheet" href="https://ngurajeka.com/assets/style.css">
+<link rel="stylesheet" href="/assets/style.css">
 
 
-<link rel="stylesheet" href="https://ngurajeka.com/style.css">
+<link rel="stylesheet" href="/style.css">
 
 
-<link rel="apple-touch-icon-precomposed" sizes="144x144" href="https://ngurajeka.com/img/apple-touch-icon-144-precomposed.png">
-<link rel="shortcut icon" href="https://ngurajeka.com/img/favicon.png">
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="/img/apple-touch-icon-144-precomposed.png">
+<link rel="shortcut icon" href="/img/favicon.png">
 
 
 <meta name="twitter:card" content="summary" />
@@ -29,7 +29,7 @@ Well, in one of our clients we started testing and let them try the Notification
 <meta name="twitter:description" content="Have you ever use Sendgrid? Well, let me tell you my story using Sendgrid.
 In the last few days, my team were develop a notification system. The notification is an Email Service which is using Sendgrid as the Provider. We use the Sendgrid API to communicate with Sendgrid.
 Well, in one of our clients we started testing and let them try the Notification system. They are testing it with many scenarios." />
-<meta name="twitter:site" content="https://ngurajeka.com/" />
+<meta name="twitter:site" content="/" />
 <meta name="twitter:creator" content="" />
 <meta name="twitter:image" content="">
 
@@ -40,7 +40,7 @@ Well, in one of our clients we started testing and let them try the Notification
 <meta property="og:description" content="Have you ever use Sendgrid? Well, let me tell you my story using Sendgrid.
 In the last few days, my team were develop a notification system. The notification is an Email Service which is using Sendgrid as the Provider. We use the Sendgrid API to communicate with Sendgrid.
 Well, in one of our clients we started testing and let them try the Notification system. They are testing it with many scenarios." />
-<meta property="og:url" content="https://ngurajeka.com/post/pkix-validation-sengrid-java/" />
+<meta property="og:url" content="/post/pkix-validation-sengrid-java/" />
 <meta property="og:site_name" content="PKIX Validation Sengrid-Java" />
 <meta property="og:image" content="">
 <meta property="og:image:width" content="2048">
@@ -54,7 +54,8 @@ Well, in one of our clients we started testing and let them try the Notification
 
 
 
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+<link rel="stylesheet" href="/css/post.css" />
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous" />
 </head>
 <body class="dark-theme">
 <div class="container">
@@ -125,7 +126,7 @@ Well, in one of our clients we started testing and let them try the Notification
   <div class="content">
     
   <div class="post">
-    <h2 class="post-title"><a href="https://ngurajeka.com/post/pkix-validation-sengrid-java/">PKIX Validation Sengrid-Java</a></h2>
+    <h2 class="post-title"><a href="/post/pkix-validation-sengrid-java/">PKIX Validation Sengrid-Java</a></h2>
     <div class="post-meta">
       
         <span class="post-date">
@@ -144,45 +145,30 @@ Well, in one of our clients we started testing and let them try the Notification
 
     <div class="post-content">
       <p>Have you ever use Sendgrid? Well, let me tell you my story using Sendgrid.</p>
-
 <p>In the last few days, my team were develop a notification system. The notification is an Email Service which is using Sendgrid as the Provider. We use the Sendgrid API to communicate with Sendgrid.</p>
-
 <p>Well, in one of our clients we started testing and let them try the Notification system. They are testing it with many scenarios. Lots of it. One of them is by switching dates backwards and forwards, and this is where it&rsquo;s gone wrong.</p>
-
 <p>Spesifically, their moving the system dates into May 15 and when they are trying to send the email it&rsquo;s not processed by system. And we got an error saying &ldquo;PKIX path validation failed: java.security.check.CErtPathValidatorException: validity check failed&rdquo;.</p>
-
 <p>Well, at first we though because our server is isolated and has limited access to the outside world then maybe it&rsquo;s the problem. Well, we were wrong. LOL!</p>
-
 <p>Then, we try to send an email from our cloud server. It&rsquo;s successfull, and you know what? This makes the debugging process a lot more harder. We started to blame the server. LOL! And spend a few days just to find which one is the root-cause.</p>
-
 <p>At the time, we didn&rsquo;t really sure what we miss. We already move the system dates, backwards and forwards before and it&rsquo;s not a problem. So why its happening right know?</p>
-
 <p>Last night, i have a little chat with our clients about the problem. And started to focusing the finding on the server configuration or the infrastructure. It might be a difference, between servers that we are using for testing.</p>
-
 <p>So in the morning, i tried to create a simple jar application just to send an email using Sendgrid-Java library. I called the project, tehpucuk. Hahaha</p>
-
 <p>I tried on 4 machine:</p>
-
 <ul>
 <li>Server 1 using system date : May 15 -&gt; failed to send -&gt; PKIX validation error</li>
 <li>Server 2 using system date : March 28 -&gt; failed to send -&gt; PKIX validation error</li>
 <li>Server 3 (cloud) using system date : January 25 -&gt; succeed</li>
 <li>Server 4 which is my local machine : January 30 -&gt; succeed</li>
 </ul>
-
 <p>On the server 1 and server 2, it is displaying the stacktrace and we managed to find the root-casue immidiately, and try new case:</p>
-
 <ul>
 <li>Server 1 using system date : May 15 -&gt; failed to send -&gt; PKIX validation error</li>
 <li>Server 2 using system date : January 15 (random pick) -&gt;  succeed</li>
 <li>Server 3 (cloud) using system date : May 15 -&gt; failed to send -&gt; PKIX validation error</li>
 <li>Server 4 which is my local machine : January 30 -&gt; succeed</li>
 </ul>
-
 <p>From above cases, we decided that the problem is because the system dates is greater than the expiry date of the SSL Certificate of Sendgrid. The SSL Certificate will be expired soon at 28 February 2019. LOL</p>
-
 <p>If you are using Sendgrid and have the same problem when testing the same case, hope above explanation will help you.</p>
-
 <p>Happy Hacking!</p>
 
     </div>
@@ -195,15 +181,15 @@ Well, in one of our clients we started testing and let them try the Notification
         <div class="pagination__buttons">
           
             <span class="button previous">
-              <a href="https://ngurajeka.com/post/how-to-make-yourself-efficient/">
+              <a href="/post/i-am-not-looking-for-money/">
                 <span class="button__icon">←</span>
-                <span class="button__text">How to Make Yourself Efficient</span>
+                <span class="button__text">I Am Not Looking for Money</span>
               </a>
             </span>
           
           
             <span class="button next">
-              <a href="https://ngurajeka.com/post/force-nginx-to-disable-cache/">
+              <a href="/post/force-nginx-to-disable-cache/">
                 <span class="button__text">Force Nginx to Disable Cache</span>
                 <span class="button__icon">→</span>
               </a>
@@ -235,15 +221,15 @@ Well, in one of our clients we started testing and let them try the Notification
 </a>
 
       <div class="copyright">
-        <span>© 2019 Powered by <a href="https://gohugo.io">Hugo</a></span>
+        <span>© 2020 Powered by <a href="https://gohugo.io">Hugo</a></span>
         <span>Theme created by <a href="https://twitter.com/panr">panr</a></span>
       </div>
     
   </div>
 </footer>
 
-<script src="https://ngurajeka.com/assets/main.js"></script>
-<script src="https://ngurajeka.com/assets/prism.js"></script>
+<script src="/assets/main.js"></script>
+<script src="/assets/prism.js"></script>
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-77797160-1"></script>
 <script>
   window.dataLayer = window.dataLayer || [];

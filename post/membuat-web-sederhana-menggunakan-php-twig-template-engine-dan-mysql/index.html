@@ -11,17 +11,17 @@ Persyaratan dan Persiapan Untuk dapat mengikuti tulisan ini ada hal-hal yang per
  Pastikan bahwa Interpreter PHP telah terinstall di mesin (Laptop/PC) anda. Pastikan bahwa MySQL-Server / MariaDB-Server telah terinstall di mesin anda. Kita hanya akan menggunakan PHP Builtin-Web Server untuk menjalankan web yang akan kita buat dari tulisan ini."/>
 <meta name="keywords" content=""/>
 <meta name="robots" content="noodp"/>
-<link rel="canonical" href="https://ngurajeka.com/post/membuat-web-sederhana-menggunakan-php-twig-template-engine-dan-mysql/" />
+<link rel="canonical" href="/post/membuat-web-sederhana-menggunakan-php-twig-template-engine-dan-mysql/" />
 
 
-<link rel="stylesheet" href="https://ngurajeka.com/assets/style.css">
+<link rel="stylesheet" href="/assets/style.css">
 
 
-<link rel="stylesheet" href="https://ngurajeka.com/style.css">
+<link rel="stylesheet" href="/style.css">
 
 
-<link rel="apple-touch-icon-precomposed" sizes="144x144" href="https://ngurajeka.com/img/apple-touch-icon-144-precomposed.png">
-<link rel="shortcut icon" href="https://ngurajeka.com/img/favicon.png">
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="/img/apple-touch-icon-144-precomposed.png">
+<link rel="shortcut icon" href="/img/favicon.png">
 
 
 <meta name="twitter:card" content="summary" />
@@ -29,7 +29,7 @@ Persyaratan dan Persiapan Untuk dapat mengikuti tulisan ini ada hal-hal yang per
 <meta name="twitter:description" content="Ringkasan Membuat web sederhana menggunakan Bahasa Pemrograman PHP, Twig Template Engine beserta MySQL sebagai basis penyimpanan data.
 Persyaratan dan Persiapan Untuk dapat mengikuti tulisan ini ada hal-hal yang perlu untuk dipersiapkan dan diketahui:
  Pastikan bahwa Interpreter PHP telah terinstall di mesin (Laptop/PC) anda. Pastikan bahwa MySQL-Server / MariaDB-Server telah terinstall di mesin anda. Kita hanya akan menggunakan PHP Builtin-Web Server untuk menjalankan web yang akan kita buat dari tulisan ini." />
-<meta name="twitter:site" content="https://ngurajeka.com/" />
+<meta name="twitter:site" content="/" />
 <meta name="twitter:creator" content="" />
 <meta name="twitter:image" content="">
 
@@ -40,7 +40,7 @@ Persyaratan dan Persiapan Untuk dapat mengikuti tulisan ini ada hal-hal yang per
 <meta property="og:description" content="Ringkasan Membuat web sederhana menggunakan Bahasa Pemrograman PHP, Twig Template Engine beserta MySQL sebagai basis penyimpanan data.
 Persyaratan dan Persiapan Untuk dapat mengikuti tulisan ini ada hal-hal yang perlu untuk dipersiapkan dan diketahui:
  Pastikan bahwa Interpreter PHP telah terinstall di mesin (Laptop/PC) anda. Pastikan bahwa MySQL-Server / MariaDB-Server telah terinstall di mesin anda. Kita hanya akan menggunakan PHP Builtin-Web Server untuk menjalankan web yang akan kita buat dari tulisan ini." />
-<meta property="og:url" content="https://ngurajeka.com/post/membuat-web-sederhana-menggunakan-php-twig-template-engine-dan-mysql/" />
+<meta property="og:url" content="/post/membuat-web-sederhana-menggunakan-php-twig-template-engine-dan-mysql/" />
 <meta property="og:site_name" content="Membuat Web Sederhana menggunakan PHP, Twig Template Engine dan MySQL" />
 <meta property="og:image" content="">
 <meta property="og:image:width" content="2048">
@@ -54,7 +54,8 @@ Persyaratan dan Persiapan Untuk dapat mengikuti tulisan ini ada hal-hal yang per
 
 
 
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+<link rel="stylesheet" href="/css/post.css" />
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous" />
 </head>
 <body class="dark-theme">
 <div class="container">
@@ -125,7 +126,7 @@ Persyaratan dan Persiapan Untuk dapat mengikuti tulisan ini ada hal-hal yang per
   <div class="content">
     
   <div class="post">
-    <h2 class="post-title"><a href="https://ngurajeka.com/post/membuat-web-sederhana-menggunakan-php-twig-template-engine-dan-mysql/">Membuat Web Sederhana menggunakan PHP, Twig Template Engine dan MySQL</a></h2>
+    <h2 class="post-title"><a href="/post/membuat-web-sederhana-menggunakan-php-twig-template-engine-dan-mysql/">Membuat Web Sederhana menggunakan PHP, Twig Template Engine dan MySQL</a></h2>
     <div class="post-meta">
       
         <span class="post-date">
@@ -143,16 +144,10 @@ Persyaratan dan Persiapan Untuk dapat mengikuti tulisan ini ada hal-hal yang per
     
 
     <div class="post-content">
-      
-
-<h1 id="ringkasan">Ringkasan</h1>
-
+      <h1 id="ringkasan">Ringkasan</h1>
 <p>Membuat web sederhana menggunakan Bahasa Pemrograman PHP, Twig Template Engine beserta MySQL sebagai basis penyimpanan data.</p>
-
 <h1 id="persyaratan-dan-persiapan">Persyaratan dan Persiapan</h1>
-
 <p>Untuk dapat mengikuti tulisan ini ada hal-hal yang perlu untuk dipersiapkan dan diketahui:</p>
-
 <ul>
 <li>Pastikan bahwa Interpreter PHP telah terinstall di mesin (Laptop/PC) anda.</li>
 <li>Pastikan bahwa MySQL-Server / MariaDB-Server telah terinstall di mesin anda.</li>
@@ -160,67 +155,42 @@ Persyaratan dan Persiapan Untuk dapat mengikuti tulisan ini ada hal-hal yang per
 <li>Akan sangat baik jika anda mengetahui perintah-perintah dasar di Antarmuka Baris Perintah (CLI). Seperti cd, mkdir, touch, dan rm atau bahkan perintah-perintah lainnya. Ini akan sangat mendukung anda dalam mengikuti tulisan ini.</li>
 <li>Tulisan ini lebih ditujukan untuk pengguna OSx atau GNU/Linux. Namun, pengguna Sistem Operasi lain pun masih bisa ikut membaca atau bahkan mencobanya.</li>
 </ul>
-
 <h1 id="membuat-dan-menyusun-struktural-projek">Membuat dan menyusun struktural projek</h1>
-
 <p>Hal yang akan kita lakukan adalah membuat dan menyusun struktural direktori dan file-file yang akan kita buat atau gunakan dalam membangun web sederhana ini. Seperti file-file php, template, static file (css/js) dan lain-lain.</p>
-
 <p>Memastikan bahwa kita berada di <strong>$HOME</strong>. Ada beberapa cara yang dapat digunakan, yaitu dengan berpindah secara langsung, atau mengecek apakah kita telah berada pada pada Home Direktori.</p>
-
-<pre><code class="language-bash">#cd: change directory
-$ cd ~
-#atau
-$ cd $HOME
-#atau
-$ cd
-#pwd: print working directory
-$ pwd
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1">#cd: change directory</span>
+$ <span class="nb">cd</span> ~
+<span class="c1">#atau</span>
+$ <span class="nb">cd</span> <span class="nv">$HOME</span>
+<span class="c1">#atau</span>
+$ <span class="nb">cd</span>
+<span class="c1">#pwd: print working directory</span>
+$ <span class="nb">pwd</span>
 /Users/ngurajeka
-</code></pre>
-
-<p>Buat satu direktori khusus untuk projek yang akan kita buat menggunakan perintah di antarmuka baris perintah (gunakan terminal, console, dan lain-lain), semisal web_pribadi. <code>mkdir web_pribadi</code>. Kemudian berpindah ke dalam direktori yang baru saja kita buat <code>cd web_pribadi</code>.</p>
-
+</code></pre></div><p>Buat satu direktori khusus untuk projek yang akan kita buat menggunakan perintah di antarmuka baris perintah (gunakan terminal, console, dan lain-lain), semisal web_pribadi. <code>mkdir web_pribadi</code>. Kemudian berpindah ke dalam direktori yang baru saja kita buat <code>cd web_pribadi</code>.</p>
 <p>Membuat file index.php, direktori inc, template, static. index.php adalah file yang pada umumnya akan menjadi file yang pertama kali di jalankan pada saat mengakses satu web yang menggunakan PHP. Walaupun hal ini bisa diubah, namun index.php ini menjadi konfigurasi default di beberapa web server. Direktori inc akan kita gunakan untuk menyimpan file-file php yang akan kita gunakan secara berulang-ulang, bisa dikatakan sebagai tempat untuk menyimpan pustaka-pustaka (library) yang akan kita buat menggunakan PHP. Direktori Template untuk menyimpan template, sedangkan static untuk menyimpan file-file seperti file css ataupun js.</p>
-
-<pre><code class="language-bash">$ touch index.php
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">$ touch index.php
 $ mkdir inc template static
-</code></pre>
-
-<h1 id="menyiapkan-pustaka-pustaka-yang-dibutuhkan">Menyiapkan pustaka-pustaka yang dibutuhkan</h1>
-
+</code></pre></div><h1 id="menyiapkan-pustaka-pustaka-yang-dibutuhkan">Menyiapkan pustaka-pustaka yang dibutuhkan</h1>
 <p>Pada bagian ini kita akan menambahkan Twig Template Engine dan Bootstrap CSS Framework.</p>
-
 <p>Mengunduh file tarball Twig Template Engine, kemudian kita ekstrak dan masukkan kedalam direktori inc</p>
-
-<pre><code class="language-bash">$ wget https://github.com/twigphp/Twig/archive/v1.23.1.tar.gz
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">$ wget https://github.com/twigphp/Twig/archive/v1.23.1.tar.gz
 $ tar xvf v1.23.1.tar.gz -C inc
 $ mv inc/Twig-1.23.1 inc/Twig
-</code></pre>
-
-<p>Dengan perintah diatas, kita mengunduh terlebih dahulu file tarballnya, kemudian mengekstrak file tersebut kedalam direktori inc dan terakhir mengubah nama direktori hasil ekstraknya dari Twig-1.23.1 menjadi Twig agar lebih mudah.</p>
-
+</code></pre></div><p>Dengan perintah diatas, kita mengunduh terlebih dahulu file tarballnya, kemudian mengekstrak file tersebut kedalam direktori inc dan terakhir mengubah nama direktori hasil ekstraknya dari Twig-1.23.1 menjadi Twig agar lebih mudah.</p>
 <p>Mengunduh bootstrap, mengekstraknya dan memasukkan file-file staticnya kedalam direktori static</p>
-
-<pre><code class="language-bash">$ wget https://github.com/twbs/bootstrap/releases/download/v3.3.5/bootstrap-3.3.5-dist.zip
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">$ wget https://github.com/twbs/bootstrap/releases/download/v3.3.5/bootstrap-3.3.5-dist.zip
 $ unzip bootstrap-3.3.5-dist.zip -d /tmp/bootstrap
 $ mv /tmp/bootstrap/bootstrap-3.3.5-dist/* static
-</code></pre>
-
-<p>Untuk memastikan atau melihat struktural file-file anda sekarang, anda dapat menggunakan perintah tree ataupun find</p>
-
-<pre><code class="language-bash"># tree: memunculkan struktur file dan folder dalam bentuk pohon hirarki
+</code></pre></div><p>Untuk memastikan atau melihat struktural file-file anda sekarang, anda dapat menggunakan perintah tree ataupun find</p>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># tree: memunculkan struktur file dan folder dalam bentuk pohon hirarki</span>
 $ tree
-# find: lebih tepat digunakan untuk mencari file, namun bisa digunakan dengan tujuan yang sama seperti tree
+<span class="c1"># find: lebih tepat digunakan untuk mencari file, namun bisa digunakan dengan tujuan yang sama seperti tree</span>
 $ find
-</code></pre>
-
-<h4 id="membuat-web-sederhana-menggunakan-php-twig-template-engine-dan-mysql-part-1">Membuat Web Sederhana menggunakan PHP, Twig Template Engine dan MySQL: Part 1</h4>
-
-<h4 id="membuat-web-sederhana-menggunakan-php-twig-template-engine-dan-mysql-part-2-post-membuat-web-sederhana-menggunakan-php-twig-template-engine-dan-mysql-part-2"><a href="/post/membuat-web-sederhana-menggunakan-php-twig-template-engine-dan-mysql-part-2">Membuat Web Sederhana menggunakan PHP, Twig Template Engine dan MySQL: Part 2</a></h4>
-
-<h4 id="membuat-web-sederhana-menggunakan-php-twig-template-engine-dan-mysql-part-3-post-membuat-web-sederhana-menggunakan-php-twig-template-engine-dan-mysql-part-3"><a href="/post/membuat-web-sederhana-menggunakan-php-twig-template-engine-dan-mysql-part-3">Membuat Web Sederhana menggunakan PHP, Twig Template Engine dan MySQL: Part 3</a></h4>
-
-<h4 id="membuat-web-sederhana-menggunakan-php-twig-template-engine-dan-mysql-part-4-post-membuat-web-sederhana-menggunakan-php-twig-template-engine-dan-mysql-part-4"><a href="/post/membuat-web-sederhana-menggunakan-php-twig-template-engine-dan-mysql-part-4">Membuat Web Sederhana menggunakan PHP, Twig Template Engine dan MySQL: Part 4</a></h4>
+</code></pre></div><h4 id="membuat-web-sederhana-menggunakan-php-twig-template-engine-dan-mysql-part-1">Membuat Web Sederhana menggunakan PHP, Twig Template Engine dan MySQL: Part 1</h4>
+<h4 id="membuat-web-sederhana-menggunakan-php-twig-template-engine-dan-mysql-part-2postmembuat-web-sederhana-menggunakan-php-twig-template-engine-dan-mysql-part-2"><a href="/post/membuat-web-sederhana-menggunakan-php-twig-template-engine-dan-mysql-part-2">Membuat Web Sederhana menggunakan PHP, Twig Template Engine dan MySQL: Part 2</a></h4>
+<h4 id="membuat-web-sederhana-menggunakan-php-twig-template-engine-dan-mysql-part-3postmembuat-web-sederhana-menggunakan-php-twig-template-engine-dan-mysql-part-3"><a href="/post/membuat-web-sederhana-menggunakan-php-twig-template-engine-dan-mysql-part-3">Membuat Web Sederhana menggunakan PHP, Twig Template Engine dan MySQL: Part 3</a></h4>
+<h4 id="membuat-web-sederhana-menggunakan-php-twig-template-engine-dan-mysql-part-4postmembuat-web-sederhana-menggunakan-php-twig-template-engine-dan-mysql-part-4"><a href="/post/membuat-web-sederhana-menggunakan-php-twig-template-engine-dan-mysql-part-4">Membuat Web Sederhana menggunakan PHP, Twig Template Engine dan MySQL: Part 4</a></h4>
 
     </div>
     
@@ -232,7 +202,7 @@ $ find
         <div class="pagination__buttons">
           
             <span class="button previous">
-              <a href="https://ngurajeka.com/post/membuat-web-sederhana-menggunakan-php-twig-template-engine-dan-mysql-part-2/">
+              <a href="/post/membuat-web-sederhana-menggunakan-php-twig-template-engine-dan-mysql-part-2/">
                 <span class="button__icon">←</span>
                 <span class="button__text">Membuat Web Sederhana menggunakan PHP, Twig Template Engine dan MySQL: Part 2</span>
               </a>
@@ -240,7 +210,7 @@ $ find
           
           
             <span class="button next">
-              <a href="https://ngurajeka.com/post/meetup-pythonid-april/">
+              <a href="/post/meetup-pythonid-april/">
                 <span class="button__text">MeetUp Python-ID</span>
                 <span class="button__icon">→</span>
               </a>
@@ -272,15 +242,15 @@ $ find
 </a>
 
       <div class="copyright">
-        <span>© 2019 Powered by <a href="https://gohugo.io">Hugo</a></span>
+        <span>© 2020 Powered by <a href="https://gohugo.io">Hugo</a></span>
         <span>Theme created by <a href="https://twitter.com/panr">panr</a></span>
       </div>
     
   </div>
 </footer>
 
-<script src="https://ngurajeka.com/assets/main.js"></script>
-<script src="https://ngurajeka.com/assets/prism.js"></script>
+<script src="/assets/main.js"></script>
+<script src="/assets/prism.js"></script>
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-77797160-1"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
