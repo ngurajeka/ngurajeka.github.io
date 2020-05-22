@@ -13,13 +13,13 @@
     
     <item>
       <title>Memeriksa endpoint menggunakan Goroutine</title>
-      <link>/usecase/goroutine/checking-multiple-endpoints/</link>
+      <link>/usecase/goroutine/memeriksa-endpoint-menggunakan-goroutine/</link>
       <pubDate>Thu, 21 May 2020 20:40:34 +0700</pubDate>
       
-      <guid>/usecase/goroutine/checking-multiple-endpoints/</guid>
-      <description>Penjelasan usecase Pada pembahasan usecase kali ini, kita akan menggunakan contoh dimana kita memiliki kebutuhan untuk melakukan pengecekan terhadap beberapa endpoint atau web secara berkala.
-Untuk melakukan pemeriksaan terhadap sebuah website atau endpoint, bisa kita lakukan secara manual dengan mengunjungi alamat web atau endpoint tersebut melalui web browser atau http client yang biasanya kita gunakan.
-Hanya saja, semakin banyak alamat yang harus kita kunjungi maka semakin lama juga waktu yang kita butuhkan.</description>
+      <guid>/usecase/goroutine/memeriksa-endpoint-menggunakan-goroutine/</guid>
+      <description>Usecase Untuk melakukan pemeriksaan terhadap sebuah website atau endpoint, bisa dilakukan secara manual dengan mengunjungi alamat web atau endpoint tersebut melalui web browser atau http client yang biasanya digunakan.
+Hanya saja, semakin banyak alamat yang harus dikunjungi maka semakin lama juga waktu yang dibutuhkan. Misal, untuk memeriksa satu alamat membutuhkan 1 menit, maka untuk memeriksa alamat sebanyak n maka waktu yang dibutuhkan adalah v = n * 1.
+Dan tentu saja saya sendiri juga cukup malas untuk melakukan hal diatas secara manual dan berulang-ulang.</description>
     </item>
     
   </channel>

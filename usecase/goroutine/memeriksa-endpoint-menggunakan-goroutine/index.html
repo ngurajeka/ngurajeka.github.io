@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+    <title>Memeriksa endpoint menggunakan Goroutine :: The Official Site of ngurajeka — an ordinary ceo</title>
+  
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+<meta name="description" content="Usecase Untuk melakukan pemeriksaan terhadap sebuah website atau endpoint, bisa dilakukan secara manual dengan mengunjungi alamat web atau endpoint tersebut melalui web browser atau http client yang biasanya digunakan.
+Hanya saja, semakin banyak alamat yang harus dikunjungi maka semakin lama juga waktu yang dibutuhkan. Misal, untuk memeriksa satu alamat membutuhkan 1 menit, maka untuk memeriksa alamat sebanyak n maka waktu yang dibutuhkan adalah v = n * 1.
+Dan tentu saja saya sendiri juga cukup malas untuk melakukan hal diatas secara manual dan berulang-ulang."/>
+<meta name="keywords" content=""/>
+<meta name="robots" content="noodp"/>
+<link rel="canonical" href="/usecase/goroutine/memeriksa-endpoint-menggunakan-goroutine/" />
+
+
+<link rel="stylesheet" href="/assets/style.css">
+
+
+<link rel="stylesheet" href="/style.css">
+
+
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="/img/apple-touch-icon-144-precomposed.png">
+<link rel="shortcut icon" href="/img/favicon.png">
+
+
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:title" content="Memeriksa endpoint menggunakan Goroutine :: The Official Site of ngurajeka — an ordinary ceo" />
+<meta name="twitter:description" content="Usecase Untuk melakukan pemeriksaan terhadap sebuah website atau endpoint, bisa dilakukan secara manual dengan mengunjungi alamat web atau endpoint tersebut melalui web browser atau http client yang biasanya digunakan.
+Hanya saja, semakin banyak alamat yang harus dikunjungi maka semakin lama juga waktu yang dibutuhkan. Misal, untuk memeriksa satu alamat membutuhkan 1 menit, maka untuk memeriksa alamat sebanyak n maka waktu yang dibutuhkan adalah v = n * 1.
+Dan tentu saja saya sendiri juga cukup malas untuk melakukan hal diatas secara manual dan berulang-ulang." />
+<meta name="twitter:site" content="/" />
+<meta name="twitter:creator" content="" />
+<meta name="twitter:image" content="">
+
+
+<meta property="og:locale" content="en" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="Memeriksa endpoint menggunakan Goroutine :: The Official Site of ngurajeka — an ordinary ceo">
+<meta property="og:description" content="Usecase Untuk melakukan pemeriksaan terhadap sebuah website atau endpoint, bisa dilakukan secara manual dengan mengunjungi alamat web atau endpoint tersebut melalui web browser atau http client yang biasanya digunakan.
+Hanya saja, semakin banyak alamat yang harus dikunjungi maka semakin lama juga waktu yang dibutuhkan. Misal, untuk memeriksa satu alamat membutuhkan 1 menit, maka untuk memeriksa alamat sebanyak n maka waktu yang dibutuhkan adalah v = n * 1.
+Dan tentu saja saya sendiri juga cukup malas untuk melakukan hal diatas secara manual dan berulang-ulang." />
+<meta property="og:url" content="/usecase/goroutine/memeriksa-endpoint-menggunakan-goroutine/" />
+<meta property="og:site_name" content="Memeriksa endpoint menggunakan Goroutine" />
+<meta property="og:image" content="">
+<meta property="og:image:width" content="2048">
+<meta property="og:image:height" content="1024">
+<meta property="article:section" content="goroutine" />
+<meta property="article:published_time" content="2020-05-21 20:40:34 &#43;0700 &#43;07" />
+
+
+
+
+
+
+
+<link rel="stylesheet" href="/css/post.css" />
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous" />
+</head>
+<body class="">
+<div class="container">
+  <header class="header">
+  <span class="header__inner">
+    <a href="/" class="logo" style="text-decoration: none;">
+  
+    <span class="logo__mark"><svg xmlns="http://www.w3.org/2000/svg" class="greater-icon" width="44" height="44" viewBox="0 0 44 44">
+  <polyline fill="none" stroke="#000" stroke-width="2" points="15 8 29.729 22.382 15 35.367"/>
+</svg>
+</span>
+    <span class="logo__text">ngurajeka</span>
+    <span class="logo__cursor"></span>
+  
+</a>
+
+    <span class="header__right">
+      
+        <nav class="menu">
+  <ul class="menu__inner menu__inner--desktop">
+    
+      
+        
+          <li><a href="/about">About</a></li>
+        
+      
+        
+          <li><a href="/podcast">Podcast</a></li>
+        
+      
+        
+          <li><a href="/usecase">Usecase</a></li>
+        
+      
+      
+    
+  </ul>
+
+  <ul class="menu__inner menu__inner--mobile">
+    
+      
+        <li><a href="/about">About</a></li>
+      
+    
+      
+        <li><a href="/podcast">Podcast</a></li>
+      
+    
+      
+        <li><a href="/usecase">Usecase</a></li>
+      
+    
+  </ul>
+</nav>
+
+        <span class="menu-trigger">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <path d="M0 0h24v24H0z" fill="none"/>
+            <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
+          </svg>
+        </span>
+      
+      <span class="theme-toggle">
+        <svg class="theme-toggler" width="24" height="24" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M22 41C32.4934 41 41 32.4934 41 22C41 11.5066 32.4934 3 22
+  3C11.5066 3 3 11.5066 3 22C3 32.4934 11.5066 41 22 41ZM7 22C7
+  13.7157 13.7157 7 22 7V37C13.7157 37 7 30.2843 7 22Z"/>
+</svg>
+
+      </span>
+    </span>
+  </span>
+</header>
+
+
+  <div class="content">
+    
+  <div class="post">
+    <h2 class="post-title"><a href="/usecase/goroutine/memeriksa-endpoint-menggunakan-goroutine/">Memeriksa endpoint menggunakan Goroutine</a></h2>
+    <div class="post-meta">
+      
+        <span class="post-date">
+            2020-05-21
+        </span>
+      
+      
+      
+        <span class="post-read-time">— 4 min read</span>
+      
+    </div>
+
+    
+
+    
+
+    <div class="post-content">
+      <!-- [Explanation about Goroutine can be found here](..) -->
+<h2 id="usecase">Usecase</h2>
+<p>Untuk melakukan pemeriksaan terhadap sebuah website atau endpoint, bisa dilakukan secara manual dengan mengunjungi alamat web atau endpoint tersebut melalui web browser atau http client yang biasanya digunakan.</p>
+<p>Hanya saja, semakin banyak alamat yang harus dikunjungi maka semakin lama juga waktu yang dibutuhkan.
+Misal, untuk memeriksa satu alamat membutuhkan 1 menit, maka untuk memeriksa alamat sebanyak <code>n</code> maka waktu yang dibutuhkan adalah <code>v = n * 1</code>.</p>
+<p>Dan tentu saja saya sendiri juga cukup malas untuk melakukan hal diatas secara manual dan berulang-ulang.
+Maka dari itu membuat sebuah <code>tools</code> kecil untuk melakukan pekerjaan diatas sangatlah berguna.</p>
+<h2 id="pemeriksaan-tanpa-goroutine">Pemeriksaan Tanpa Goroutine</h2>
+<p>Misalkan, berikut adalah alamat yang perlu dilakukan pemeriksaan:</p>
+<ul>
+<li><a href="https://github.com">https://github.com</a></li>
+<li><a href="https://api.github.com">https://api.github.com</a></li>
+<li><a href="https://google.com">https://google.com</a></li>
+<li><a href="https://ngurajeka.com">https://ngurajeka.com</a></li>
+</ul>
+<p>Bahasa Pemrograman Go menyediakan library yang dapat digunakan untuk melakukan hal tersebut yaitu <code>net/http</code>.</p>
+<pre><code>package main
+
+import (
+	&quot;log&quot;
+	&quot;net/http&quot;
+)
+
+func main() {
+	urls := []string{
+		&quot;https://github.com&quot;,
+		&quot;https://api.github.com&quot;,
+		&quot;https://google.com&quot;,
+		&quot;https://ngurajeka.com&quot;,
+	}
+	for _, url := range urls {
+		resp, err := http.Get(url)
+		if err != nil {
+			log.Printf(&quot;%s got err: %s&quot;, url, err.Error())
+			continue
+		}
+		defer resp.Body.Close()
+
+		if resp.StatusCode != http.StatusOK || resp.StatusCode != http.StatusCreated {
+			log.Printf(&quot;%s get error code: %d&quot;, url, resp.StatusCode)
+			continue
+		}
+		log.Printf(&quot;%s looks fine&quot;, url)
+	}
+}
+</code></pre><p>Ketika kode tersebut dijalankan, maka hasilnya sebagai berikut:</p>
+<p><img src="../pinger-execution-time.jpg" alt=""></p>
+<p>Pada dasarnya, kode diatas sudah dapat digunakan untuk melakukan pemeriksaan terhadap lebih dari satu alamat sekaligus. Hanya saja akan ada beberapa masalah yang akan muncul ketika alamat yang diperiksa jumlahnya lebih banyak.</p>
+<p>Perhatikan gambar di bawah, sebelum program dijalankan.
+Proses compile perlu dilakukan untuk membuat program di atas menjadi file binary, dan program dijalankan dari hasil binary hasil compile.</p>
+<pre><code>$ go build -o pinger
+</code></pre><p><img src="../pinger-compiled-execution-time.jpg" alt=""></p>
+<p>Saat menggunakan program yang sudah dicompile menjadi binary, waktu yang dibutuhkan menjadi lebih sedikit karena proses compile sudah tidak dilakukan.</p>
+<p>Berikutnya, melakukan uji coba dengan jumlah alamat lebih banyak</p>
+<pre><code>urls := []string{
+	&quot;https://github.com&quot;,
+	&quot;https://api.github.com&quot;,
+	&quot;https://google.com&quot;,
+	&quot;https://ngurajeka.com&quot;,
+	&quot;https://meraxes.id&quot;,
+	&quot;https://valutac.com&quot;,
+	&quot;https://teams.microsoft.com&quot;,
+	&quot;https://facebook.com&quot;,
+	&quot;https://twitter.com&quot;,
+}
+</code></pre><p>Sebelum dijalankan, lakukan compile terlebih dahulu untuk memperbarui file binary.</p>
+<p><img src="../pinger-compiled-2-execution-time.jpg" alt=""></p>
+<p>Pada proses di atas, setiap alamat diperiksa satu persatu secara sinkronos.
+Dengan semakin banyaknya alamat yang dibutuhkan untuk periksa, tentunya pemeriksaan secara sinkronos bukanlah metode yang baik digunakan.</p>
+<p><img src="../pinger-sync.jpg" alt=""></p>
+<p>Alasannya, sebenarnya sama seperti melakukan pemeriksaan secara manual.
+Misalkan untuk memeriksa satu alamat dibutuhkan waktu 5 detik, maka untuk memeriksa alamat sejumlah n dibutuhkan waktu <code>v = n * 5</code>.</p>
+<p>Solusinya adalah menjalankan proses pemeriksaan setiap alamat secara bersamaan.
+Untuk beberapa bahasa pemrograman yang tidak mendukung proses async, maka tentu saja dibutuhkan tools terpisah untuk melakukan proses tersebut.</p>
+<h2 id="pemeriksaan-dengan-goroutine">Pemeriksaan Dengan Goroutine</h2>
+<p>Pattern yang cukup sering digunakan untuk kasus similiar adalah dengan membuat sebuah penampungan data yang akan dikonsumsi oleh program lainnya yang bertugas untuk menjalankan proses utama yang ingin dilaksanakan secara async.</p>
+<p><img src="../pinger-async.jpg" alt=""></p>
+<p>Dengan menjalankan program secara async, maka waktu yang dibutuhkan menjadi lebih sedikit.</p>
+<p>Di Go, terdapat sebuah fitur yaitu Goroutine. Dimana dengan goroutine program dapat menjalankan sebuah proses secara async.</p>
+<p>Berikut kode program diatas setelah diubah untuk menggunakan goroutine</p>
+<pre><code>package main
+
+import (
+        &quot;log&quot;
+        &quot;net/http&quot;
+        &quot;sync&quot;
+)
+
+func main() {
+        urls := []string{
+                &quot;https://github.com&quot;,
+                &quot;https://api.github.com&quot;,
+                &quot;https://google.com&quot;,
+                &quot;https://ngurajeka.com&quot;,
+                &quot;https://meraxes.id&quot;,
+                &quot;https://valutac.com&quot;,
+                &quot;https://teams.microsoft.com&quot;,
+                &quot;https://facebook.com&quot;,
+                &quot;https://twitter.com&quot;,
+        }
+        var wg sync.WaitGroup
+        for _, url := range urls {
+                wg.Add(1)
+
+                go func(v string) {
+                        defer wg.Done()
+                        resp, err := http.Get(v)
+                        if err != nil {
+                                log.Printf(&quot;%s got err: %s&quot;, v, err.Error())
+                                return
+                        }
+                        defer resp.Body.Close()
+
+                        if resp.StatusCode != http.StatusOK || resp.StatusCode != http.StatusCreated {
+                                log.Printf(&quot;%s get error code: %d&quot;, v, resp.StatusCode)
+                                return
+                        }
+                        log.Printf(&quot;%s looks fine&quot;, v)
+                }(url)
+        }
+        wg.Wait()
+}
+</code></pre><p>Perbedaan saat menggunakan goroutine dan tidak adalah proses utama yang ingin dijalankan dibungkus (wrap) menjadi sebuah anonymous function dan ditambahkan keyword go saat dijalankan.
+Bagian tersebut bisa dibuat menjadi fungsi terpisah agar lebih mudah dibaca dan dimodifikasi.</p>
+<p>Kode diatas juga menggunakan <code>sync.WaitGroup</code> untuk menunggu semua proses selesai sebelum mengakhiri jalannya program utama (main).</p>
+<p>Untuk mencoba melihat hasilnya, compile program terlebih dahulu lalu jalankan kembali.</p>
+<p><img src="../pinger-goroutine-execution-time.jpg" alt=""></p>
+<p>Setelah menggunakan goroutine, proses pemeriksaan berjalan kurang dari 1 detik untuk total alamat yang sama dengan sebelumnya. Pada gambar diatas juga terlihat bahwa proses pemeriksaan sudah tidak dilakukan secara berurut lagi (sync).</p>
+<p>Di goroutine juga terdapat <code>channel</code> yang bisa digunakan untuk berkomunikasi dari setiap program yang dieksekusi secara async kepada program utama yang menjalankannya. Mungkin bagian ini bisa dibahas dengan usecase yang berbeda.</p>
+<ul>
+<li><a href="https://gist.github.com/ngurajeka/c8573812df2d99165d3bf7f9daca0174">Source code tanpa menggunakan Goroutine</a></li>
+<li><a href="https://gist.github.com/ngurajeka/4f4ee2c054b38512dc6d3198910e5cfa">Source code menggunakan Goroutine</a></li>
+</ul>
+<p>Metode diatas digunakan pada tools berikut <a href="https://github.com/Valutac/meraxes">https://github.com/Valutac/meraxes</a> dan juga pada <a href="meraxes.id">meraxes.id</a> untuk versi web.</p>
+<p>Editor: <a href="https://github.com/yaumianwar">Nur Yaumi</a></p>
+
+    </div>
+    
+
+    <div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "ngurajeka" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+    </div>
+
+  </div>
+
+  
+    <footer class="footer">
+  <div class="footer__inner">
+    
+      <a href="/" class="logo" style="text-decoration: none;">
+  
+    <span class="logo__mark"><svg xmlns="http://www.w3.org/2000/svg" class="greater-icon" width="44" height="44" viewBox="0 0 44 44">
+  <polyline fill="none" stroke="#000" stroke-width="2" points="15 8 29.729 22.382 15 35.367"/>
+</svg>
+</span>
+    <span class="logo__text">ngurajeka</span>
+    <span class="logo__cursor"></span>
+  
+</a>
+
+      <div class="copyright">
+        <span>© 2020 Powered by <a href="https://gohugo.io">Hugo</a></span>
+        <span>Theme created by <a href="https://twitter.com/panr">panr</a></span>
+      </div>
+    
+  </div>
+</footer>
+
+<script src="/assets/main.js"></script>
+<script src="/assets/prism.js"></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-77797160-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-77797160-1');
+</script>
+
+
+
+  
+</div>
+
+</body>
+</html>
