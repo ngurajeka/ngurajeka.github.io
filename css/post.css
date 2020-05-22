@@ -24,5 +24,6 @@
 }
 
 .posts-date {
-	width: 60px;
+	opacity: .8;
+	margin-right: 16px;
 }

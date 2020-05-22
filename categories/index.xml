@@ -6,15 +6,24 @@
     <description>Recent content in Categories on The Official Site of ngurajeka</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 22 May 2019 05:32:34 +0700</lastBuildDate>
+    <lastBuildDate>Thu, 21 May 2020 20:40:34 +0700</lastBuildDate>
     
 	<atom:link href="/categories/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
+      <title>goroutine</title>
+      <link>/categories/goroutine/</link>
+      <pubDate>Thu, 21 May 2020 20:40:34 +0700</pubDate>
+      
+      <guid>/categories/goroutine/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>podcast</title>
       <link>/categories/podcast/</link>
-      <pubDate>Wed, 22 May 2019 05:32:34 +0700</pubDate>
+      <pubDate>Tue, 28 May 2019 23:28:34 +0700</pubDate>
       
       <guid>/categories/podcast/</guid>
       <description></description>
